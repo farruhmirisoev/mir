@@ -5,7 +5,7 @@
 /**
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 22, ../scss/_normalize.scss */
+/* line 11, ../scss/_normalize.scss */
 article,
 aside,
 details,
@@ -24,7 +24,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 32, ../scss/_normalize.scss */
+/* line 30, ../scss/_normalize.scss */
 audio,
 canvas,
 video {
@@ -75,7 +75,7 @@ html {
  * Address `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-/* line 83, ../scss/_normalize.scss */
+/* line 79, ../scss/_normalize.scss */
 html,
 button,
 input,
@@ -106,7 +106,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 112, ../scss/_normalize.scss */
+/* line 111, ../scss/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -167,7 +167,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-/* line 169, ../scss/_normalize.scss */
+/* line 168, ../scss/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -209,7 +209,7 @@ mark {
 /**
  * Address margins set differently in IE 6/7.
  */
-/* line 210, ../scss/_normalize.scss */
+/* line 209, ../scss/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
@@ -218,7 +218,7 @@ pre {
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-/* line 221, ../scss/_normalize.scss */
+/* line 218, ../scss/_normalize.scss */
 code,
 kbd,
 pre,
@@ -249,7 +249,7 @@ q {
 /**
  * Address `quotes` property not supported in Safari 4.
  */
-/* line 250, ../scss/_normalize.scss */
+/* line 249, ../scss/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -267,7 +267,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 268, ../scss/_normalize.scss */
+/* line 267, ../scss/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -292,7 +292,7 @@ sub {
 /**
  * Address margins set differently in IE 6/7.
  */
-/* line 294, ../scss/_normalize.scss */
+/* line 291, ../scss/_normalize.scss */
 dl,
 menu,
 ol,
@@ -308,7 +308,7 @@ dd {
 /**
  * Address paddings set differently in IE 6/7.
  */
-/* line 308, ../scss/_normalize.scss */
+/* line 306, ../scss/_normalize.scss */
 menu,
 ol,
 ul {
@@ -318,7 +318,7 @@ ul {
 /**
  * Correct list images handled incorrectly in IE 7.
  */
-/* line 317, ../scss/_normalize.scss */
+/* line 316, ../scss/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -402,7 +402,7 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
-/* line 401, ../scss/_normalize.scss */
+/* line 398, ../scss/_normalize.scss */
 button,
 input,
 select,
@@ -421,7 +421,7 @@ textarea {
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 414, ../scss/_normalize.scss */
+/* line 413, ../scss/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -433,7 +433,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 426, ../scss/_normalize.scss */
+/* line 425, ../scss/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -448,7 +448,7 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 443, ../scss/_normalize.scss */
+/* line 440, ../scss/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -464,7 +464,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 454, ../scss/_normalize.scss */
+/* line 453, ../scss/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -476,7 +476,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 466, ../scss/_normalize.scss */
+/* line 465, ../scss/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -508,7 +508,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 492, ../scss/_normalize.scss */
+/* line 491, ../scss/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -517,7 +517,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 3+.
  */
-/* line 501, ../scss/_normalize.scss */
+/* line 500, ../scss/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -548,73 +548,188 @@ table {
   border-spacing: 0;
 }
 
-/* line 61, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-* html {
-  font-size: 87.5%;
-}
-
-/* line 64, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 106, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
-  font-size: 14px;
+  font-size: 87.5%;
   line-height: 1.5em;
 }
 
 /* Some typography rules */
 /* line 17, ../scss/_typography.scss */
 h1 {
-  font-size: 2.42857em;
-  line-height: 1.23529em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 34px;
+  font-size: 2.42857rem;
+  line-height: 42px;
+  line-height: 3rem;
+  margin-top: 21px;
+  margin-top: 1.5rem;
+  margin-bottom: 21px;
+  margin-bottom: 1.5rem;
 }
 
 /* line 23, ../scss/_typography.scss */
 h2 {
-  font-size: 1.78571em;
-  line-height: 1.68em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 25px;
+  font-size: 1.78571rem;
+  line-height: 42px;
+  line-height: 3rem;
+  margin-top: 21px;
+  margin-top: 1.5rem;
+  margin-bottom: 21px;
+  margin-bottom: 1.5rem;
 }
 
 /* line 29, ../scss/_typography.scss */
 h3 {
-  font-size: 1.42857em;
-  line-height: 1.05em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 20px;
+  font-size: 1.42857rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+  margin-top: 21px;
+  margin-top: 1.5rem;
+  margin-bottom: 21px;
+  margin-bottom: 1.5rem;
 }
 
 /* line 35, ../scss/_typography.scss */
 h4 {
-  font-size: 1.28571em;
-  line-height: 1.16667em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+  margin-top: 21px;
+  margin-top: 1.5rem;
+  margin-bottom: 21px;
+  margin-bottom: 1.5rem;
 }
 
 /* line 41, ../scss/_typography.scss */
 h5 {
-  font-size: 1.14286em;
-  line-height: 1.3125em;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+  margin-top: 11px;
+  margin-top: 0.75rem;
+  margin-bottom: 11px;
+  margin-bottom: 0.75rem;
 }
 
 /* line 47, ../scss/_typography.scss */
 h6 {
-  font-size: 1.07143em;
-  line-height: 1.4em;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  font-size: 15px;
+  font-size: 1.07143rem;
+  line-height: 21px;
+  line-height: 1.5rem;
+  margin-top: 11px;
+  margin-top: 0.75rem;
+  margin-bottom: 11px;
+  margin-bottom: 0.75rem;
 }
 
 /* line 53, ../scss/_typography.scss */
 p {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 21px;
+  margin-top: 1.5rem;
+  margin-bottom: 21px;
+  margin-bottom: 1.5rem;
 }
 
 /* line 1, ../scss/_presets.scss */
 ul {
   padding: 0;
+}
+
+/* line 2, ../scss/regions/_header.scss */
+.panels-flexible-33-inside {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+/* line 5, ../scss/regions/_header.scss */
+.panels-flexible-33 .pane-page-logo {
+  width: 14.89362%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 8, ../scss/regions/_header.scss */
+.panels-flexible-33 .pane-superfish-1 {
+  width: 14.89362%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 11, ../scss/regions/_header.scss */
+.panels-flexible-33 .pane-block-8 {
+  width: 40.42553%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 14, ../scss/regions/_header.scss */
+.panels-flexible-33 .pane-block-9 {
+  width: 14.89362%;
+  float: left;
+  margin-right: 2.12766%;
+}
+
+/* line 1, ../scss/regions/_body.scss */
+.panels-flexible-1 {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+
+/* line 1, ../scss/regions/_footer.scss */
+.panels-flexible-40 {
+  background-color: #a31418;
+  background-image: url(../images/footer_bg_img.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 6, ../scss/regions/_footer.scss */
+.panels-flexible-40-inside {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+
+/* line 11, ../scss/regions/_footer.scss */
+.panels-flexible-region-40-left {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 13, ../scss/regions/_footer.scss */
+.panels-flexible-region-40-left .panels-flexible-region-40-left-inside {
+  padding-right: 0;
+}
+
+/* line 17, ../scss/regions/_footer.scss */
+.panels-flexible-region-40-center {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 19, ../scss/regions/_footer.scss */
+.panels-flexible-region-40-center .panels-flexible-region-40-left-inside {
+  padding-right: 0;
+}
+
+/* line 23, ../scss/regions/_footer.scss */
+.panels-flexible-region-40-right {
+  width: 31.91489%;
+  float: right;
+  margin-right: 0;
+}
+/* line 25, ../scss/regions/_footer.scss */
+.panels-flexible-region-40-right .panels-flexible-region-40-right-last {
+  padding-left: 0;
+}
+
+/* line 30, ../scss/regions/_footer.scss */
+.panels-flexible-region-mir_1-footer {
+  float: none;
+  width: auto;
 }
