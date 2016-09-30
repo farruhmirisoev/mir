@@ -1,0 +1,86 @@
+/*
+Error: Undefined variable: "$bootstrap-sass-asset-helper".
+        on line 13 of _glyphicons.scss
+
+8: // <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+9: 
+10: // Import the fonts
+11: @font-face {
+12:   font-family: 'Glyphicons Halflings';
+13:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));
+14:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+15:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),
+16:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),
+17:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.svg#glyphicons-halflingsregular'), '#{$icon-font-path}#{$icon-font-name}.svg#glyphicons-halflingsregular')) format('svg');
+18: }
+
+Backtrace:
+_glyphicons.scss:13
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `each_with_index'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `each_with_index'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:123:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:491:in `block (2 levels) in visit_directive'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:491:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:491:in `block in visit_directive'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:490:in `visit_directive'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/base.rb:40:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$bootstrap-sass-asset-helper\".\A         on line 13 of _glyphicons.scss\A \A 8: // <a href=\"#\"><span class=\"glyphicon glyphicon-star\"></span> Star</a>\A 9: \A 10: // Import the fonts\A 11: @font-face {\A 12:   font-family: 'Glyphicons Halflings';\A 13:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));\A 14:   src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),\A 15:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),\A 16:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),\A 17:        url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.svg#glyphicons-halflingsregular'), '#{$icon-font-path}#{$icon-font-name}.svg#glyphicons-halflingsregular')) format('svg');\A 18: }"; }

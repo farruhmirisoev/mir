@@ -1,0 +1,37 @@
+<?php
+
+function notifications_ctools_plugin_directory($owner, $plugin_type) {
+    if ($owner == 'ctools' && $plugin_type == 'content_types') {
+        return 'plugins/' . $plugin_type;
+    }
+}
+
+function notifications_get_node_count($content_type) {
+    $db_query = db_select('node','n')
+        -> fields('n',array('nid'))
+        -> condition('n.status',0,'=')
+        -> condition('n.type',$content_type,'=');
+            $result = $db_query->countQuery()->execute()->fetchField();
+            return $result;
+}
+
+function notifications_get_nodes_by_type($content_type) {
+    $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'node')
+        ->entityCondition('bundle', $content_type)
+        ->propertyCondition('status', 0);
+    $my_result = $query->execute();
+   return print_results($my_result);
+}
+
+function print_results($printed_result) {
+    $row = '';
+    foreach (array_keys($printed_result['node']) as $nid) {
+        $node = node_load($nid, NULL, TRUE);
+        $build_body = field_view_field('node', $node, 'body', 'teaser');
+
+        $row .= '<p><a href ="/node/' . $node->nid . '">'  . $node->title . '</a></p>' . '<div class="body">' . render($build_body) . '<a href ="/node/' . $node->nid . '">Подробнее</a>'   . '<a href ="/node/' . $node->nid . '">Опубликовать</a>' . '</div>';
+    }
+    return $row;
+}
+

@@ -1,0 +1,14 @@
+<?php
+function custom_map_init() {
+  drupal_add_js('https://api-maps.yandex.ru/2.1/?lang=ru_RU', 'external');
+//  drupal_add_js(drupal_get_path('module', 'custom_map') . '/js/custom_map.js');
+}
+
+function custom_map_ctools_plugin_directory($owner, $plugin_type) {
+    if ($owner == 'ctools' && $plugin_type == 'content_types') {
+        return 'plugins/' . $plugin_type;
+    }
+}
+
+
+

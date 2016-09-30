@@ -1,0 +1,32 @@
+<?php
+
+function misc_cron() {
+    change_sale_end_date();
+}
+function change_sale_end_date () {
+    $upDate = date('Y-m-d', strtotime('+5 day'));
+
+    $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'node')
+        ->entityCondition('bundle', array('sale','offerings'), IN)
+        ->propertyCondition('status', NODE_PUBLISHED);
+//        ->fieldCondition('field_end_date', 'value', REQUEST_TIME, '>');
+    $my_result = $query->execute();
+    if (!isset($my_result['node'])) {
+        drush_log("No nodes to process.", "ok");
+        return;
+    }
+    foreach (array_keys($my_result['node']) as $nid) {
+        $node = node_load($nid, NULL, TRUE);
+        $nowDate = time();
+        $myData = $node->field_end_date[LANGUAGE_NONE][0]['value'];
+        $myData1 = strtotime($myData);
+        if(!empty($myData)) {
+            if($nowDate - $myData1 > 0) {
+//                drush_log("Processed nid={$node->nid}, title={$node->title}, date={$node->field_end_date[LANGUAGE_NONE][0]['value']}",  "ok");
+                $node->field_end_date[LANGUAGE_NONE][0]['value'] = $upDate;
+                node_save($node);
+            }
+        }
+    }
+}

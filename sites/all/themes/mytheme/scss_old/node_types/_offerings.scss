@@ -1,0 +1,340 @@
+.node-type-offerings {
+  .pane-page-content {
+    > .pane-content {
+      width: 100% !important;
+    }
+  }
+}
+.node-type-offerings {
+
+  .field-name-field-offerings-image {
+    @include float_left_img;
+  }
+  .pane-node-content {
+    @include centered_div;
+    overflow: hidden;
+    .field {
+      .field-label {
+        @include title_1_left_1;
+      }
+    }
+    .field-name-field-offerings-image {
+      @include float_left_img;
+    }
+    .field-name-field-progr-content {
+      overflow: hidden;
+      clear: both;
+      @include respond-to(tablet) {
+        width: 100%;
+        padding: 0px 15px;
+      }
+      @include respond-to(phone) {
+        width: 100%;
+        padding: 0px 15px;
+      }
+      @include respond-to(min-phone) {
+        width: 100%;
+        padding: 0px 15px;
+      }
+    }
+    .field-name-field-reccomend {
+      float: left;
+      width: 64%;
+      @include respond-to(tablet) {
+        width: 100%;
+        padding: 0px 15px;
+      }
+      @include respond-to(phone) {
+        width: 100%;
+        padding: 0px 15px;
+      }
+      @include respond-to(min-phone) {
+        width: 100%;
+        padding: 0px 15px;
+      }
+      .field-label {
+        margin-top: 24px;
+      }
+      .field-item {
+        font-size: 0;
+        display: block;
+        float: left;
+        margin-right: 20px;
+        height: 80px;
+        width: 101px;
+      }
+      .man {
+        background-position: -120px 0px;
+      }
+      .adult {
+        background-position: -240px 0px;
+      }
+    }
+    .field-name-body {
+      .field-items {
+        @include respond-to(tablet) {
+          width: 100%;
+          padding: 0px 15px;
+        }
+        @include respond-to(phone) {
+          width: 100%;
+          padding: 0px 15px;
+        }
+        @include respond-to(min-phone) {
+          width: 100%;
+          padding: 0px 15px;
+        }
+      }
+    }
+  }
+  article {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pane-node-field-backend-prices {
+    margin-bottom: 45px;
+    h4.pane-title {
+      @include title_1;
+    }
+    .pane-content {
+      @include centered_div;
+      padding: 0px 15px;
+    }
+  }
+  .pane-webform-client-block-125 {
+    margin-bottom: 75px;
+  }
+  .pane-backend-doc {
+    overflow: hidden;
+    background: $color_1;
+    color: #fff;
+    h4.pane-title {
+      @include title_1;
+      color: #fff;
+    }
+    > .pane-content {
+      width: 100%;
+    }
+    .pane-views-panes {
+      overflow: hidden;
+      clear: both;
+    }
+    #doc-inf-backend {
+      @include respond-to(tablet) {
+        h4.pane-title {
+          margin-top: 18px;
+        }
+      }
+      @include respond-to(phone) {
+        h4.pane-title {
+          margin-top: 18px;
+        }
+      }
+      @include respond-to(min-phone) {
+        h4.pane-title {
+          margin-top: 18px;
+        }
+      }
+      .pane-content {
+        @include centered_div;
+        @include respond-to(tablet) {
+          padding: 0px 15px;
+          .view-doctors {
+            margin-bottom: 0;
+          }
+        }
+        @include respond-to(phone) {
+          padding: 0px 15px;
+          .view-doctors {
+            margin-bottom: 0;
+          }
+        }
+        @include respond-to(min-phone) {
+          padding: 0px 15px;
+          .view-doctors {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    #doc-reviews-backend {
+      h4.pane-title {
+        margin-top: 43px;
+      }
+      .pane-content {
+        @include centered_div;
+        @include respond-to(tablet) {
+          padding: 0px 15px;
+        }
+        @include respond-to(phone) {
+          padding: 0px 15px;
+        }
+        @include respond-to(min-phone) {
+          padding: 0px 15px;
+        }
+      }
+      .views-row {
+        &:last-child {
+          border-bottom: 0;
+        }
+        .views-field-title,
+        .views-field-body {
+          color: #fff;
+        }
+      }
+    }
+    #backend-doc-sert {
+      padding-bottom: 70px;
+      h4.pane-title {
+        margin-top: 0px;
+      }
+      .pane-content {
+        width: 100%;
+        .view-doctors {
+          @include centered_div;
+          @include respond-to(tablet) {
+            padding: 0px 15px;
+          }
+          @include respond-to(phone) {
+            padding: 0px 15px;
+          }
+          @include respond-to(min-phone) {
+            padding: 0px 15px;
+          }
+          .views-field-field-certificats {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .view-doctors {
+      .view-content {
+        .views-field-title {
+          color: #fff;
+          font-size: 20px;
+        }
+        .views-field-field-doc-photo {
+          @include float_left_img;
+        }
+        .views-field-field-position {
+          background: transparent;
+          padding: 0px;
+          font-size: 16px;
+        }
+        .views-field-field-doc-text {
+          overflow: hidden;
+          clear: both;
+          position: relative;
+          margin-top: 50px;
+          &:before {
+            content: '';
+            display: block;
+            height: 37px;
+            width: 50px;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            margin: auto;
+          }
+          .field-content {
+            font-style: italic;
+            font-size: 18px;
+            border-left: 5px solid #fff;
+            margin-left: 70px;
+            padding-left: 25px;
+          }
+        }
+      }
+    }
+  }
+  #results {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 60px;
+    h4.pane-title {
+      @include title_1;
+    }
+    .pane-content {
+      @include centered_div;
+      .views-field-field-results-program {
+        width: 42%;
+        float: left;
+        overflow: hidden;
+        margin-top: 35px;
+        @include respond-to(tablet) {
+          margin-bottom: 28px;
+          width: 100%;
+          float: none;
+        }
+        @include respond-to(phone) {
+          margin-bottom: 28px;
+          width: 100%;
+          float: none;
+        }
+        @include respond-to(min-phone) {
+          margin-bottom: 28px;
+          width: 100%;
+          float: none;
+        }
+      }
+      .views-field-field-photo-results {
+        width: 58%;
+        overflow: hidden;
+        padding-left: 15px;
+        @include respond-to(tablet) {
+          width: 100%;
+          float: none;
+        }
+        @include respond-to(phone) {
+          width: 100%;
+          float: none;
+        }
+        @include respond-to(min-phone) {
+          width: 100%;
+          float: none;
+        }
+      }
+      .entity-field-collection-item {
+        .field-name-field-client-name {
+          font-size: 16px;
+          @include bold_font;
+        }
+        .field-name-field-results-photo-comp {
+          .field-item {
+            float: left;
+            width: 31%;
+            margin: 0 5px;
+            @include bodrered_image(1px, $title-line-color);
+          }
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .pane-steps {
+    h4.pane-title {
+      @include title_1;
+    }
+    .pane-content {
+      @include centered_div;
+    }
+  }
+
+  #other-programs {
+    h4.pane-title {
+      @include title_1;
+    }
+    .pane-content {
+      @include centered_div;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+.pane-custom-map {
+  >.pane-content {
+    >ymaps {
+      border: 4px solid $color_2;
+      border-radius: 4px;
+    }
+    p {
+      &:first-child {
+        margin-top: 20px;
+      }
+      color: $text_color;
+      margin-bottom: 5px;
+    }
+  }
+}
+#main_map {
+  position: relative;
+  .placemark_layout_container {
+    position: relative;
+    .polygon_layout {
+      bottom: 0px;
+      position: absolute;
+      left: -46px;
+      img {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+#map,
+#mini-panel-adress_tabs {
+  position: relative;
+  overflow: hidden;
+
+  .route-from {
+    float: left;
+    margin-right: 10px;
+    span {
+      font-size: 20px;
+      color: $text_color;
+    }
+    input[type="text"] {
+      height: 34px;
+    }
+  }
+  .for_map_auto,
+  .for_map_public,
+  .for_map_metro {
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 10;
+    @include respond-to(desctop_max) {
+      bottom: 79px;
+    }
+    @include respond-to(desctop_wide) {
+      bottom: 79px;
+    }
+    @include respond-to(desctop) {
+      bottom: 79px;
+    }
+    @include respond-to(tablet) {
+      bottom: 102px;
+    }
+    @include respond-to(phone) {
+      bottom: 151px;
+    }
+    @include respond-to(min-phone) {
+      bottom: 192px;
+    }
+    >div {
+      @include centered_div;
+      padding: 10px 0;
+      p {
+        color: $color_2;
+        float: left;
+        margin: 5px 10px 0 0;
+        @include respond-to(min-phone) {
+          text-align: center;
+          float: none;
+        }
+      }
+      input#name_street {
+        height: 30px;
+        @include respond-to(min-phone) {
+          width: 50%;
+        }
+      }
+      input[type="submit"] {
+        border: 0px;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .center {
+    z-index: 9;
+  }
+  #map_buttons {
+    z-index: 9;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    bottom: 0px;
+    padding: 15px 0;
+    @include respond-to(desctop_wide) {
+      //      bottom: 79px;
+    }
+    @include respond-to(desctop) {
+      //      bottom: 79px;
+    }
+    .map_buttons_content {
+      @include centered_div;
+    }
+    .but_content {
+      @include centered_div;
+    }
+    input {
+      outline: 0;
+
+    }
+    input[name="AutoRoute"],
+    input[name="PublicTransport"],
+    input[name="metro"] {
+      border: 0px;
+      padding: 15px 20px;
+      margin-right: 10px;
+      @include site_button($color_2, $hover-button);
+      @include respond-to(phone) {
+        margin-bottom: 5px;
+      }
+      @include respond-to(min-phone) {
+        margin-bottom: 5px;
+        width: 100%;
+        font-size: 13px;
+      }
+    }
+    input[name="panorama"] {
+      background: transparent;
+      color: $color_2;
+      text-transform: none;
+      font-weight: normal;
+      text-decoration: underline;
+      border: 0;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+#mini-panel-adress_tabs {
+  #directionsPanel {
+    top: 0px;
+    height: 433px;
+  }
+}
+
+
+#directionsPanel{
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 136px;
+  height: 382px;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.6);
+  @include respond-to(tablet) {
+    top: 229px;
+  }
+  @include respond-to(min-phone) {
+    display: none !important;
+  }
+}
+
+#map {
+  position: relative;
+  background: #fff;
+  padding-bottom: 40px;
+  >.pane-content {
+    position: relative;
+    @include centered_div;
+  }
+}
+#mini-panel-adress_1 {
+  @include centered_div;
+  .center {
+    padding: 20px 0px 0px 0;
+    color: $text_color;
+    div {
+      margin-bottom: 5px;
+    }
+  }
+
+}

@@ -1,0 +1,349 @@
+.step-num {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  color: #fff;
+  background: $color_2;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 10px $color_1;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+.pane-steps-panel-pane-1 {
+  overflow: hidden;
+  clear: both;
+}
+.pane-steps-taxonomy-panel-pane-1 {
+  overflow: hidden;
+  clear: both;
+}
+.view-steps,
+.view-steps-taxonomy {
+  .views-row {
+    padding: 0 15px;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    @include respond-to(phone) {
+      width: 100% !important;
+      float: none;
+    }
+    @include respond-to(min-phone) {
+      width: 100% !important;
+      float: none;
+    }
+
+    .views-field-field-step-img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .views-field-field-step-body {
+      background: #fff;
+      padding: 7px 31px;
+      .field_step_title {
+        font-size: 20px;
+        color: $title_h3;
+        margin: 20px 0 25px 0;
+      }
+      .field_duration {
+        margin-bottom: 10px;
+        &:before {
+          content: '';
+          display: block;
+          height: 22px;
+          width: 22px;
+          float: left;
+          margin-right: 5px;
+        }
+      }
+      .field_step_price {
+        margin-bottom: 10px;
+        &:before {
+          content: '';
+          display: block;
+          height: 22px;
+          width: 22px;
+          float: left;
+          margin-right: 5px;
+        }
+      }
+      .field_step_body {}
+    }
+  }
+}
+#steps {
+  padding-bottom: 30px !important;
+  .pane-content {
+    @include centered_div;
+  }
+}
+.pane-panels-mini.pane-steps,
+#steps {
+  background: $color_1;
+  background-size: auto 100%;
+  overflow: hidden;
+  padding-bottom: 68px;
+  clear: both;
+
+  >.pane-title {
+    color: #fff !important;
+  }
+  .pane-webform-client-block-126 {
+    @include respond-to(desctop_max) {
+      width: $screen-lg - 70px;
+      float: none;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    @include respond-to(desctop_wide) {
+      width: $screen-md - 30px;
+      float: none;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    @include respond-to(desctop) {
+      width: $screen-md - 30px;
+      float: none;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    @include respond-to(tablet) {
+      width: $screen-sm - 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    padding: 40px;
+    .pane-title {
+      display: block;
+      font-size: 32px;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      border: 0;
+      &:before, &:after {
+        display: none;
+      }
+    }
+    form {
+      .form-item {
+        @include respond-to(desctop_max) {
+          width: 40%;
+        }
+        @include respond-to(desctop_wide) {
+          width: 40%;
+        }
+        @include respond-to(desctop) {
+          width: 40%;
+        }
+      }
+      .form-submit {
+        @include respond-to(phone) {
+          width: 100%;
+        }
+        @include respond-to(min-phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .pane-title {
+    @include title_1;
+  }
+  .pane-content {
+    @include centered_div;
+    .panel-pane {
+      .pane-content {
+        width: 100%;
+        p.large-img {
+          margin: 0 !important;
+          img {
+            width: 100% !important;
+            height: auto !important;
+            margin: 0 !important;
+          }
+        }
+        h3 {
+          font-size: 20px;
+          color: $title-color;
+          margin-bottom: 25px;
+        }
+        .step-content {
+          padding: 7px 31px;
+          background: #fff;
+          strong {
+            color: $color_2;
+          }
+          img {
+            clear: none;
+            display: inline-block;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .steps-header {
+      p {
+        &:nth-child(2) {
+          @include respond-to(desctop_wide) {
+            padding-left: 64px;
+          }
+          @include respond-to(desctop) {
+            padding-left: 64px;
+          }
+        }
+      }
+    }
+    .pane-1 {
+      p {
+        &:nth-child(2) {
+          @include respond-to(desctop_max) {
+            padding-left: 35px;
+          }
+          @include respond-to(desctop_wide) {
+            padding-left: 75px;
+          }
+          @include respond-to(desctop) {
+            padding-left: 75px;
+          }
+        }
+      }
+    }
+
+    .call,
+    .steps-header {
+      padding: 10px 15px 25px 15px;
+      overflow: hidden;
+      .call-button {
+        float: left;
+        margin-right: 10px;
+        @include respond-to(phone) {
+          float: none;
+          margin: 0;
+          text-align: center;
+          .btn {
+            font-size: 13px;
+          }
+        }
+        @include respond-to(min-phone) {
+          float: none;
+          margin: 0;
+          text-align: center;
+          .btn {
+            font-size: 13px;
+          }
+        }
+      }
+      p.text-phone {
+        padding-top: 7px;
+        color: #fff;
+        strong {
+          font-size: 18px;
+          font-family: $main-font;
+        }
+      }
+      @include respond-to(phone) {
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+      @include respond-to(min-phone) {
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .step-block {
+      margin-bottom: 30px;
+      position: relative;
+      strong {
+        color: $color_2;
+      }
+    }
+  }
+  .step {
+    @include respond-to(phone) {
+      margin-bottom: 10px;
+    }
+    @include respond-to(min-phone) {
+      margin-bottom: 10px;
+    }
+    p.large-img {
+      margin: 0 !important;
+      img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      color: $title-color;
+      margin-bottom: 25px;
+    }
+    .step-content {
+      padding: 7px 31px;
+      background: #fff;
+      //      min-height: 545px;
+      strong {
+        color: $color_2;
+      }
+    }
+  }
+}
+#steps-webform-block {
+  background: $color_1;
+  overflow: hidden;
+  padding-bottom: 68px;
+  #steps-webform {
+    @include centered_div;
+    padding: 40px 40px 19px 40px;
+    h4.pane-title {
+      font-weight: bold;
+      font-size: 32px;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      margin: 0px 0px 27px 0px;
+      border: 0;
+      &:before, &:after {
+        display: none;
+      }
+    }
+    .pane-content {
+      width: 100% !important;
+    }
+    form {
+      .form-item {
+        @include respond-to(desctop_max) {
+          width: 40%;
+        }
+        @include respond-to(desctop_wide) {
+          width: 40%;
+        }
+        @include respond-to(desctop) {
+          width: 40%;
+        }
+      }
+      .form-submit {
+        @include respond-to(phone) {
+          width: 100%;
+        }
+        @include respond-to(min-phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

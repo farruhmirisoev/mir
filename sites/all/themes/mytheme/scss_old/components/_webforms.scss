@@ -1,0 +1,375 @@
+.webform-client-form {
+  @include respond-to(phone) {
+    text-align: center;
+  }
+  @include respond-to(min-phone) {
+    text-align: center;
+  }
+  .form-item {
+    input {
+      border-radius: 0;
+      height: 44px;
+
+    }
+  }
+  .form-actions {
+    margin: 0;
+    @include button_1;
+    display: inline-block;
+    input.webform-submit {
+      background-color: transparent;
+      width: 100%;
+      text-align: center;
+      font-family: $main-font;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: 0;
+      padding: 12px 20px;
+    }
+  }
+}
+
+.pane-webform-client-block-124 {
+  margin-bottom: 30px;
+  .field-name-body {
+    line-height: 35px;
+  }
+}
+.pane-webform-client-block-124,
+.pane-webform-client-block-125,
+.pane-webform-client-block-126 {
+  background: $color_1;
+  box-shadow: inset 0px 0px 0px 8px #fff;
+  border: 2px solid $color_1;
+  overflow: hidden;
+  clear: both;
+  .content {
+    padding: 50px;
+  }
+  h2 {
+    display: none;
+  }
+  .field-name-body {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    strong {
+      @include bold_font;
+      width: 100%;
+      display: block;
+      margin: 30px 0;
+    }
+  }
+  form {
+    .form-item {
+      @include respond-to(desctop_max) {
+        width: 33%;
+        float: left;
+        margin-right: 5px;
+      }
+      @include respond-to(desctop_wide) {
+        width: 29%;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 0;
+      }
+      @include respond-to(desctop) {
+        width: 33%;
+        float: left;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.pane-webform-client-block-125 {
+  @include centered_div;
+  padding: 40px;
+  margin-bottom: 30px;
+  .pane-title {
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    @include respond-to(desctop_max) {
+      float: left;
+      margin: 12px 20px 0 0;
+      width: auto;
+      text-align: left;
+    }
+    @include respond-to(desctop_wide) {
+      float: left;
+      margin: 12px 10px 0 0;
+      width: auto;
+      text-align: left;
+    }
+    @include respond-to(desctop) {
+      float: left;
+      margin: 12px 20px 0 0;
+      width: auto;
+      text-align: left;
+    }
+  }
+  .form-submit {
+    @include respond-to(phone) {
+      width: 100%;
+    }
+    @include respond-to(min-phone) {
+      width: 100%;
+    }
+  }
+  form {
+    .form-item {
+      @include respond-to(desctop_max) {
+        margin-bottom: 0px;
+      }
+      @include respond-to(desctop_wide) {
+        margin-bottom: 0px;
+        width: 21% !important;
+      }
+      @include respond-to(desctop) {
+        margin-bottom: 0px;
+      }
+
+    }
+  }
+}
+
+#consultation-webform {
+  @include centered_div;
+  overflow: hidden;
+  background: $color_1;
+  border: 2px solid $color_1;
+  box-shadow: inset 0px 0px 0px 10px #fff;
+  padding: 3.5% 4%;
+  margin-top: 65px;
+  @include respond-to(phone) {
+    padding: 35px 4% 35px 4%;
+  }
+  @include respond-to(min-phone) {
+    padding: 35px 4% 35px 4%;
+  }
+  .pane-title {
+    float: none;
+    font-size: 31px;
+    color: #fff;
+    margin: 0px;
+    @include respond-to(desctop_max) {
+      float: left;
+      margin-right: 20px;
+    }
+    @include respond-to(desctop_wide) {
+      float: left;
+      margin-right: 10px;
+    }
+    @include respond-to(desctop) {
+      width: 100%;
+      text-align: center;
+    }
+    @include respond-to(tablet) {
+      width: 100%;
+      text-align: center;
+    }
+    @include respond-to(phone) {
+      width: 100%;
+      text-align: center;
+      margin: 15px 0;
+    }
+    @include respond-to(min-phone) {
+      width: 100%;
+      text-align: center;
+      margin: 15px 0;
+    }
+  }
+  .pane-content {
+    width: 53%;
+    float: left;
+    @include respond-to(desctop_wide) {
+      width: 45%;
+    }
+    @include respond-to(desctop) {
+      width: 100%;
+      float: none;
+    }
+    @include respond-to(tablet) {
+      width: 100%;
+      float: none;
+    }
+    @include respond-to(phone) {
+      width: 100%;
+      float: none;
+    }
+    @include respond-to(min-phone) {
+      width: 100%;
+      float: none;
+    }
+    .webform-client-form {
+      @include respond-to(phone) {
+        text-align: center;
+      }
+      @include respond-to(min-phone) {
+        text-align: center;
+      }
+      .form-item {
+        width: 68%;
+        float: left;
+        margin-right: 7px;
+        margin-bottom: 0;
+        @include respond-to(desctop_wide) {
+          width: 56%;
+        }
+        @include respond-to(phone) {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        @include respond-to(min-phone) {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+      .form-actions {
+        @include respond-to(desctop_max) {
+          margin: 0px;
+        }
+        @include respond-to(desctop_wide) {
+          margin: 0px;
+        }
+        @include respond-to(phone) {
+          text-align: center;
+        }
+        @include respond-to(min-phone) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.pane-webform-client-block-88 {
+  &:before {
+    content: '';
+    display: block;
+    width: 288px;
+    height: 348px;
+    float: left;
+    margin: 0 10% 10px 10%;
+    @include respond-to(desctop) {
+      margin: 0 6% 10px 6%;
+    }
+    @include respond-to(tablet) {
+      margin: 0 6% 10px 6%;
+    }
+    @include respond-to(phone) {
+      display: none;
+    }
+    @include respond-to(min-phone) {
+      display: none;
+    }
+  }
+  .pane-content {
+    @include respond-to(desctop_max) {
+      padding-top: 58px;
+    }
+    @include respond-to(desctop_wide) {
+      padding-top: 58px;
+    }
+    @include respond-to(desctop) {
+      padding-top: 58px;
+    }
+    @include respond-to(tablet) {
+      padding-top: 7%;
+    }
+  }
+  .webform-client-form {
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 0px 0px 10px 10px;
+    @include respond-to(phone) {
+      clear: both;
+      width: 100%;
+      padding-left: 0px;
+    }
+    @include respond-to(min-phone) {
+      clear: both;
+      width: 100%;
+      padding-left: 0px;
+    }
+    .webform-component--vashe-imya,
+    .webform-component--kontaktnyy-telefon {
+      width: 50%;
+      padding: 0px 16px 0px 0px;
+      float: left;
+      margin-bottom: 7px;
+      overflow: hidden;
+      @include respond-to(phone) {
+        width: 100%;
+        padding: 0 0px 10px 0px;
+        float: none;
+      }
+      @include respond-to(min-phone) {
+        width: 100%;
+        padding: 0 0px 10px 0px;
+        float: none;
+      }
+    }
+    .webform-component-textarea {
+      width: 100%;
+      padding-right: 16px;
+      display: inline-block;
+      margin: 0;
+      @include respond-to(phone) {
+        width: 100%;
+        padding: 0;
+      }
+      @include respond-to(min-phone) {
+        width: 100%;
+        padding: 0;
+      }
+      textarea {
+        border-radius: 0px;
+        height: 109px;
+      }
+    }
+    .call-but-form {
+      @include respond-to(desctop_max) {
+        margin: auto 20%;
+      }
+      @include respond-to(desctop_wide) {
+        margin: auto 10%;
+      }
+      @include respond-to(desctop) {
+        margin: auto 10%;
+      }
+      @include respond-to(tablet) {
+        margin: auto 0;
+      }
+      @include respond-to(phone) {
+        padding-bottom: 15px;
+        margin: auto 5%;
+      }
+      @include respond-to(min-phone) {
+        padding-bottom: 15px;
+      }
+    }
+    .forcall {
+      display: block;
+      height: 53px;
+      width: 210px;
+      float: left;
+      margin-right: 15px;
+      @include respond-to(min-phone) {
+        margin: 0 20% 20px 20%;
+      }
+    }
+    .form-actions {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+
+    }
+  }
+}
+
+

@@ -1,0 +1,70 @@
+/*
+Error: Undefined variable: "$line-height-computed".
+        on line 29 of _progress-bars.scss
+
+24: // -------------------------
+25: 
+26: // Outer container
+27: .progress {
+28:   overflow: hidden;
+29:   height: $line-height-computed;
+30:   margin-bottom: $line-height-computed;
+31:   background-color: $progress-bg;
+32:   border-radius: $border-radius-base;
+33:   @include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
+34: }
+
+Backtrace:
+_progress-bars.scss:29
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:420:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/plugin.rb:82:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/base.rb:40:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.4.4/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$line-height-computed\".\A         on line 29 of _progress-bars.scss\A \A 24: // -------------------------\A 25: \A 26: // Outer container\A 27: .progress {\A 28:   overflow: hidden;\A 29:   height: $line-height-computed;\A 30:   margin-bottom: $line-height-computed;\A 31:   background-color: $progress-bg;\A 32:   border-radius: $border-radius-base;\A 33:   @include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));\A 34: }"; }

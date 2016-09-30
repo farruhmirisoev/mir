@@ -1,0 +1,348 @@
+.panels-flexible-row.footer {
+  background-color: $color_5;
+  color: #fff;
+  padding: 0px;
+  overflow: hidden;
+  .panels-flexible-region {
+    width: 100% !important;
+  }
+  #footer-block,
+  .pane-footer-block {
+    padding: 40px 0;
+    background: $color_1;
+    @include respond-to(phone) {
+      padding: 0 0 20px 0;
+    }
+    @include respond-to(min-phone) {
+      padding: 0 0 20px 0;
+    }
+    >.pane-content {
+      position: relative;
+//      overflow: hidden;
+      @extend .center;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: $color_3;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        border: 2px solid $color_1;
+        box-shadow: inset 0px 0px 0px 6px #3EC3DD;
+
+      }
+      #footer-block-img {
+        .with-girl {
+          height: 365px;
+          width: 275px;
+          background: url("../images/girl.png") no-repeat;
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          bottom: 10px;
+        }
+      }
+      #footer-webform {
+        padding: 50px;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        .pane-title {
+          font-size: 36px;
+          color: #fff;
+          width: 50%;
+          float: left;
+          display: block;
+          text-transform: uppercase;
+          padding: 30px 0 0 0;
+          @include respond-to(tablet) {
+            padding: 0;
+          }
+          @include respond-to(phone) {
+            padding: 0;
+            width: 100%;
+            float: none;
+            text-align: center;
+          }
+          @include respond-to(min-phone) {
+            padding: 0;
+            width: 100%;
+            float: none;
+            text-align: center;
+          }
+        }
+        .pane-content {
+          width: 50%;
+          float: right;
+          display: block;
+          @include respond-to(tablet) {}
+          @include respond-to(phone) {
+            position: relative;
+            width: 100%;
+            float: none;
+            text-align: center;
+          }
+          @include respond-to(min-phone) {
+            position: relative;
+            width: 100%;
+            float: none;
+            text-align: center;
+          }
+          .webform-client-form {
+            .form-item {
+              input {
+                background: transparent;
+                border: 3px dotted #fff;
+                border-radius: 0;
+                height: 48px;
+                color: #fff;
+                text-transform: uppercase;
+                &::-webkit-input-placeholder {color:#fff;}
+                &::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+                &:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+                &:-ms-input-placeholder      {color:#fff;}
+              }
+            }
+            .form-actions {
+              display: inline-block;
+              input.webform-submit {
+                padding: 9px 30px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+  .pane-menu-menu-socials {
+    padding-top: 13px;
+    .pane-content {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          float: left;
+          margin-right: 10px;
+          @include respond-to(tablet) {
+            margin-right: 0px;
+            padding: 0;
+          }
+          @include respond-to(min-phone) {
+            margin-right: 0px;
+          }
+          a {
+            @include hidden_text;
+            display: block;
+            width: 36px;
+            height: 36px;
+            @include background(image_url('socials.png'));
+          }
+          .fb {
+            background-position: -44px 0px;
+            &:hover{
+              background-position: -44px -38px;
+            }
+          }
+          .vk {
+
+            &:hover{
+              background-position: 0px -38px;
+            }
+          }
+          .instagramm {
+            background-position: -92px 0px;
+            &:hover{
+              background-position: -92px -38px;
+            }
+          }
+          .youTube {
+            background-position: -138px 0px;
+            &:hover{
+              background-position: -138px -38px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    >.pane-content {
+      @include centered_div;
+    }
+    .pane-menu-menu-footer {
+      >.pane-content {
+        padding-bottom: 43px;
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            float: left;
+            padding: 16px 0;
+            text-align: center;
+            a {
+              text-align: center;
+              font-size: 16px;
+              text-decoration: none !important;
+              @include hover-menu-item(#fff, $color_2, transparent, transparent);
+            }
+            @include respond-to(desctop_max) {
+              padding-left: 8px;
+              padding-right: 8px;
+            }
+            @include respond-to(desctop_wide) {
+              padding-left: 5px;
+              padding-right: 5px;
+              a {
+                font-size: 14px;
+              }
+            }
+            @include respond-to(tablet) {
+              padding-left: 5px;
+              padding-right: 5px;
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .pane-contacts-footer {
+      padding-bottom: 35px;
+      overflow: hidden;
+      clear: both;
+      >.pane-content {
+        @include centered_div;
+      }
+      img {
+        margin-right: 11px;
+      }
+      p {
+        color: #fff;
+        @include respond-to(phone) {
+          width: 100%;
+          float: none;
+        }
+        @include respond-to(min-phone) {
+          width: 100%;
+          float: none;
+        }
+      }
+      .footer-adress,
+      .footer-phone {
+        p {
+          &:before {
+
+          }
+        }
+      }
+      .footer-adress {
+        p.location {
+          &:before {
+            content: '';
+            display: block;
+            height: 22px;
+            width: 22px;
+            float: left;
+            margin-right: 5px;
+            background: url("../images/sprite.png") no-repeat;
+            background-position: 0px -117px;
+          }
+        }
+      }
+      .footer-phone {
+        p.phone {
+          margin-bottom: 25px;
+          &:before {
+            content: '';
+            display: block;
+            height: 22px;
+            width: 22px;
+            float: left;
+            margin-right: 5px;
+            background: url("../images/sprite.png") no-repeat;
+            background-position: 0px -146px;
+          }
+        }
+        p.work {
+          &:before {
+            content: '';
+            display: block;
+            height: 22px;
+            width: 22px;
+            float: left;
+            margin-right: 5px;
+            background: url("../images/sprite.png") no-repeat;
+            background-position: 0px -173px;
+          }
+        }
+        p.holiday {
+          padding-left: 27px;
+        }
+      }
+      .footer-work {
+        @include respond-to(desctop_wide) {
+          padding: 0;
+        }
+        div {
+          padding: 0;
+          &:first-child {
+            p {
+              &:before {
+                content: '';
+                display: block;
+                height: 22px;
+                width: 22px;
+                float: left;
+                margin-right: 5px;
+                background: url("../images/sprite.png") no-repeat;
+                background-position: -85px 0px;
+              }
+            }
+          }
+        }
+      }
+      .licence {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    #mini-panel-copyright {
+      @include respond-to(tablet) {
+        text-align: center;
+      }
+      @include respond-to(phone) {
+        text-align: center;
+      }
+      @include respond-to(min-phone) {
+        text-align: center;
+      }
+    }
+    #company-inf {
+//      background-color: $color_1;
+      color: #fff;
+      padding: 25px 0 10px 0;
+      overflow: hidden;
+      font-size: 13px;
+      >.pane-content {
+        @include centered_div;
+        @include respond-to(phone) {
+          text-align: center;
+        }
+        @include respond-to(min-phone) {
+          text-align: center;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

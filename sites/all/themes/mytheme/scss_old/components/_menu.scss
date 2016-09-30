@@ -1,0 +1,111 @@
+.doc-page {
+  .menu-title {
+    color: transparent;
+    font-size: 0;
+    &:before {
+      content: 'Отделения';
+      display: block;
+      height: 34px;
+      color: #fff !important;
+      font-size: 25px;
+    }
+  }
+  .menu-button {
+    display: block;
+    width: 23px;
+    height: 16px;
+    margin: auto;
+    position: relative;
+  }
+}
+
+.pane-menu-menu-doctors,
+.pane-menu-menu-sale-category,
+.pane-menu-menu-articles-category {
+  margin-bottom: 20px;
+  padding: 0px 15px;
+  .pane-title {
+    color: #fff;
+    background: $color_1;
+    font-size: 20px;
+    @include bold_font;
+    padding: 12px 15px;
+    margin: 0px 0px 1px 0px;
+  }
+  .pane-content {
+    border: 1px solid $title-line-color;
+    ul {
+      list-style: none;
+      padding: 0px 15px;
+      margin: 0;
+      li {
+        border-bottom: 1px solid $title-line-color;
+        &:last-child {
+          border: 0;
+        }
+        a {
+          padding: 11px 0;
+          display: block;
+          color: $color_1;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .active {
+          color: $color_2;
+        }
+      }
+    }
+  }
+
+}
+.left-sidebar {
+  .responsive-menus {
+    margin-bottom: 15px;
+    span.toggler {
+      background: $color_1;
+      box-shadow: none;
+      font-size: 25px;
+      width: 100%;
+      overflow: hidden;
+      padding: 10px;
+      .menu-title {
+        float: left;
+      }
+      .menu-button {
+        float: right;
+        top: 10px;
+      }
+    }
+  }
+  #rm-removed {
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid $title-line-color;
+    ul {
+      list-style: none;
+      padding: 0px 15px;
+      margin: 0;
+      li {
+        border-bottom: 1px solid $title-line-color;
+        &:last-child {
+          border: 0;
+        }
+        a {
+          text-decoration: none;
+          padding: 11px 0;
+          display: block;
+          color: $menu-link-color;
+          &:hover {
+            color: $color_2;
+            text-decoration: underline;
+          }
+        }
+        .active {
+          color: $color_2;
+        }
+      }
+    }
+  }
+}

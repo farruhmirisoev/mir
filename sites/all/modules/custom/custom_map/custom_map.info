@@ -1,0 +1,6 @@
+name = custom_map
+description = custom_map.
+core = 7.x
+
+dependencies[] = panels
+dependencies[] = ctools

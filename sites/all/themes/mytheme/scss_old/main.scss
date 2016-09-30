@@ -1,0 +1,155 @@
+////////////////////////
+// Main file that pulls in everything from your project (except files in
+// specifics) and produces an aggregated CSS file.
+////////////////////////
+
+// Base:
+@import "includes/base";
+
+// Includes:
+@import "../bootstrap/bootstrap";
+@import "includes/layout";
+@import "includes/styles";
+@import "includes/sprites";
+@import "includes/color";
+
+@import "hover-effects/hover";
+@import "components/grid";
+@import "components/mixins";
+@import "components/buttons";
+@import "components/titles";
+@import "components/carousel";
+@import "components/header";
+@import "components/footer";
+@import "components/views";
+@import "components/webforms";
+@import "components/steps";
+@import "components/menu";
+@import "node_types/all_types";
+@import "components/map";
+@import "components/taxonomy";
+
+
+@import "other/404";
+@import "other/modal";
+@import "other/tabs";
+
+//Fonts (example)
+
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/droidsans/droidsans.eot');
+  src: url('../fonts/droidsans/droidsans.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/droidsans/droidsans.woff') format('woff'),
+  url('../fonts/droidsans/droidsans.ttf') format('truetype'),
+  url('../fonts/droidsans/droidsans.svg#droidsans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url('../fonts/roboto-light/roboto-light-webfont.eot');
+  src: url('../fonts/roboto-light/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/roboto-light/roboto-light-webfont.woff') format('woff'),
+  url('../fonts/roboto-light/roboto-light-webfont.ttf') format('truetype'),
+  url('../fonts/roboto-light/roboto-light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droidsansbold';
+  src: url('../fonts/droidsansbold/droidsansbold.eot');
+  src: url('../fonts/droidsansbold/droidsansbold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/droidsansbold/droidsansbold.woff') format('woff'),
+  url('../fonts/droidsansbold/droidsansbold.ttf') format('truetype'),
+  url('../fonts/droidsansbold/droidsansbold.svg#droidsansbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droidsans';
+  src: url('../fonts/droidsans/droidsans.eot');
+  src: url('../fonts/droidsans/droidsans.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/droidsans/droidsans.woff') format('woff'),
+  url('../fonts/droidsans/droidsans.ttf') format('truetype'),
+  url('../fonts/droidsans/droidsans.svg#droidsans') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'agforeignerlightc';
+  src: url('../fonts/agforeignerlightc/agforeignerlightc.eot');
+  src: url('../fonts/agforeignerlightc/agforeignerlightc.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/agforeignerlightc/agforeignerlightc.woff') format('woff'),
+  url('../fonts/agforeignerlightc/agforeignerlightc.ttf') format('truetype'),
+  url('../fonts/agforeignerlightc/agforeignerlightc.svg#agforeignerlightc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'agforeignerlightcbold';
+  src: url('../fonts/agforeignerlightcbold/agforeignerlightcbold.eot');
+  src: url('../fonts/agforeignerlightcbold/agforeignerlightcbold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/agforeignerlightcbold/agforeignerlightcbold.woff') format('woff'),
+  url('../fonts/agforeignerlightcbold/agforeignerlightcbold.ttf') format('truetype'),
+  url('../fonts/agforeignerlightcbold/agforeignerlightcbold.svg#agforeignerlightcbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,cyrillic");
+
+$font-droidsansbold: 'droidsansbold', 'Open Sans', sans-serif;
+$font-droidsans: 'droidsans', 'Open Sans', sans-serif;
+$font-agforeignerlightc: 'agforeignerlightc', 'Open Sans', sans-serif;
+$font-agforeignerlightcbold: 'agforeignerlightcbold', 'Open Sans', sans-serif;
+
+body {
+  font-family: $main-font;
+  font-size: 16px;
+  min-width: 1171px; //$screen-lg;
+  //max-width: 1480px;
+}
+
+html, body {
+  height: 100%;
+  color: $text_color;
+}
+img {
+  // width: auto !important;
+  // max-width: 100% !important;
+  // height: auto !important; 
+}
+a {
+  outline: none !important;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.center {
+  @include centered_div;
+}
+ul.nav {
+  li {
+    a {
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.panels-flexible-region-last:not(.not-100) {
+  width: 100%;
+}
+.panels-flexible-2 .panels-flexible-row {
+  padding: 0;
+}
+
+.field,
+.pane-content {
+  @include titles_links;
+}

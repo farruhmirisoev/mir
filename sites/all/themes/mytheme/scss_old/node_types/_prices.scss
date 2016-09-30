@@ -1,0 +1,42 @@
+.node-type-prices {
+  .pane-page-content {
+    > .pane-content {
+      width: 100%;
+    }
+  }
+  .pane-price-panel-pane-1,
+  .pane-price-panel-pane-2 {
+    @include centered_div;
+    >.pane-title {
+      @include title_1_left_1;
+    }
+    margin-bottom: 30px;
+  }
+  .view-price {
+    .views-field-field-consultation,
+    .views-field-field-pocedures {
+      .views-label {
+        @include title_1_left_1;
+        display: block;
+      }
+      .field-content {
+        padding: 0px 15px;
+      }
+    }
+  }
+  table {
+    tbody {
+      tr {
+        td {
+          &:first-child {
+            width: 80%;
+          }
+          &:last-child {
+            width: 20%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

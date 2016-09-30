@@ -1,0 +1,7 @@
+.node-type-page {
+  .field-name-body {
+    margin-bottom: 20px;
+    @include content_margin;
+    @include titles_links;
+  }
+}

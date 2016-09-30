@@ -1,0 +1,61 @@
+<?php
+
+
+/**
+ * Implements hook_filter_info().
+ */
+function hypher_filter_info() {
+  $filters['hypher_full'] = array(
+    'title' => t('Hypher full'),
+    'process callback' => '_filter_hypher',
+    'weight' => -10,
+  );
+  $filters['hypher_juctrict'] = array(
+    'title' => t('Hypher juctrict'),
+    'process callback' => '_filter_hypher_juctrict',
+    'weight' => -10,
+  );
+  return $filters;
+}
+
+/**
+ * Implements callback_filter_process().
+ */
+function _filter_hypher($text, $filter) {
+  require_once 'libs/hypher.php';
+  $hy_ru = new phpHypher(drupal_get_path('module', 'hypher') . '/libs/hyph_ru_RU.conf');
+
+  if($text != ""){
+    $text = iconv('utf-8','windows-1251', $text);
+    $text = $hy_ru->hyphenate($text, 'utf-8');
+    $text = iconv('windows-1251','utf-8', $text);
+  }
+
+  return trim($text);
+}
+
+/**
+ * Implements callback_filter_process().
+ */
+function _filter_hypher_juctrict($text, $filter) {
+  require_once 'libs/hypher.php';
+  $hy_ru = new phpHypher(drupal_get_path('module', 'hypher') . '/libs/hyph_ru_RU.conf');
+
+  if($text != ""){
+    include_once('libs/simplehtmldom/simple_html_dom.php');
+    $html = new simple_html_dom();
+
+    $text = iconv('utf-8','windows-1251', $text);
+    $html->load($text);
+    $element = $html->find(".rtejustify");
+
+    foreach ($element as $key => $value) {
+      $element[$key]->innertext = $hy_ru->hyphenate($element[$key]->innertext, 'utf-8');
+    }
+    $html->save();
+
+    $text = iconv('windows-1251','utf-8', $html->innertext);
+  }
+
+  return trim($text);
+}

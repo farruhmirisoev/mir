@@ -1,0 +1,56 @@
+.modal-dialog {
+  background: #fff;
+  padding: 30px;
+  border: 2px solid $color_1;
+  box-shadow: 0px 0px 0px 2px #fff;
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .pane-title {
+    color: $title-color;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .vertical-tabs,
+  .field-type-node-reference,
+  .field-name-field-reviews-serv,
+  .field-name-field-reviews-photo,
+  .field-name-field-doc-question {
+    display: none;
+  }
+  textarea {
+    height: 100px;
+    border-radius: 0;
+  }
+  .form-item {
+    input {
+      border-radius: 0;
+      height: 48px;
+    }
+  }
+
+  form {
+    text-align: center;
+  }
+  .form-actions {
+    text-align: center;
+    @include button_1;
+    display: inline-block;
+    input {
+      background-color: transparent;
+      width: 100%;
+      text-align: center;
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: 0;
+      padding: 15px 29px;
+    }
+  }
+}

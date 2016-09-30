@@ -1,0 +1,257 @@
+////////////////////////
+// Mixins make it easy to produce reusable CSS. You can put them here, or organize
+// them by category in smaller files as appropriate. To create a mixin:
+//
+// @mixin my-mixin($parameter-1, $parameter-2) {
+//   some-property: $parameter-1;
+//   padding: $parameter-2;
+// }
+//
+// // Then you can include its CSS somewhere.
+// .some-class {
+//   @include my-mixin(2em, 5%);
+// }
+//
+// More info: http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+////////////////////////
+@mixin border($side, $size, $type, $color){
+    border-#{$side}: #{$size} #{$type} #{$color};
+}
+
+@mixin bodrered_image($size, $color) {
+  img {
+    border: $size solid $color;
+  }
+}
+
+@mixin center_div_fix {
+  max-width: $screen-lg;
+  margin: auto;
+}
+
+
+@mixin centered_div {
+  @include respond-to(desctop_max) {
+    width: $screen-lg;
+    float: none;
+  }
+  @include respond-to(desctop_wide) {
+    width: $screen-md;
+    float: none;
+  }
+  @include respond-to(desctop) {
+    width: $screen-md;
+    float: none;
+  }
+  @include respond-to(tablet) {
+    width: $screen-sm;
+  }
+  @include respond-to(phone) {
+//    width: $screen-xs;
+  }
+  @include centered_margin;
+}
+
+@mixin item_size($element_main_width, $items_num) {
+  width: $element_main_width/$items_num;
+}
+
+@mixin font-face($name, $font-files, $eot: false, $weight: false, $style: false) {
+  $iefont: unquote("#{$eot}?#iefix");
+  @font-face {
+    font-family: quote($name);
+    @if $eot {
+      src: font-url($eot);
+      $font-files: font-url($iefont) unquote("format('eot')"), $font-files;
+    }
+    src: $font-files;
+    @if $weight {
+      font-weight: $weight;
+    }
+    @if $style {
+      font-style: $style;
+    }
+  }
+}
+
+@mixin hover-link($color_1, $color_2) {
+  text-decoration: none;
+  color: $color_1;
+  &:hover {
+    text-decoration: underline;
+    color: $color_2;
+  }
+}
+@mixin hover-link_2($font-size) {
+  text-decoration: underline;
+  color: $color_1;
+  font-size: $font-size;
+  &:hover {
+    text-decoration: none;
+  }
+}
+@mixin hover-link_3($font-size) {
+  text-decoration: none;
+  color: $color_1;
+  font-size: $font-size;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+@mixin hover-menu-item($color_1, $color_2, $background-color-1, $background-color-2) {
+  text-decoration: none;
+  color: $color_1;
+  background-color: $background-color-1;
+  &:hover {
+    text-decoration: underline;
+    color: $color_2;
+    background-color: $background-color-2;
+  }
+}
+
+@mixin background($images) {
+  background: $images;
+  background-repeat: no-repeat;
+}
+
+@mixin hidden_text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin float_left_img {
+  float: left;
+  margin: 0px 30px 30px 0;
+  @include bodrered_image(1px, $title-line-color);
+  @include respond-to(phone) {
+    float: none;
+    margin-right: 0;
+    padding: 0px 15px;
+    img {
+      max-width: 100%;
+      height: auto !important;
+    }
+  }
+  @include respond-to(min-phone) {
+    float: none;
+    margin-right: 0;
+    padding: 0px 15px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@mixin table {
+
+  table {
+    width: 100%;
+    border: 0px;
+    thead {
+      tr {
+        border: 1px solid $color_3 !important;
+        background: $color_3;
+        th {
+          color: #fff;
+          padding: 16px;
+          font-size: 14px !important;
+          border-bottom: 0px;
+        }
+      }
+    }
+    tbody {
+      border-top: 0;
+      tr {
+        border: 1px solid $title-line-color;
+        td {
+          border-left: 1px solid $title-line-color;
+          border-right: 1px solid $title-line-color;
+          padding: 16px;
+          font-family: $main-font !important;
+          font-size: 14px !important;
+          color: $text_color  !important;
+        }
+        &:nth-child(odd) {
+          background: #fff;
+        }
+        &:nth-child(even) {
+          background: #fafcfc;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin img_hover  {
+  &:hover {
+    a {
+      img {
+//        @include buzz-out;
+      }
+    }
+  }
+}
+@mixin img_hover_2  {
+  &:hover {
+    a {
+      img {
+//        @include push;
+      }
+    }
+  }
+}
+
+// fonts-variables
+
+$main-font: 'robotolight','Open Sans', sans-serif;
+
+
+@mixin bold_font {
+  font-family: $main-font;
+  font-weight: bold;
+}
+
+@mixin content_margin {
+  @include respond-to(desctop_max) {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  @include respond-to(desctop_wide) {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+@mixin content_padding {
+  @include respond-to(desctop_max) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  @include respond-to(desctop_wide) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@mixin centered_div_with_padding {
+  @include respond-to(desctop_max) {
+    width: $screen-lg - 300 !important;
+    float: none;
+  }
+  @include respond-to(desctop_wide) {
+    width: $screen-md - 300 !important;
+    float: none;
+  }
+  @include respond-to(desctop) {
+    width: $screen-md;
+    float: none;
+  }
+  @include respond-to(tablet) {
+    width: $screen-sm;
+  }
+  @include respond-to(phone) {
+    //    width: $screen-xs;
+  }
+  @include centered_margin;
+}

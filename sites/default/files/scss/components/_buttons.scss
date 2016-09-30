@@ -1,0 +1,55 @@
+//site_button($background-color, $hover-color) - общая структура всех кнопок на сайте
+//button_[n] - стили для других кнопок
+//класс red-button сохранился из первоначальной сборки данного шаблона
+
+
+
+
+@mixin site_button($background-color, $hover-color) {
+  background-color: $background-color;
+  display: block;
+  text-decoration: none !important;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  cursor: pointer;
+  color: #fff !important;
+  position: relative;
+  border-radius: 10px;
+  border: 1px dotted #fff;
+  a {
+    text-decoration: none !important;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: $hover-color;
+    text-decoration: none;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
+}
+@mixin button_1 {
+  @include site_button($color_2, #F47710);
+}
+@mixin button_2 {
+// ...
+}
+
+.red-button,
+.button-1 {
+  @include button_1;
+  padding: 9px 30px;
+}
+
+.btn {
+  &:focus {
+    color: #fff;
+    outline: none;
+  }
+}

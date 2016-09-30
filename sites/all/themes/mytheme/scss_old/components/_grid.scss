@@ -1,0 +1,64 @@
+$min-phone-width: 220px;
+@mixin respond-to($media) {
+  @if $media == min-phone {
+    @media only screen and (max-width: 479px) and (min-width: $min-phone-width){ @content; }
+  }
+  @if $media == phone {
+    @media only screen and (max-width: $screen-xs-max) and (min-width: 480px){ @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content; }
+  }
+  @else if $media == desctop {
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) { @content; }
+  }
+  @else if $media == desctop_wide {
+    @media only screen and (min-width: $screen-lg-min) and (max-width: 1366px) { @content; }
+  }
+  @else if $media == desctop_max {
+    @media only screen and (min-width: 1367px) { @content; }
+  }
+}
+
+//@media (max-width: $screen-xs-max 479) {}
+//@media (min-width: $screen-sm-min 768) and (max-width: @screen-sm-max 991) {}
+//@media (min-width: $screen-md-min 992) and (max-width: @screen-md-max 1199 ) {}
+//@media (min-width: $screen-lg-min 1200) {}
+
+@mixin centered_margin {
+  margin: 0 auto;
+}
+
+.col-xs-3-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-6-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .col-xs-6-12 {
+    width: 50%;
+    float: left;
+  }
+  .col-xs-3-6 {
+    width: 25%;
+    float: left;
+  }
+}
+@media (max-width: 479px) {
+  .col-xs-6-12 {
+    width: 100%;
+    float: left;
+  }
+  .col-xs-3-6 {
+    width: 50%;
+    float: left;
+  }
+}

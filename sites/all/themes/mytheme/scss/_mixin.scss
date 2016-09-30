@@ -1,0 +1,73 @@
+@mixin clearfix {
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+// @mixin innerbox($marginLeftRight:0, $paddingLeftRight:0) {
+//     max-width: container();
+//     margin: 0 auto;
+//     @if $marginLeftRight==1 {
+//         $marginLeftRight: gutter(12);
+//         margin-left: $marginLeftRight;
+//         margin-right: $marginLeftRight;
+//     }
+//     @if $paddingLeftRight==1 {
+//         $paddingLeftRight: gutter(12);
+//         padding-left: $paddingLeftRight;
+//         padding-right: $paddingLeftRight;
+//     }
+// }
+
+@mixin img_res {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@mixin color_btn($color:$mainorange, $textColor:#fff, $transparent:1) {
+    @if($transparent == 1) {
+        color: $textColor;
+        background-color: $color;
+        &:hover {
+            background-color: darken($color, 10);
+
+        }
+    }
+    @else {
+        color: $color;
+        background: none;
+        &:hover {
+            color: $textColor;
+            background-color: $mainorange;
+        }
+    }
+    display: inline-block;
+    padding: 10px 2em;
+    border-radius: 3px;
+    border: 1px solid $color;
+    text-decoration: none;
+    cursor: pointer;
+    @include adjust-font-size-to(16px, 1);
+    @include box-shadow(0px 1px 1px 0px #B9E0EF);
+    @include box-sizing(border-box);
+    @include single-transition(all, 0.2s, ease-out, 0s);
+}
+
+@mixin remove_gallery {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    float: none;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &::-moz-placeholder {@content}
+    &:-moz-placeholder {@content}
+    &:-ms-input-placeholder {@content}
+}

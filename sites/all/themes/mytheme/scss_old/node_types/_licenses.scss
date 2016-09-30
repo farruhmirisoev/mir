@@ -1,0 +1,30 @@
+.field-name-field-licenses {
+  .field-item {
+    padding: 20px;
+    img {
+      border: 1px solid $title-line-color;
+    }
+    &:hover {
+      img {
+        border: 1px solid $color_1;
+        box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+      }
+    }
+    @include respond-to(desctop_max) {
+      float: left;
+      width: 25%;
+    }
+    @include respond-to(desctop_wide) {
+      float: left;
+      width: 25%;
+    }
+    @include respond-to(desctop) {
+      float: left;
+      width: 25%;
+    }
+    @include respond-to(tablet) {
+      float: left;
+      width: 33.3%;
+    }
+  }
+}

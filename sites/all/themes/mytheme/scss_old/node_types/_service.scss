@@ -1,0 +1,433 @@
+//Service pages
+//Service pages(main page)
+.view-services {
+  .view-content {
+    .views-row {
+      padding: 15px;
+      position: relative;
+      margin: 12px 0 0 0;
+      height: 121px;
+
+      .views-field-field-min-serv-price {
+        color: #60646c;
+        min-height: 20px;
+        @include border(bottom, 1px, solid, $title-line-color);
+        position: absolute;
+        width: 90%;
+        margin: 10px 0;
+        padding: 10px 0;
+        display: block;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+//Service page(inside)
+
+.field-name-field-serv-image {
+  @include float_left_img;
+}
+
+.pane-offerings-panel-pane-2 {
+  overflow: hidden;
+  clear: both;
+  .pane-title {
+    @include title_1;
+  }
+}
+
+.pane-reviews-panel-pane-2,
+.pane-reviews-book-panel-pane-2 {
+  .pane-title {
+    @include title_1_left;
+  }
+  .pane-content {
+    width: 100% !important;
+  }
+}
+#service-doc {
+  overflow: hidden;
+  clear: both;
+  margin-bottom: 30px;
+}
+.pane-services-panel-pane-2 {
+  overflow: hidden;
+  clear: both;
+}
+
+.pane-services-panel-pane-3,
+.pane-sale-panel-pane-7 {
+  .pane-title {
+    @include title_1;
+  }
+  .view-services.view-display-id-panel_pane_3,
+  .view-sale.view-display-id-panel_pane_7 {
+    position: relative;
+    .pane-title {
+      margin-bottom: 54px;
+    }
+    .view-content {
+      .views-field-field-doc-photo {
+        float: left;
+        margin-right: 10px;
+        @include bodrered_image(4px, $color_6);
+        img {
+          border-radius: 50%;
+          overflow: hidden;
+          box-shadow: inset 0px 0px 0px 4px #fff;
+        }
+      }
+      .views-field-title {
+        @include title_2;
+      }
+      .views-field-field-position {
+        font-size: 14px;
+      }
+      .views-field-field-experience {
+        .views-label {
+          float: left;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.pane-sale-panel-pane-2 {
+  .pane-title {
+    @include title_1;
+  }
+}
+
+
+#prices {
+  background: $color_6;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+  .pane-title {
+    @include title_1;
+  }
+
+  .view-services.view-display-id-panel_pane_2,
+  .view-doctors.view-display-id-panel_pane_2 {
+
+    .pane-content {
+      overflow: hidden;
+      clear: both;
+    }
+    .views-row {
+      height: 100% !important;
+    }
+    #consultation-procedure {
+      ul.nav.nav-tabs {
+        //      width: 430px;
+        overflow: hidden;
+        margin: 0 auto 16px auto;
+      }
+      .tab-content {
+        .tab-pane {
+          @include table;
+        }
+      }
+    }
+    table {
+      tr {
+        td {
+          &:first-child {
+            width: 70%;
+          }
+          &:last-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+#mini-panel-adress_tabs {
+  .ui-tabs-nav {
+    @include respond-to(desctop) {
+      width: 100%;
+    }
+    @include respond-to(tablet) {
+      width: 100%;
+    }
+    @include respond-to(phone) {
+      width: 100%;
+    }
+    @include respond-to(min-phone) {
+      width: 100%;
+    }
+    li {
+      border-radius: 0;
+      border: 0;
+      //
+      @include respond-to(desctop) {
+        width: 20%;
+        margin: 0;
+        a {
+          text-align: center;
+          padding: 15px 0 !important;
+          width: 100%;
+          font-size: 14px !important;
+        }
+      }
+      @include respond-to(tablet) {
+        width: 20%;
+        margin: 0;
+        a {
+          text-align: center;
+          padding: 15px 0 !important;
+          width: 100%;
+          font-size: 14px !important;
+        }
+      }
+      @include respond-to(phone) {
+        width: 20%;
+        margin: 0;
+        a {
+          text-align: center;
+          padding: 15px 0 !important;
+          width: 100%;
+          font-size: 13px !important;
+        }
+      }
+      @include respond-to(min-phone) {
+        width: 100%;
+        margin: 0;
+        a {
+          text-align: center;
+          padding: 15px 0 !important;
+          width: 100%;
+          font-size: 13px !important;
+        }
+      }
+      a {
+        background-color: #fff;
+        color: $color_3;
+        border: 1px solid $title-line-color;
+        padding: 15px 52px;
+        font-size: 16px;
+        @include bold_font;
+        outline: none;
+        &:hover {
+          background-color: $color_5;
+          color: #fff;
+        }
+      }
+    }
+    .ui-tabs-active {
+      a {
+        background-color: $color_2;
+        border: 1px solid $color_2;
+        text-transform: none;
+        font-weight: normal;
+        color: #fff;
+        &:hover {
+          background-color: $color_5;
+          border-color: $color_5;
+        }
+      }
+    }
+  }
+  .ui-tabs-panel {
+    padding-top: 20px;
+  }
+}
+
+#about {
+  margin: 57px 0 68px 0;
+  .pane-content {
+    border: 3px solid $color_1;
+    overflow: hidden;
+    width: 65%;
+    padding: 29px 0px;
+    div {
+      text-align: center;
+      @include bold_font;
+      img {
+        overflow: hidden;
+        clear: both;
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+    }
+  }
+}
+/*_________________________________________________-*/
+
+.node-type-service {
+  .pane-page-content {
+    overflow: hidden;
+    > h4.pane-title {
+      @include title_1;
+    }
+    .panel-pane {
+      .pane-content {
+        @include centered_div;
+      }
+    }
+    .field-name-body {
+      @include content_margin;
+    }
+  }
+}
+
+.node-type-service {
+  .pane-page-content {
+    > .pane-content {
+      width: 100% !important;
+    }
+  }
+}
+
+.node-type-service {
+  .field-name-body {
+    @include respond-to(phone) {
+      padding: 0px 15px;
+    }
+    @include respond-to(min-phone) {
+      padding: 0px 15px;
+    }
+  }
+  .pane-clinic-articles-panel-pane-4 {
+    >h4.pane-title {
+      @include title_1;
+    }
+    .pane-content {
+      overflow: hidden;
+      .view-clinic-articles {
+        .view-content {
+          .views-row {
+            .views-field-field-doc-photo {
+              margin-bottom: 10px;
+              .field-content {
+                border: 1px solid $title-line-color;
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+            .views-field-title {
+              @include title_2;
+              @include respond-to(phone) {
+                text-align: center;
+              }
+              @include respond-to(min-phone) {
+                text-align: center;
+              }
+            }
+            .views-field-field-position {
+              overflow: hidden;
+              font-size: 13px;
+              color: $text_color;
+              @include respond-to(phone) {
+                text-align: center;
+              }
+              @include respond-to(min-phone) {
+                text-align: center;
+              }
+            }
+            .views-field-field-experience {
+              margin-bottom: 17px;
+              font-size: 13px;
+              .views-label {
+                float: left;
+              }
+            }
+            .views-field-field-quote {
+              position: relative;
+              background: #f7f7f7;
+              box-shadow: 0 0 9px #ededed;
+              border-radius: 3px;
+              border: 1px solid #e8e8e8;
+              &:before {
+                color: $color_2;
+                content: "\201D";
+                font-family: Georgia,serif;
+                display: block;
+                font-size: 65px;
+                left: 4px;
+                position: absolute;
+                top: -10px;
+              }
+              .field-content {
+                font-style: italic;
+                font-size: 13px;
+                padding: 15px 15px 5px 30px;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.node-type-service {
+  .node-webform {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    .form-actions {
+      text-align: center;
+    }
+  }
+  article {
+    /*@include respond-to(desctop_wide) {
+      margin: 0 150px;
+    }
+    @include respond-to(desctop) {
+      margin: 0 150px;
+    }*/
+
+    margin-bottom: 20px;
+    h2 {
+      color: $title_h2;
+      font-family: $main-font;
+      font-size: 20px;
+      margin: 30px 0 16px 0;
+      @include bold_font;
+    }
+    h3 {
+      color: $title_h3;
+      font-size: 18px;
+      font-family: $main-font;
+      margin: 24px 0 10px 0;
+      @include bold_font;
+    }
+    h4 {
+      color: $title_h3;
+      font-size: 16px;
+      font-family: $main-font;
+      margin: 18px 0 10px 0;
+      @include bold_font;
+    }
+    a {
+      color: $color_1;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      line-height: 21px;
+      font-size: 15px;
+
+    }
+    ol {
+      li {
+        ul {
+          padding-left: 13px;
+        }
+      }
+    }
+  }
+}

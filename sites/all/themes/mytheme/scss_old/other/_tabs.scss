@@ -1,0 +1,142 @@
+.tabs-processed.ui-tabs {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  .item-list {
+    ul {
+      background: none;
+      border: 0;
+      display: table;
+      margin: 0 auto;
+      li {
+        border-radius: 0;
+        background: transparent;
+        border: 0;
+        a {
+          @include hover-menu-item($color_5, #fff, $color_6, $color_5);
+          border: 1px solid $title-line-color;
+          padding: 15px 52px;
+          font-size: 16px;
+          @include bold_font;
+          outline: none;
+        }
+      }
+      .ui-tabs-active {
+        a {
+          background-color: $color_2;
+          border: 1px solid $color_2;
+          text-transform: none;
+          font-weight: normal;
+          color: #fff;
+          &:hover {
+            background-color: $color_5;
+          }
+        }
+      }
+    }
+  }
+  .ui-tabs-panel {
+    padding: 0;
+    .pane-content {
+      @include table;
+    }
+
+    .jcarousel-three-items {
+      .item {
+        @include respond-to(desctop_max){
+          min-width: $screen-lg/3;
+        }
+        @include respond-to(desctop_wide){
+          min-width: $screen-lg/3 - 60;
+        }
+        @include respond-to(desctop){
+          min-width: $screen-md-min/3;
+        }
+        @include respond-to(tablet){
+          min-width: $screen-sm/3;
+        }
+        @include respond-to(phone){
+          min-width: $screen-xs;
+          padding: 0 40px;
+        }
+        @include respond-to(min-phone){
+          min-width: $min-phone-width;
+          padding: 0 40px;
+        }
+      }
+    }
+    .jcarousel-four-items {
+      .item {
+        @include respond-to(desctop_max){
+          min-width: $screen-lg/4;
+        }
+        @include respond-to(desctop_wide){
+          min-width: $screen-lg/4 - 60;
+        }
+        @include respond-to(desctop){
+          min-width: $screen-md-min/4;
+        }
+        @include respond-to(tablet){
+          min-width: $screen-sm/4;
+        }
+        @include respond-to(phone){
+          min-width: $screen-xs;
+          padding: 0 40px;
+        }
+        @include respond-to(min-phone){
+          //          min-width: $min-phone-width;
+          padding: 0 40px;
+        }
+      }
+    }
+  }
+}
+
+ul.nav.nav-tabs {
+  border-bottom: 0px;
+  overflow: hidden;
+  display: table;
+  margin: 0 auto;
+  li {
+    margin-right: 8px;
+    margin-bottom: 0;
+    @include respond-to(min-phone) {
+      margin-bottom: 5px;
+      width: 100%;
+      text-align: center;
+    }
+    a {
+      @include hover-menu-item($color_5, #fff, $color_6, $color_5);
+      border-radius: 0px;
+      border: 1px solid $title-line-color;
+      padding: 15px 52px;
+      font-size: 16px;
+      @include bold_font;
+      @include respond-to(desctop) {
+        font-size: 14px !important;
+      }
+      @include respond-to(tablet) {
+        font-size: 14px !important;
+      }
+      @include respond-to(phone) {
+        font-size: 13px !important;
+      }
+      @include respond-to(min-phone) {
+        font-size: 13px !important;
+      }
+    }
+  }
+  li.active {
+    a {
+      background-color: $color_2;
+      border: 1px solid $color_2;
+      text-transform: none;
+      font-weight: normal;
+      color: #fff;
+      &:hover {
+        background-color: $color_5;
+        border-color: $color_5;
+      }
+    }
+  }
+}

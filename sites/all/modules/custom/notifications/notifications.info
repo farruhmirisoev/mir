@@ -1,0 +1,6 @@
+name = Notifications
+description = Notifications for admin about new comments and nodes.
+core = 7.x
+
+dependencies[] = panels
+dependencies[] = ctools

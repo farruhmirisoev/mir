@@ -1,0 +1,69 @@
+.page-reviews {
+  .view-filters {
+    float: left;
+    width: 30%;
+    @include respond-to(desctop) {
+      display: none;
+    }
+    @include respond-to(tablet) {
+      display: none;
+    }
+    @include respond-to(phone) {
+      display: none;
+    }
+    @include respond-to(min-phone) {
+      display: none;
+    }
+    .views-exposed-widget {
+      float: none;
+      > label {
+        color: #fff;
+        background: $color_1;
+        font-size: 20px;
+        @include bold_font;
+        padding: 12px 15px;
+        margin: 0px 0px 1px 0px;
+        width: 100%;
+      }
+      .views-widget {
+        border: 1px solid $title-line-color;
+        > .form-item {
+          list-style: none;
+          padding: 0px 15px;
+          .form-type-bef-link {
+            border-bottom: 1px solid $title-line-color;
+            &:last-child {
+              border: 0;
+            }
+            a {
+              padding: 11px 0;
+              display: block;
+              color: $color_1;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            .active {
+              color: $color_2;
+            }
+          }
+
+        }
+      }
+    }
+  }
+  .view-content {
+    overflow: hidden;
+    width: 70%;
+  }
+}
+
+.page-reviews {
+  .pane-page-content {
+    > .pane-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

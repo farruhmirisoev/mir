@@ -1,0 +1,85 @@
+.jcarousel {
+  overflow: hidden;
+  position: relative;
+  ul {
+    width: 20000em;
+    position: relative;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+
+    }
+  }
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  display: block;
+  line-height: 1;
+  opacity: 1 !important;
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: $color_1;
+  background: #fff;
+  padding: 6px 21px 15px 21px;
+  &:hover {
+    background: $color_1;
+    color: #fff;
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+.jcarousel-control-next {
+  right: -30px;
+  background-position: 100% 0;
+  @include respond-to(tablet) {
+    right: 0;
+  }
+  @include respond-to(phone) {
+    right: 0;
+  }
+  @include respond-to(min-phone) {
+    right: 0;
+  }
+
+}
+.jcarousel-control-prev {
+  left: -30px;
+  @include respond-to(tablet) {
+    left: 0;
+  }
+  @include respond-to(phone) {
+    left: 0;
+  }
+  @include respond-to(min-phone) {
+    left: 0;
+  }
+
+}
+
+.jcarousel-pagination {
+  bottom: 30px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  a {
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block;
+    background-position: 100% 100%;
+    opacity: 1;
+    font-size: 0;
+    margin: 0px 5px;
+  }
+  .active {
+    background-position: 0px 100%;
+  }
+}

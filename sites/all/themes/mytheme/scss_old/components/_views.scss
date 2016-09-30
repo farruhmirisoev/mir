@@ -1,0 +1,967 @@
+/*------------------------------------------------------*/
+
+//All views
+
+.view-offerings {
+  .view-content {
+    .views-row {
+      margin: 70px 0px 0px 0px;
+      @include respond-to(desctop) {
+        margin: 40px 0 0 0;
+      }
+      @include respond-to(tablet) {
+        margin: 40px 0 0 0;
+      }
+      @include respond-to(phone) {
+        margin: 40px 0 0 0;
+      }
+      @include respond-to(min-phone) {
+        margin: 40px 0 0 0;
+      }
+      .views-field-field-offerings-image,
+      .views-field-field-sale-photo {
+        @include bodrered_image(1px, $title-line-color);
+        @include img_hover;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .views-field-title {
+        text-align: center;
+        margin: 28px 0px 9px 0px;
+        @include respond-to(tablet) {
+          font-size: 16px;
+        }
+        font-size: 20px;
+        a {
+          @include title_3;
+        }
+      }
+      .views-field-body {
+        color: $text_color;
+        font-size: 13px;
+        text-align: center;
+        height: 55px;
+        overflow: hidden;
+      }
+      .views-field-view-node {
+        @include border(bottom, 4px, solid, $color_1);
+        margin: 13px 0px 30px 0px;
+        padding: 0px 0px 30px 0px;
+        text-align: center;
+        @include respond-to(desctop) {
+          margin-bottom: 0px;
+        }
+        @include respond-to(tablet) {
+          margin-bottom: 0px;
+        }
+        @include respond-to(phone) {
+          margin-bottom: -10px;
+        }
+        @include respond-to(min-phone) {
+          margin-bottom: -10px;
+        }
+        a {
+          @include site_button($color_2, $hover-button);
+          @include hover-link(#fff, #fff);
+          text-decoration: none !important;
+          margin: 0 auto;
+          width: 140px;
+          padding: 14px 0px;
+        }
+      }
+    }
+  }
+}
+
+.view-stoma-services,
+.view-services,
+.view-price.view-display-id-page_1 {
+  .view-content {
+    .views-row {
+      padding: 15px;
+      position: relative;
+      margin: 12px 0;
+      height: 80px;
+      &:hover {
+        .views-field-field-serv-icon,
+        .views-field-field-categody-img-tax,
+        .views-field-field-price-icon {
+          &:after {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+          }
+          img {
+            transform: translate(0,-70px);
+            -webkit-transform: translate(0,-70px);
+            -o-transform: translate(0,-70px);
+            -moz-transform: translate(0,-70px);
+          }
+        }
+        .views-field-title,
+        .views-field-name {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+      .views-field-field-serv-icon,
+      .views-field-field-categody-img-tax,
+      .views-field-field-price-icon {
+        display: block;
+        width: 70px;
+        height: 70px;
+        top: 0;
+        position: absolute;
+        bottom: 0;
+        -webkit-transition: background 0.2s, color 0.2s;
+        -moz-transition: background 0.2s, color 0.2s;
+        transition: background 0.2s, color 0.2s;
+        .field-content {
+          height: 70px;
+          width: 70px;
+          overflow: hidden;
+        }
+        &:after {
+          pointer-events: none;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          content: '';
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          box-sizing: content-box;
+          top: -7px;
+          left: -7px;
+          padding: 7px;
+          box-shadow: 0 0 0 4px $color_1;
+          -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+          -webkit-transform: scale(0.8);
+          -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+          -moz-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          transition: transform 0.2s, opacity 0.2s;
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        @include respond-to(tablet) {
+          width: 62px;
+          height: 62px;
+        }
+        @include respond-to(phone) {
+          width: 62px;
+          height: 62px;
+        }
+        @include respond-to(min-phone) {
+          width: 62px;
+          height: 62px;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .views-field-title,
+      .views-field-name {
+        padding: 0;
+        z-index: 10;
+        position: absolute;
+        font-size: 16px;
+        a {
+          color: $text-color;
+          text-decoration: none;
+          text-transform: uppercase;
+          display: inline-block;
+          width: 100%;
+          min-height: 42px;
+          padding-left: 90px;
+          font-size: 18px;
+          @include respond-to(desctop_max) {
+            font-size: 20px;
+          }
+          @include respond-to(tablet) {
+            font-size: 14px;
+            padding-left: 75px;
+          }
+          @include respond-to(phone) {
+            font-size: 14px;
+            padding-left: 75px;
+          }
+          @include respond-to(min-phone) {
+            font-size: 14px;
+            padding-left: 75px;
+          }
+        }
+      }
+      .views-field-field-min-serv-price {
+        color: #60646c;
+      }
+    }
+  }
+}
+
+.view-news,
+.view-clinic-articles,
+.view-smi{
+  .view-content {
+    .views-row {
+      overflow: hidden;
+      .views-field-field-news-photo,
+      .views-field-field-smi-photo {
+        @include respond-to(desctop_max) {
+          float: left;
+          margin-right: 20px;
+        }
+        @include respond-to(desctop_wide) {
+          float: left;
+          margin-right: 20px;
+        }
+        @include bodrered_image(1px, $title-line-color);
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .views-field-title {
+        @include title_2;
+        text-align: center;
+      }
+      .views-field-created {
+        font-size: 13px;
+        @include bold_font;
+        color: $color_1;
+        margin-bottom: 11px;
+      }
+      .views-field-body {
+        text-align: center;
+        .field_article_photo {}
+        .title {
+          @include title_2;
+          margin: 30px 0 20px;
+          padding: 0 10px 20px;
+          position: relative;
+          font-size: 18px;
+          font-weight: 400;
+          @include respond-to(desctop_max) {
+            font-size: 20px;
+            padding: 0 40px 20px 40px;
+          }
+          @include respond-to(tablet) {
+            font-size: 16px;
+          }
+          @include respond-to(phone) {
+            font-size: 16px;
+          }
+          @include respond-to(min-phone) {
+            font-size: 16px;
+          }
+          &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 60%;
+            background: $color_1;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+          }
+        }
+        .body {
+          padding: 0 10px 20px;
+          font-size: 14px;
+          @include respond-to(desctop_max) {
+            font-size: 16px;
+            padding: 0 40px 20px 40px;
+          }
+        }
+        .view_node {
+          @include hover-link($color_2, $color_1);
+          padding-bottom: 20px;
+        }
+      }
+      .views-field-view-node {
+        a {
+          @include hover-link($color_2, $color_1);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .more-link {
+    margin: 49px 0 0 0;
+    a {
+      @include site_button($color_2, $hover-button);
+      float: left;
+      padding: 13px 28px;
+    }
+  }
+}
+
+.view-clinic-articles {
+  .views-row {
+    @include respond-to(desctop_max) {
+      padding: 35px;
+    }
+    @include respond-to(desctop_wide) {
+      padding: 35px;
+    }
+    @include respond-to(desctop) {
+      padding: 35px;
+    }
+    @include respond-to(phone) {
+      padding: 30px 100px;
+    }
+    &:hover {
+      .views-field-body {
+        box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  .views-field-body {
+    border: 3px solid $color_1;
+  }
+}
+
+.view-smi {
+  .views-row {
+    @include border(right, 4px, solid, $color_1);
+    @include respond-to(phone) {
+      border-right: 0;
+    }
+    @include respond-to(min-phone) {
+      border-right: 0;
+    }
+  }
+  .views-field-field-smi-photo {
+    @include respond-to(tablet) {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+  .views-field-view-node {
+    @include respond-to(phone) {
+      @include border(bottom, 4px, solid, $color_1);
+      padding-bottom: 20px;
+    }
+    @include respond-to(min-phone) {
+      @include border(bottom, 4px, solid, $color_1);
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.view-gallery.view-display-id-page_1 {
+  .views-row {
+    padding: 20px;
+    img {
+      border: 1px solid $title-line-color;
+    }
+    &:hover {
+      img {
+        border: 1px solid $color_1;
+        box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+      }
+    }
+  }
+}
+.view-gallery,
+.view-partners,
+.view-licenses {
+  position: relative;
+  .item,
+  .views-row {
+    .views-field-field-gallery-photo,
+    .views-field-field-partner-logo,
+    .views-field-field-licenses {
+
+    }
+  }
+}
+.view-partners.view-display-id-page_1 {
+  .views-row {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $title-line-color;
+    clear: both;
+    overflow: hidden;
+    .views-field-field-partner-logo {
+      border: 1px solid $title-line-color;
+      @include float_left_img;
+    }
+    .views-field-title {
+      color: $text_color;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.view-partners.view-display-id-panel_pane_1 {
+  .view-content {
+    @include respond-to(desctop_max) {
+      padding: 0 120px;
+    }
+    @include respond-to(desctop_wide) {
+      padding: 0 60px;
+    }
+    @include respond-to(desctop) {
+      padding: 0 60px;
+    }
+  }
+  .views-field-field-partner-logo {
+    border: 1px solid #eee;
+    padding: 50px;
+  }
+}
+.view-licenses {
+  .item {
+    .field-content {
+      img {
+        border: 1px solid #eee;
+      }
+    }
+    &:hover {
+      .field-content {
+        a {
+          position: relative;
+          display: block;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.view-doctors {
+  position: relative;
+  .view-content {
+    .views-row {
+      position: relative;
+      .views-field-field-doc-photo {
+        position: relative;
+        overflow: hidden;
+        border: 3px solid #fff;
+        .field-content {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .title {
+          position: absolute;
+          background: rgba(0,0,0,0.5);
+          top: 75%;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s ease-in-out;
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+          }
+        }
+        &:hover {
+          .title {
+            transform: translate(0, -75%);
+            -webkit-transform: translate(0, -75%);
+            -o-transform: translate(0, -75%);
+            -moz-transform: translate(0, -75%);
+            a {
+              text-align: center;
+              padding-top: 60%;
+            }
+          }
+        }
+      }
+      .views-field-title {
+        @include title_2;
+        font-weight: 400;
+        @include respond-to(phone) {
+          text-align: center;
+        }
+        @include respond-to(min-phone) {
+          text-align: center;
+        }
+      }
+      .views-field-view-node {
+        text-align: right;
+        @include respond-to(phone) {
+          margin-top: 15px;
+        }
+        @include respond-to(min-phone) {
+          margin-top: 15px;
+        }
+        a {
+          @include hover-link($color_2, $color_1);
+          font-size: 13px;
+          text-decoration: underline;
+          padding: 11px 0px;
+          display: block;
+        }
+
+      }
+      .views-field-field-position {
+        overflow: hidden;
+        background-color: #fff;
+        padding: 10px 20px 20px;
+        @include respond-to(phone) {
+          text-align: center;
+        }
+        @include respond-to(min-phone) {
+          text-align: center;
+        }
+        .title {
+          @include title_2;
+        }
+        .field_position {
+          font-size: 15px;
+          color: $text_color;
+          margin-bottom: 17px;
+        }
+        .nothing {
+          float: left;
+          a {
+            @include site_button($color_2, $hover-button);
+            float: left;
+            padding: 13px 28px;
+          }
+        }
+        .view_node {
+          text-align: right;
+          @include respond-to(phone) {
+            margin-top: 15px;
+          }
+          @include respond-to(min-phone) {
+            margin-top: 15px;
+          }
+          a {
+            @include hover-link($color_2, $color_1);
+            font-size: 14px;
+            text-decoration: underline;
+            padding: 11px 0px;
+            display: block;
+          }
+        }
+      }
+      .views-field-nothing,
+      .views-field-nothing-1 {
+        a {
+          @include site_button($color_2, $hover-button);
+          font-size: 12px;
+          @include respond-to(desctop_wide) {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.view-reviews {
+  .view-content {
+    .views-row {
+      overflow: hidden;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $title-line-color;
+      .views-field-field-reviews-photo {
+        float: left;
+        width: 105px;
+        height: 112px;
+        margin-right: 30px;
+        img {
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+          top: 13px;
+          left: 5px;
+        }
+      }
+      .views-field-title {
+        @include bold_font;
+        margin-bottom: 16px;
+        font-size: 16px;
+        color: $color_5;
+      }
+      .views-field-body {
+        color: $text_color;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .more-link {
+    margin: 41px 0 0px 0;
+    float: right;
+    font-size: 14px;
+    a {
+      @include hover-link($color_2, $color_1);
+      text-decoration: underline;
+    }
+  }
+  .view-footer {
+    float: left;
+    margin: 30px 0 0px 0;
+    a {
+      padding: 13px 28px;
+    }
+  }
+}
+
+.view-reviews-book {
+  .view-content {
+    overflow: hidden;
+    .views-row {
+      .views-field-field-reviews-book-photo {
+        @include bodrered_image(10px, $title-line-color);
+        @include img_hover;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .views-field-field-rev-doc {
+        @include border(top, 10px, solid, $title-line-color);
+        @include border(left, 10px, solid, $title-line-color);
+        @include border(right, 10px, solid, $title-line-color);
+        margin-top: 10px;
+        padding: 15px 15px 0 15px;
+        .views-label {
+          float: left;
+          @include bold_font;
+          color: $title-color;
+          margin-right: 10px;
+        }
+      }
+      .views-field-field-rev-serv {
+        @include border(bottom, 10px, solid, $title-line-color);
+        @include border(left, 10px, solid, $title-line-color);
+        @include border(right, 10px, solid, $title-line-color);
+        padding: 0px 15px 15px 15px;
+        .views-label {
+          float: left;
+          @include bold_font;
+          color: $title-color;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .more-link {
+    margin: 41px 0 0px 0;
+    a {
+      @include hover-link($color_2, $color_1);
+      text-decoration: underline;
+    }
+  }
+}
+
+.view-sale {
+  .views-row {
+    overflow: hidden;
+    margin-bottom: 15px;
+    .views-field-field-sale-photo,
+    .views-field-field-offerings-image {
+      @include float_left_img;
+      padding: 0;
+      position: relative;
+      @include img_hover;
+      .field-content {
+        overflow: hidden;
+        position: relative;
+      }
+      .date-on-photo {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        color: #fff;
+        background: $color_1;
+        text-align: center;
+        padding: 5px 0;
+      }
+    }
+    .views-field-title {
+      text-align: left;
+      @include respond-to(tablet) {
+        font-size: 16px;
+      }
+      @include respond-to(phone) {
+        text-align: center;
+      }
+      @include respond-to(min-phone) {
+        text-align: center;
+      }
+      font-size: 20px;
+      @include bold_font;
+      a {
+        @include hover-link($color_5, $color_1);
+        text-decoration: underline;
+      }
+    }
+    .views-field-body {
+      color: $text_color;
+      font-size: 13px;
+      text-align: left;
+      height: 55px;
+      overflow: hidden;
+      @include respond-to(phone) {
+        text-align: center;
+      }
+      @include respond-to(min-phone) {
+        text-align: center;
+      }
+    }
+
+    .views-field-field-end-date-1 {
+      background: $color_6;
+      overflow: hidden;
+      padding: 22px 30px;
+      @include respond-to(desctop) {
+        overflow: hidden;
+        clear: both;
+        padding: 10px;
+      }
+      @include respond-to(tablet) {
+        overflow: hidden;
+        clear: both;
+        padding: 10px;
+      }
+      @include respond-to(phone) {
+        overflow: hidden;
+        clear: both;
+        padding: 10px;
+      }
+      @include respond-to(min-phone) {
+        overflow: hidden;
+        clear: both;
+        padding: 10px;
+      }
+      .field-content {
+        padding: 0;
+      }
+      .col-1 {
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+        div {
+          margin-bottom: 9px;
+          .date-display-single {
+            @include bold_font;
+          }
+          span.line-through {
+            text-decoration: line-through;
+          }
+          span.new-price {
+            color: $color_2;
+            @include bold_font;
+          }
+        }
+        .expression {
+          color: $color_2;
+          span {
+            @include bold_font;
+            color: $title-color;
+          }
+        }
+      }
+      .col-2 {
+        text-align: center;
+        @include respond-to(phone) {
+          margin: 10px 0;
+        }
+        @include respond-to(min-phone) {
+          margin: 10px 0;
+        }
+      }
+      .col-3 {
+        padding: 0;
+        margin-top: 10px;
+        a {
+          @include site_button($color_2, $hover-button);
+          width: 100%;
+          padding: 10px 0;
+        }
+      }
+    }
+    .views-field-nothing {
+      @include respond-to(tablet) {
+        margin-bottom: 10px;
+      }
+      @include respond-to(phone) {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      @include respond-to(min-phone) {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .red-button {
+        @include site_button($color_2, $hover-button);
+        padding: 14px 10px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.view-questions {
+  .view-content {
+    h3 {
+      font-weight: bold;
+      font-style: italic;
+      .title {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .body {
+        font-size: 14px;
+      }
+    }
+    .views-row {
+      margin: 10px 0px 10px 10px;
+      .views-field-subject {
+        font-style: italic;
+        .subject {
+
+        }
+        .comment_body {
+
+        }
+      }
+    }
+  }
+}
+
+.view-unpublished {
+  .views-row {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $title-line-color;
+    .views-field-title,
+    .views-field-subject {
+      a {
+        color: $color_4;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+        &:hover {
+          text-decoration: none;
+          color: $color_1;
+        }
+      }
+    }
+    .views-field-view-node,
+    .views-field-replyto-comment,
+    .views-field-edit-comment,
+    .views-field-delete-comment,
+    .views-field-approve-comment {
+      a {
+        color: $color_1;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+          color: $color_2;
+        }
+      }
+    }
+
+  }
+}
+
+.view-price {
+  .views-field-field-serv-icon,
+  .views-field-field-price-icon {
+    .field-content {
+      position: relative;
+      overflow: hidden;
+      a {
+        position: absolute;
+        left: 0px;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        font-size: 0px;
+      }
+    }
+  }
+}
+
+
+.view-video {
+  .views-row {
+    margin-bottom: 30px;
+    .views-field-field-video {
+      margin-bottom: 10px;
+    }
+    .views-field-title {
+      @include title_2;
+      text-align: center;
+    }
+  }
+}
+
+.view-equipment {
+  .views-row {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $title-line-color;
+    clear: both;
+    overflow: hidden;
+    .views-field-field-equipment-img {
+      @include float_left_img
+    }
+    .views-field-title {
+      color: $text_color;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.view-vopros-otvet {
+  .views-row {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $title-line-color;
+    clear: both;
+    overflow: hidden;
+    .views-field-title {
+      @include title_2;
+      margin-bottom: 10px;
+    }
+    .views-field-view-node {
+      a {
+        &:hover {
+          color: $color_2;
+        }
+      }
+    }
+  }
+}

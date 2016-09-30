@@ -1,0 +1,150 @@
+@mixin all_titles {
+  @include border(bottom, 1px, solid, $title-line-color);
+  font-family: $main-font;
+  font-weight: normal;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: $title-color;
+  text-transform: uppercase;
+  b {
+    font-weight: normal;
+  }
+  span {
+    display: inline-block;
+    border-bottom: 1px solid;
+    padding: 0px 10px 10px 10px;
+    position: relative;
+    top: 1px;
+  }
+}
+@mixin title_1 {
+  @include centered_div;
+  @include all_titles;
+  font-size: 36px;
+  text-align: center;
+  @include respond-to(phone) {
+    font-size: 25px;
+  }
+  @include respond-to(min-phone) {
+    font-size: 25px;
+  }
+}
+@mixin title_1_100 {
+  @include all_titles;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+@mixin title_1_left {
+  @include all_titles;
+  width: 100%;
+  font-size: 36px;
+  text-align: left;
+  @include respond-to(phone) {
+    font-size: 25px;
+  }
+  @include respond-to(min-phone) {
+    font-size: 25px;
+  }
+}
+
+@mixin title_1_left_1 {
+  @include centered_div;
+  @include all_titles;
+  font-size: 20px;
+  text-align: left;
+  margin: 40px auto 14px auto;
+  &:after {
+    right: auto;
+  }
+}
+
+@mixin title_2 {
+  margin: 0px 0px 10px;
+  color: $title-color;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  a {
+    @include hover-link($color_1, $color_2);
+  }
+}
+@mixin title_3 {
+  @include hover-link($title-color, $color_1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $main-font;
+}
+
+@mixin titles_links {
+  h2 {
+    color: $title_h2;
+    font-family: $main-font;
+    font-size: 20px;
+    margin: 30px 0 16px 0;
+    @include bold_font;
+  }
+  h3 {
+    color: $title_h3;
+    font-size: 18px;
+    font-family: $main-font;
+    margin: 24px 0 10px 0;
+    @include bold_font;
+  }
+  h4 {
+    color: $title_h3;
+    font-size: 16px;
+    font-family: $main-font;
+    margin: 18px 0 10px 0;
+    @include bold_font;
+  }
+  p,
+  li {
+    a {
+      color: $color_1;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  p {
+    line-height: 21px;
+//    font-size: 16px;
+    img {
+      overflow: hidden;
+      margin: 0px 20px 20px 0px;
+      max-width: 100%;
+      @include respond-to(phone) {
+        clear: both;
+        display: block;
+        margin: 20px auto;
+      }
+      @include respond-to(min-phone) {
+        clear: both;
+        display: block;
+        margin: 20px auto;
+      }
+    }
+  }
+  ol {
+    li {
+      ul {
+        padding-left: 13px;
+      }
+    }
+  }
+  ul {
+    list-style-image: url("../images/list-points.png");
+    li {
+      padding-left: 8px;
+    }
+  }
+}
+

@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the hypher module.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function hypher_enable() {
+  $format_exists = (bool) db_query_range('SELECT 1 FROM {filter_format} WHERE name = :name', 0, 1, array(':name' => 'Hypher full'))->fetchField();
+  if (!$format_exists) {
+    $hypher_full_format = array(
+      'format' => 'hypher_full',
+      'name' => 'Hypher full',
+      'weight' => 12,
+      'filters' => array(
+        'hypher_full' => array(
+          'weight' => 0,
+          'status' => 1,
+        ),
+      ),
+    );
+    $hypher_full_format = (object) $hypher_full_format;
+    filter_format_save($hypher_full_format);
+    drupal_set_message(t('A <a href="@hypher_full">Hypher full</a> text format has been created.', array('@hypher_full' => url('admin/config/content/formats/' . $hypher_full_format->format))));
+  }
+
+//  $format_exists = (bool) db_query_range('SELECT 1 FROM {filter_format} WHERE name = :name', 0, 1, array(':name' => 'Hypher juctrict'))->fetchField();
+//  if (!$format_exists) {
+//    $hypher_juctrict_format = array(
+//      'format' => 'hypher_juctrict',
+//      'name' => 'Hypher juctrict',
+//      'weight' => 12,
+//      'filters' => array(
+//        'hypher_juctrict' => array(
+//          'weight' => 0,
+//          'status' => 1,
+//        ),
+//      ),
+//    );
+//    $hypher_juctrict_format = (object) $hypher_juctrict_format;
+//    filter_format_save($hypher_juctrict_format);
+//    drupal_set_message(t('A <a href="@hypher_full">Hypher juctrict</a> text format has been created.', array('@hypher_full' => url('admin/config/content/formats/' . $hypher_juctrict_format->format))));
+//  }
+}
