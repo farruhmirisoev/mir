@@ -54,12 +54,30 @@
   width: auto;
 }
 
+.panels-flexible-region-1-____________ {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-1-2-inside {
+  padding-right: 0px;
+}
+
 .panels-flexible-region-1-center {
   float: left;
   width: 99.0000%;
 }
 
 .panels-flexible-row-1-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-1-underground {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-1-1-inside {
   padding-right: 0px;
 }
 

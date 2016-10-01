@@ -8,20 +8,20 @@
     }
 }
 
-// @mixin innerbox($marginLeftRight:0, $paddingLeftRight:0) {
-//     max-width: container();
-//     margin: 0 auto;
-//     @if $marginLeftRight==1 {
-//         $marginLeftRight: gutter(12);
-//         margin-left: $marginLeftRight;
-//         margin-right: $marginLeftRight;
-//     }
-//     @if $paddingLeftRight==1 {
-//         $paddingLeftRight: gutter(12);
-//         padding-left: $paddingLeftRight;
-//         padding-right: $paddingLeftRight;
-//     }
-// }
+@mixin innerbox($marginLeftRight:0, $paddingLeftRight:0) {
+    max-width: container();
+    margin: 0 auto;
+    @if $marginLeftRight==1 {
+        $marginLeftRight: gutter(12);
+        margin-left: $marginLeftRight;
+        margin-right: $marginLeftRight;
+    }
+    @if $paddingLeftRight==1 {
+        $paddingLeftRight: gutter(12);
+        padding-left: $paddingLeftRight;
+        padding-right: $paddingLeftRight;
+    }
+}
 
 @mixin img_res {
     display: block;
@@ -29,13 +29,12 @@
     height: auto;
 }
 
-@mixin color_btn($color:$mainorange, $textColor:#fff, $transparent:1) {
+@mixin mir_button($color:$mainorange, $textColor:#fff, $borderSize:0, $transparent:1) {
     @if($transparent == 1) {
         color: $textColor;
         background-color: $color;
         &:hover {
             background-color: darken($color, 10);
-
         }
     }
     @else {
@@ -47,15 +46,17 @@
         }
     }
     display: inline-block;
-    padding: 10px 2em;
-    border-radius: 3px;
-    border: 1px solid $color;
+    min-width: 168px;
+    padding: .4em 1.5em;
+    border-radius: 2em;    
+    border:$borderSize solid $textColor;
     text-decoration: none;
+    outline: none;
     cursor: pointer;
-    @include adjust-font-size-to(16px, 1);
-    @include box-shadow(0px 1px 1px 0px #B9E0EF);
+    @include adjust-font-size-to(16px, 1);    
     @include box-sizing(border-box);
     @include single-transition(all, 0.2s, ease-out, 0s);
+
 }
 
 @mixin remove_gallery {
@@ -70,4 +71,8 @@
     &::-moz-placeholder {@content}
     &:-moz-placeholder {@content}
     &:-ms-input-placeholder {@content}
+}
+
+@mixin fontsize($size, $lineHeight){
+    @include adjust-font-size-to($size, $lineHeight);
 }

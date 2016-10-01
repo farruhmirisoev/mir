@@ -1,3 +1,84 @@
-ul{
-  padding: 0;
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    &.menu {
+        li {
+            list-style-image: none;
+            list-style: none;
+        }
+    }
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+    color: $gold;
+    border: 1px solid $gold;
+    background: $red;
+    width: 100%;
+    padding: .5em .7em;
+    @include box-sizing(border-box);
+    @include placeholder {
+        color: $gold;
+    }
+}
+
+input[type="submit"] {
+    @include mir_button($red, $gold, 1px);
+}
+
+textarea {
+    color: $gold;
+    border: 1px solid $gold;
+    background: $red;
+    width: 100%;
+    padding: .5em .7em;
+    @include box-sizing(border-box);
+    @include placeholder {
+        color: $gold;
+    }
+}
+
+body {
+    font-family: 'PTSerif';
+    color: $black;
+}
+
+.mir-button {
+    &__red {
+        @include mir_button($red);
+    }
+}
+
+.pane-title {
+    @include fontsize(22px, 1);
+    // @include margin-leader(1);
+    @include margin-trailer(1);
+}
+
+.panels-flexible-region-mir_1-center{
+	float: none;
+	width: 100%;
+}
+.panels-flexible-mir_1 .panels-flexible-region-inside{
+	padding-left: 0;
+}
+.panels-flexible-region-1-____________{
+	width: 100%;
+	float: none;
 }

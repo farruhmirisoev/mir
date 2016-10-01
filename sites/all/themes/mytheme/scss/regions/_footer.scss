@@ -1,0 +1,73 @@
+.panels-flexible-40 {
+    background-color: $red;
+    background-image: url(../images/footer_bg_img.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    &-inside {
+        @include innerbox(0, 1);
+    }
+    .panels-flexible-row-40-main-row {
+        @include padding-leader(2);
+        @include padding-trailer(.5);
+        color: $gold;
+    }
+    .panels-flexible-row-40-1{
+    	@include padding-leader(.5);
+        @include padding-trailer(.5);	
+    }
+
+    .pane-block-3{
+    	.contact-phone{
+    		@include fontsize(30px,1.5);
+    	}
+    	.contact-list{
+    		color: #fff;
+    		list-style: none;
+    		li{
+    			padding: 0.5em;	
+    		}
+    		a{
+    			color: #fff;
+    		}
+
+    	}
+    }
+}
+
+.panels-flexible-region-40-left {
+    @include span(4);
+    .panels-flexible-region-40-left-inside {
+        padding-right: 0;
+    }
+}
+
+.panels-flexible-region-40-center {
+    @include span(4);
+    .panels-flexible-region-40-left-inside {
+        padding-right: 0;
+    }
+}
+
+.panels-flexible-region-40-right {
+    @include span(4 last);
+    .panels-flexible-region-40-right-last {
+        padding-left: 0;
+    }
+}
+
+.panels-flexible-region-mir_1-footer {
+    float: none;
+    width: auto;
+}
+
+.pane-menu-menu-mir-main-menu {
+    .menu {
+        a {
+            color: $gold;
+        }
+    }
+}
+
+.panels-flexible-region-40-copyright {
+    color: #fff;
+}

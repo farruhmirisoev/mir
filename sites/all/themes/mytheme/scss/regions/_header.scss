@@ -1,0 +1,28 @@
+.panels-flexible-33{
+		&-inside{
+		@include innerbox(0,1); 
+	}
+	.pane-page-logo{
+		@include span(2);
+	}
+	.pane-superfish-1{
+		@include span(2);
+	}
+	.pane-block-8{
+		@include span(5);
+		.pane-content{
+			color: $red;
+			@include fontsize(30px,2);	
+		}
+	}
+	.pane-block-9{
+		@include span(2);
+		line-height: 3em;
+	}
+}
+
+#superfish-1-toggle{
+	color:$black;
+	@include fontsize(24px, 2);
+}
+
