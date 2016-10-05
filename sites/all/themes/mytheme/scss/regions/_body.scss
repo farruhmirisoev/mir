@@ -15,11 +15,11 @@
 
 .stats-object__wrap{
     background: url(../images/stats_bg.jpg) no-repeat;
-    background-size: cover;	
+    background-size: cover;
 }
 .stats-object {
 	@include innerbox(0, 1);
-    @include clearfix;    
+    @include clearfix;
     color: $gold_lite;
     @include padding-leader(2);
     @include padding-trailer(2);
@@ -42,6 +42,39 @@
         }
         &__region {
             @include fontsize(24px, 1.5);
+        }
+    }
+}
+
+.view-view-block-teaser-section{
+    .views-row{
+				height: 264px ;
+        &:nth-child(8n+1){
+            @include span(4);
+        }
+        &:nth-child(8n+2){
+            @include span(8);
+        }
+        &:nth-child(8n+3){
+            @include span(8);
+        }
+        &:nth-child(8n+4){
+            @include span(4);
+        }
+        &:nth-child(8n+5){
+            @include span(4);
+        }
+        &:nth-child(8n+6){
+            @include span(4);
+        }
+        &:nth-child(8n+7){
+            @include span(4);
+        }
+        &:nth-child(8n+7){
+            @include span(8);
+        }
+        &:nth-child(8n+8){
+            @include span(4);
         }
     }
 }

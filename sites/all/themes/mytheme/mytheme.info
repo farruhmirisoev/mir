@@ -7,6 +7,9 @@ core = 7.x
 regions[content] = Content
 
 stylesheets[all][] = css/main.css
+stylesheets[all][] = plugins/slick/slick.css
+stylesheets[all][] = plugins/slick/slick-theme.css
+stylesheets[all][] = css/custom.css
 
 scripts[] = js/init.js
 scripts[] = js/bootstrap.js
@@ -17,6 +20,7 @@ scripts[] = js/bootstrap.js
 ;scripts[] = js/jquery.matchHeight.js
 ;scripts[] = js/hideTable.js
 scripts[] = plugins/bxslider/jquery.bxslider.min.js
+scripts[] = plugins/slick/slick.min.js
 scripts[] = js/mir_custom.js
 
 

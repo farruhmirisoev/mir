@@ -30,5 +30,14 @@
       //   });
       // });
     }
+
+    $('.view-id-main_slider.view-display-id-block_1 .view-content').slick({
+      arrows: false,
+      infinite: false,
+      dots: true,
+      adaptiveHeight: false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
   });
 })(jQuery);
