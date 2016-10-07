@@ -921,30 +921,13 @@ body {
   line-height: 3rem;
 }
 
-/* line 3, ../scss/regions/_body.scss */
-.panels-flexible-row-mir_1-main-row .panels-flexible-row-1-main-row {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-left: 2.12766%;
-  padding-right: 2.12766%;
-}
-
-/* line 9, ../scss/regions/_body.scss */
-.panels-flexible-region-mir_1-center .pane-title {
-  color: #a31418;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 36px;
-  line-height: 2.25rem;
-}
-
-/* line 15, ../scss/regions/_body.scss */
+/* line 1, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__wrap {
   background: url(../images/stats_bg.jpg) no-repeat;
   background-size: cover;
 }
 
-/* line 20, ../scss/regions/_body.scss */
+/* line 6, ../scss/regions/blocks/_stats-object.scss */
 .stats-object {
   max-width: 1170px;
   margin: 0 auto;
@@ -964,7 +947,7 @@ body {
   clear: both;
   visibility: hidden;
 }
-/* line 27, ../scss/regions/_body.scss */
+/* line 13, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__item {
   width: 22.91667%;
   float: left;
@@ -997,25 +980,25 @@ body {
   margin-right: -100%;
   clear: none;
 }
-/* line 32, ../scss/regions/_body.scss */
+/* line 18, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__item:last-child {
   border: none;
 }
-/* line 37, ../scss/regions/_body.scss */
+/* line 23, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__number {
   font-size: 72px;
   font-size: 4.5rem;
   line-height: 96px;
   line-height: 6rem;
 }
-/* line 40, ../scss/regions/_body.scss */
+/* line 26, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__title {
   font-size: 48px;
   font-size: 3rem;
   line-height: 72px;
   line-height: 4.5rem;
 }
-/* line 43, ../scss/regions/_body.scss */
+/* line 29, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__region {
   font-size: 24px;
   font-size: 1.5rem;
@@ -1023,7 +1006,7 @@ body {
   line-height: 2.25rem;
 }
 
-/* line 49, ../scss/regions/_body.scss */
+/* line 1, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section {
   background: #f2eede;
   padding: 0 1.05263%;
@@ -1040,67 +1023,67 @@ body {
   clear: both;
   visibility: hidden;
 }
-/* line 58, ../scss/regions/_body.scss */
+/* line 10, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row {
   position: relative;
   margin: 1.05263% 0;
   overflow: hidden;
 }
-/* line 62, ../scss/regions/_body.scss */
+/* line 14, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+1) {
   width: 31.91489%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 65, ../scss/regions/_body.scss */
+/* line 17, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+2) {
   width: 65.95745%;
   float: right;
   margin-right: 0;
 }
-/* line 68, ../scss/regions/_body.scss */
+/* line 20, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+3) {
   width: 65.95745%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 71, ../scss/regions/_body.scss */
+/* line 23, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+4) {
   width: 31.91489%;
   float: right;
   margin-right: 0;
 }
-/* line 74, ../scss/regions/_body.scss */
+/* line 26, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+5) {
   width: 31.91489%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 77, ../scss/regions/_body.scss */
+/* line 29, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+6) {
   width: 31.91489%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 80, ../scss/regions/_body.scss */
+/* line 32, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+7) {
   width: 31.91489%;
   float: right;
   margin-right: 0;
 }
-/* line 83, ../scss/regions/_body.scss */
+/* line 35, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+8) {
   width: 65.95745%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 86, ../scss/regions/_body.scss */
+/* line 38, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:nth-child(8n+9) {
   width: 31.91489%;
   float: right;
   margin-right: 0;
 }
-/* line 89, ../scss/regions/_body.scss */
+/* line 41, ../scss/regions/blocks/_block-teaser.scss */
 .view-view-block-teaser-section .views-row:hover .bt__bg-img {
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -1108,7 +1091,7 @@ body {
   transform: scale(1.5);
 }
 
-/* line 95, ../scss/regions/_body.scss */
+/* line 47, ../scss/regions/blocks/_block-teaser.scss */
 .bt__bg-img {
   -moz-transition: all 10s ease-out 0s;
   -o-transition: all 10s ease-out 0s;
@@ -1123,12 +1106,12 @@ body {
   width: 100%;
 }
 
-/* line 105, ../scss/regions/_body.scss */
+/* line 57, ../scss/regions/blocks/_block-teaser.scss */
 .bt__title {
   position: relative;
   z-index: 2;
 }
-/* line 108, ../scss/regions/_body.scss */
+/* line 60, ../scss/regions/blocks/_block-teaser.scss */
 .bt__title a {
   font-size: 24px;
   font-size: 1.5rem;
@@ -1141,6 +1124,37 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* line 1, ../scss/regions/blocks/_our-work-slider.scss */
+.our-work-slider-two_row {
+  max-width: 1170px;
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.our-work-slider-two_row:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 7, ../scss/regions/_body.scss */
+.panels-flexible-row-mir_1-main-row .panels-flexible-row-1-main-row {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+
+/* line 13, ../scss/regions/_body.scss */
+.panels-flexible-region-mir_1-center .pane-title {
+  color: #a31418;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 /* line 1, ../scss/regions/_footer.scss */
@@ -1241,4 +1255,3 @@ body {
 .panels-flexible-region-40-copyright {
   color: #fff;
 }
- 
