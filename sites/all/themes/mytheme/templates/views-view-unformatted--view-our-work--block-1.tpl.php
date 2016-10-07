@@ -18,13 +18,11 @@
    if($counter == 1): ?>
     <li<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
   <?php endif ?>
-  <?php 
-    print $row;      
-	if($counter == 2): 
-		$counter = 0; 			
-	?>
+  <div class="out-work-slider__slide-item"><?php print $row;  ?></div>
+  <? if($counter == 2):    
+      $counter = 0;	?>
     </li>
-    <?php endif; ?>
+  <?php endif; ?>
 <?php endforeach; ?>
 
 </ul>
