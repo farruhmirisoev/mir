@@ -1135,7 +1135,7 @@ body {
 /* line 1, ../scss/regions/blocks/_our-work-slider.scss */
 .panels-flexible-region-1-underground {
   background: url(../images/our_work_bg.jpg) no-repeat center;
-  background-size: 100%;
+  background-size: cover;
   float: none;
   width: auto;
   position: relative;
@@ -1281,6 +1281,12 @@ body {
   font-size: 1.5rem;
   line-height: 36px;
   line-height: 2.25rem;
+}
+
+/* line 19, ../scss/regions/_panels.scss */
+.panels-flexible-region-1-center {
+  float: none;
+  width: auto;
 }
 
 /* line 1, ../scss/regions/_footer.scss */
