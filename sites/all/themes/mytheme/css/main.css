@@ -872,57 +872,147 @@ body {
   float: none;
 }
 
-/* line 1, ../scss/regions/_header.scss */
+/* line 88, ../scss/_presets.scss */
+.mir-colortext--base-red {
+  color: #a31418;
+}
+
+/* line 1, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-toggle {
+  color: #353535;
+  outline: none;
+}
+/* line 4, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-toggle span {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  vertical-align: middle;
+}
+/* line 8, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-toggle:hover {
+  color: #a31418;
+}
+/* line 11, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-toggle:before {
+  content: '\f0c9';
+  display: inline-block;
+  font-family: 'fontawesome';
+  margin-right: 10px;
+  font-size: 38px;
+  font-size: 2.375rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  vertical-align: middle;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.2s ease-out 0s;
+}
+/* line 20, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-toggle.sf-expanded {
+  color: #a31418;
+}
+/* line 22, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-toggle.sf-expanded:before {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 29, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion {
+  position: absolute;
+  background: #a31418;
+  overflow: hidden;
+  width: 300px;
+}
+/* line 35, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion li.sf-depth-2, #superfish-1-accordion a.active {
+  background: #760e11;
+}
+/* line 38, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion .sf-clone-parent {
+  display: none;
+}
+/* line 41, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion .sf-depth-1.sf-expanded {
+  background: #5f0c0e;
+}
+/* line 43, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion .sf-depth-1.sf-expanded a.sf-depth-1 {
+  -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.59);
+  position: relative;
+  z-index: 999;
+}
+/* line 50, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion a.menuparent:after {
+  content: '\f0d7';
+  font-family: fontawesome;
+  margin-left: 10px;
+}
+/* line 58, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion a {
+  color: #edd6a2;
+  outline: none;
+  padding: 0.5em 1em;
+}
+/* line 62, ../scss/regions/blocks/_main-menu.scss */
+#superfish-1-accordion a:hover {
+  background: #6c0d10;
+}
+
+/* line 2, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside {
   max-width: 1170px;
   margin: 0 auto;
   padding-left: 2.12766%;
   padding-right: 2.12766%;
 }
-/* line 3, ../scss/regions/_header.scss */
+/* line 4, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside .pane-page-logo {
   width: 14.89362%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 6, ../scss/regions/_header.scss */
+/* line 7, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside .pane-superfish-1 {
   width: 14.89362%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 9, ../scss/regions/_header.scss */
+/* line 10, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside .pane-block-8 {
-  width: 40.42553%;
+  width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
 }
-/* line 11, ../scss/regions/_header.scss */
+/* line 12, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside .pane-block-8 .pane-content {
   color: #a31418;
   font-size: 30px;
   font-size: 1.875rem;
-  line-height: 48px;
-  line-height: 3rem;
+  line-height: 60px;
+  line-height: 3.75rem;
 }
-/* line 16, ../scss/regions/_header.scss */
+/* line 17, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside .pane-block-9 {
-  width: 14.89362%;
+  width: 31.91489%;
   float: left;
   margin-right: 2.12766%;
-  line-height: 3em;
+  line-height: 3.5em;
+}
+/* line 21, ../scss/regions/_header.scss */
+.panels-flexible-row-33-main-row-inside .pane-block-9 .pane-content div {
+  text-align: right;
 }
 
-/* line 22, ../scss/regions/_header.scss */
-#superfish-1-toggle {
-  color: #353535;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 48px;
-  line-height: 3rem;
-}
-
-/* line 27, ../scss/regions/_header.scss */
+/* line 30, ../scss/regions/_header.scss */
 .panels-flexible-row-33-1-inside {
   max-width: 1170px;
   margin: 0 auto;
@@ -930,25 +1020,25 @@ body {
   padding-right: 2.12766%;
 }
 
-/* line 31, ../scss/regions/_header.scss */
+/* line 34, ../scss/regions/_header.scss */
 .not-front .pane-page-logo {
   height: 60px;
   overflow: hidden;
 }
-/* line 34, ../scss/regions/_header.scss */
+/* line 37, ../scss/regions/_header.scss */
 .not-front .pane-page-logo img {
   margin-top: -90px;
   max-width: 100%;
   display: block;
 }
 
-/* line 41, ../scss/regions/_header.scss */
+/* line 44, ../scss/regions/_header.scss */
 .header-bottom {
   background: url(../images/footer_bottom_bg.jpg) no-repeat;
   background-size: cover;
   color: #f2eede;
 }
-/* line 45, ../scss/regions/_header.scss */
+/* line 48, ../scss/regions/_header.scss */
 .header-bottom .pane-page-title h1 {
   font-weight: normal;
 }
@@ -1163,22 +1253,24 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 
-/* line 78, ../scss/regions/blocks/_our-work-slider.scss */
+/* line 80, ../scss/regions/blocks/_our-work-slider.scss */
 .out-work-slider__slide-item {
   position: relative;
   margin-right: 24px;
 }
-/* line 81, ../scss/regions/blocks/_our-work-slider.scss */
+/* line 83, ../scss/regions/blocks/_our-work-slider.scss */
 .out-work-slider__slide-item:first-child {
   margin-bottom: 24px;
 }
-/* line 84, ../scss/regions/blocks/_our-work-slider.scss */
+/* line 86, ../scss/regions/blocks/_our-work-slider.scss */
 .out-work-slider__slide-item:hover > a {
   opacity: 1;
 }
-/* line 87, ../scss/regions/blocks/_our-work-slider.scss */
+/* line 89, ../scss/regions/blocks/_our-work-slider.scss */
 .out-work-slider__slide-item > a {
   position: absolute;
   top: 0;
@@ -1198,7 +1290,7 @@ body {
   -webkit-transition-delay: 0s;
   transition: opacity 0.3s ease-out 0s;
 }
-/* line 106, ../scss/regions/blocks/_our-work-slider.scss */
+/* line 108, ../scss/regions/blocks/_our-work-slider.scss */
 .out-work-slider__slide-item .views-field-field-news-img img {
   display: block;
   width: 100%;

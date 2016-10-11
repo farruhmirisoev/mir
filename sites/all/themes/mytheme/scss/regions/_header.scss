@@ -1,3 +1,4 @@
+@import 'blocks/main-menu';
 .panels-flexible-row-33-main-row-inside{
 	@include innerbox(0,1); 	
 	.pane-page-logo{
@@ -7,22 +8,24 @@
 		@include span(2);
 	}
 	.pane-block-8{
-		@include span(5);
+		@include span(3);
 		.pane-content{
 			color: $red;
-			@include fontsize(30px,2);	
+			@include fontsize(30px,2.5);	
 		}
 	}
 	.pane-block-9{
-		@include span(2);
-		line-height: 3em;
+		@include span(4);
+		line-height: 3.5em;
+		.pane-content{
+			div{
+				text-align: right;
+			}
+		}
 	}
 
 }
-#superfish-1-toggle{
-	color:$black;
-	@include fontsize(24px, 2);
-}
+
 
 .panels-flexible-row-33-1-inside{
 	@include innerbox(0,1);
