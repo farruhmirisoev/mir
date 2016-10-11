@@ -1,0 +1,17 @@
+.view-id-view_partnerlsit{
+
+	.views-row{
+		@include gallery(3);
+		@include margin-trailer(1);
+		img{
+			@include img_res;
+			border:2px solid $gold_lite;
+			&:hover{
+				border:2px solid $red;
+			}
+		}
+		.views-field-title{
+			@include margin-leader(.5);
+		}
+	}
+}
