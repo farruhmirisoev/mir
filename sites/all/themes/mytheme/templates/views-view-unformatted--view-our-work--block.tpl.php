@@ -10,8 +10,8 @@
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
-<ul class="our-works-slider"><?php foreach ($rows as $id => $row): ?>
-  <li<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+<div class="our-works-slider"><?php foreach ($rows as $id => $row): ?>
+  <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
-  </li>
-<?php endforeach; ?></ul>  
+  </div>
+<?php endforeach; ?></div>  

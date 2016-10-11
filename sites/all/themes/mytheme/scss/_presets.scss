@@ -13,6 +13,12 @@ ul {
         }
     }
 }
+.pane-title {
+    @include fontsize(22px, 1);
+    // @include margin-leader(1);
+    @include margin-trailer(1);
+    color: $red;
+}
 
 input[type="color"],
 input[type="date"],
@@ -28,15 +34,44 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-    color: $gold;
-    border: 1px solid $gold;
-    background: $red;
+    color: $red;
+    border: 1px solid $red;
+    background: $gold;
     width: 100%;
+    max-width: 270px;
     padding: .5em .7em;
     @include box-sizing(border-box);
     @include placeholder {
+        color: $red;
+    }
+}
+
+#mini-panel-footer{
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"] {
+        color: $gold;
+        border: 1px solid $gold;
+        background: $red;
+        @include placeholder {
+            color: $gold;
+        }
+    }
+    .pane-title {    
         color: $gold;
     }
+
 }
 
 input[type="submit"] {
@@ -66,11 +101,7 @@ body {
     }
 }
 
-.pane-title {
-    @include fontsize(22px, 1);
-    // @include margin-leader(1);
-    @include margin-trailer(1);
-}
+
 
 .panels-flexible-region-mir_1-center{
 	float: none;
@@ -89,3 +120,4 @@ body {
         color: $red;
     }
 }
+

@@ -26,11 +26,16 @@
 
 }
 
-
 .panels-flexible-row-33-1-inside{
 	@include innerbox(0,1);
 }
 
+
+.front .pane-page-logo{
+		margin-bottom: -120px;
+    	z-index: 2;
+    	position: relative;
+}	
 .not-front .pane-page-logo{
 	height: 60px;
 	overflow: hidden;

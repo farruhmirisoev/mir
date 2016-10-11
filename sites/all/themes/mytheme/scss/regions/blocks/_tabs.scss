@@ -1,0 +1,21 @@
+.pane-pane-messages{
+	.nav-pills{
+		li{
+			display: inline-block;
+			margin-right: 5px;
+			a{
+				background: $red;
+				color: $gold_lite;
+				padding: 0.5em 1em;
+				border-top-left-radius: 5px;
+    			border-top-right-radius: 5px;
+				&:hover, &.active{
+					background: darken($red, 10);
+				}
+				.sr-only{
+					display: none;
+				}
+			}
+		}
+	}
+}
