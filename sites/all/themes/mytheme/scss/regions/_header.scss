@@ -1,7 +1,5 @@
-.panels-flexible-33{
-		&-inside{
-		@include innerbox(0,1); 
-	}
+.panels-flexible-row-33-main-row-inside{
+	@include innerbox(0,1); 	
 	.pane-page-logo{
 		@include span(2);
 	}
@@ -19,10 +17,32 @@
 		@include span(2);
 		line-height: 3em;
 	}
-}
 
+}
 #superfish-1-toggle{
 	color:$black;
 	@include fontsize(24px, 2);
 }
 
+.panels-flexible-row-33-1-inside{
+	@include innerbox(0,1);
+}
+
+.not-front .pane-page-logo{
+	height: 60px;
+	overflow: hidden;
+	img{
+		margin-top: -90px;
+		max-width: 100%;
+		display: block;
+	}
+}
+
+.header-bottom{
+	background: url(../images/footer_bottom_bg.jpg) no-repeat;
+	background-size:  cover;
+	color: $gold_lite;
+	.pane-page-title h1{
+		font-weight: normal;
+	}
+}

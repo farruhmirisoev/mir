@@ -1,0 +1,21 @@
+.panels-flexible-region-mir_1-left_sidebar{
+  float: none;
+  padding-right: 0;
+  float: none;
+  width: auto;
+}
+
+.panels-flexible-region-mir_1-left_sidebar-inside{
+  padding-right: 0;
+}
+
+.pane-menu-menu-menu-about{
+	background: $gray_bg;
+	padding: 2em;
+	@include margin-trailer(1);
+	.menu{
+		a{
+			text-decoration: underline; 
+		}
+	}
+}

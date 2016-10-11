@@ -1,0 +1,32 @@
+.stats-object__wrap{
+    background: url(../images/stats_bg.jpg) no-repeat;
+    background-size: cover;
+}
+.stats-object {
+	@include innerbox(0, 1);
+    @include clearfix;
+    color: $gold_lite;
+    @include padding-leader(2);
+    @include padding-trailer(2);
+    @include with-layout(split) {
+        &__item {
+            @include gallery(3);
+            text-align: center;
+            border-right: 2px solid $gold_lite;
+            padding: 0 gutter(12);
+            &:last-child {
+                border: none;
+            }
+            min-height: 240px;
+        }
+        &__number {
+            @include fontsize(72px, 4);
+        }
+        &__title {
+            @include fontsize(48px, 3);
+        }
+        &__region {
+            @include fontsize(24px, 1.5);
+        }
+    }
+}
