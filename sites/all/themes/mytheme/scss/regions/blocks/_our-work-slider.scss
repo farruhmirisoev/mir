@@ -25,7 +25,7 @@
   @include clearfix;
 }
 
-.pane-view-our-work {
+.view-view-our-work.view-display-id-block_1 {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
@@ -109,6 +109,25 @@
     display: block;
     width: 100%;
     height: auto;
+  }
+}
+
+
+
+// works page
+.node-type-content-our-work-section{
+  .pane-view-our-work{
+    @include innerbox(0,1);
+  }
+}
+.view-view-our-work.view-display-id-block{  
+  .views-field{
+    margin-right: 30px;          
+  }
+  .views-field-field-ow-img{
+    img{
+      @include img_res;
+    }
   }
 }
 

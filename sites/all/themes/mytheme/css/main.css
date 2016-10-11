@@ -658,7 +658,18 @@ ul.menu li {
   list-style: none;
 }
 
-/* line 17, ../scss/_presets.scss */
+/* line 16, ../scss/_presets.scss */
+.pane-title {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  color: #a31418;
+}
+
+/* line 23, ../scss/_presets.scss */
 input[type="color"],
 input[type="date"],
 input[type="datetime"],
@@ -673,10 +684,11 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-  color: #edd6a2;
-  border: 1px solid #edd6a2;
-  background: #a31418;
+  color: #a31418;
+  border: 1px solid #a31418;
+  background: #edd6a2;
   width: 100%;
+  max-width: 270px;
   padding: .5em .7em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -697,7 +709,7 @@ input[type="text"]::-webkit-input-placeholder,
 input[type="time"]::-webkit-input-placeholder,
 input[type="url"]::-webkit-input-placeholder,
 input[type="week"]::-webkit-input-placeholder {
-  color: #edd6a2;
+  color: #a31418;
 }
 /* line 71, ../scss/_mixin.scss */
 input[type="color"]::-moz-placeholder,
@@ -714,7 +726,7 @@ input[type="text"]::-moz-placeholder,
 input[type="time"]::-moz-placeholder,
 input[type="url"]::-moz-placeholder,
 input[type="week"]::-moz-placeholder {
-  color: #edd6a2;
+  color: #a31418;
 }
 /* line 72, ../scss/_mixin.scss */
 input[type="color"]:-moz-placeholder,
@@ -731,7 +743,7 @@ input[type="text"]:-moz-placeholder,
 input[type="time"]:-moz-placeholder,
 input[type="url"]:-moz-placeholder,
 input[type="week"]:-moz-placeholder {
-  color: #edd6a2;
+  color: #a31418;
 }
 /* line 73, ../scss/_mixin.scss */
 input[type="color"]:-ms-input-placeholder,
@@ -748,10 +760,102 @@ input[type="text"]:-ms-input-placeholder,
 input[type="time"]:-ms-input-placeholder,
 input[type="url"]:-ms-input-placeholder,
 input[type="week"]:-ms-input-placeholder {
+  color: #a31418;
+}
+
+/* line 50, ../scss/_presets.scss */
+#mini-panel-footer input[type="color"],
+#mini-panel-footer input[type="date"],
+#mini-panel-footer input[type="datetime"],
+#mini-panel-footer input[type="datetime-local"],
+#mini-panel-footer input[type="email"],
+#mini-panel-footer input[type="month"],
+#mini-panel-footer input[type="number"],
+#mini-panel-footer input[type="password"],
+#mini-panel-footer input[type="search"],
+#mini-panel-footer input[type="tel"],
+#mini-panel-footer input[type="text"],
+#mini-panel-footer input[type="time"],
+#mini-panel-footer input[type="url"],
+#mini-panel-footer input[type="week"] {
+  color: #edd6a2;
+  border: 1px solid #edd6a2;
+  background: #a31418;
+}
+/* line 70, ../scss/_mixin.scss */
+#mini-panel-footer input[type="color"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="date"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="datetime"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="datetime-local"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="email"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="month"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="number"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="password"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="search"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="tel"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="text"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="time"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="url"]::-webkit-input-placeholder,
+#mini-panel-footer input[type="week"]::-webkit-input-placeholder {
+  color: #edd6a2;
+}
+/* line 71, ../scss/_mixin.scss */
+#mini-panel-footer input[type="color"]::-moz-placeholder,
+#mini-panel-footer input[type="date"]::-moz-placeholder,
+#mini-panel-footer input[type="datetime"]::-moz-placeholder,
+#mini-panel-footer input[type="datetime-local"]::-moz-placeholder,
+#mini-panel-footer input[type="email"]::-moz-placeholder,
+#mini-panel-footer input[type="month"]::-moz-placeholder,
+#mini-panel-footer input[type="number"]::-moz-placeholder,
+#mini-panel-footer input[type="password"]::-moz-placeholder,
+#mini-panel-footer input[type="search"]::-moz-placeholder,
+#mini-panel-footer input[type="tel"]::-moz-placeholder,
+#mini-panel-footer input[type="text"]::-moz-placeholder,
+#mini-panel-footer input[type="time"]::-moz-placeholder,
+#mini-panel-footer input[type="url"]::-moz-placeholder,
+#mini-panel-footer input[type="week"]::-moz-placeholder {
+  color: #edd6a2;
+}
+/* line 72, ../scss/_mixin.scss */
+#mini-panel-footer input[type="color"]:-moz-placeholder,
+#mini-panel-footer input[type="date"]:-moz-placeholder,
+#mini-panel-footer input[type="datetime"]:-moz-placeholder,
+#mini-panel-footer input[type="datetime-local"]:-moz-placeholder,
+#mini-panel-footer input[type="email"]:-moz-placeholder,
+#mini-panel-footer input[type="month"]:-moz-placeholder,
+#mini-panel-footer input[type="number"]:-moz-placeholder,
+#mini-panel-footer input[type="password"]:-moz-placeholder,
+#mini-panel-footer input[type="search"]:-moz-placeholder,
+#mini-panel-footer input[type="tel"]:-moz-placeholder,
+#mini-panel-footer input[type="text"]:-moz-placeholder,
+#mini-panel-footer input[type="time"]:-moz-placeholder,
+#mini-panel-footer input[type="url"]:-moz-placeholder,
+#mini-panel-footer input[type="week"]:-moz-placeholder {
+  color: #edd6a2;
+}
+/* line 73, ../scss/_mixin.scss */
+#mini-panel-footer input[type="color"]:-ms-input-placeholder,
+#mini-panel-footer input[type="date"]:-ms-input-placeholder,
+#mini-panel-footer input[type="datetime"]:-ms-input-placeholder,
+#mini-panel-footer input[type="datetime-local"]:-ms-input-placeholder,
+#mini-panel-footer input[type="email"]:-ms-input-placeholder,
+#mini-panel-footer input[type="month"]:-ms-input-placeholder,
+#mini-panel-footer input[type="number"]:-ms-input-placeholder,
+#mini-panel-footer input[type="password"]:-ms-input-placeholder,
+#mini-panel-footer input[type="search"]:-ms-input-placeholder,
+#mini-panel-footer input[type="tel"]:-ms-input-placeholder,
+#mini-panel-footer input[type="text"]:-ms-input-placeholder,
+#mini-panel-footer input[type="time"]:-ms-input-placeholder,
+#mini-panel-footer input[type="url"]:-ms-input-placeholder,
+#mini-panel-footer input[type="week"]:-ms-input-placeholder {
+  color: #edd6a2;
+}
+/* line 71, ../scss/_presets.scss */
+#mini-panel-footer .pane-title {
   color: #edd6a2;
 }
 
-/* line 42, ../scss/_presets.scss */
+/* line 77, ../scss/_presets.scss */
 input[type="submit"] {
   color: #edd6a2;
   background-color: #a31418;
@@ -781,7 +885,7 @@ input[type="submit"]:hover {
   background-color: #760e11;
 }
 
-/* line 46, ../scss/_presets.scss */
+/* line 81, ../scss/_presets.scss */
 textarea {
   color: #edd6a2;
   border: 1px solid #edd6a2;
@@ -809,13 +913,13 @@ textarea:-ms-input-placeholder {
   color: #edd6a2;
 }
 
-/* line 58, ../scss/_presets.scss */
+/* line 93, ../scss/_presets.scss */
 body {
   font-family: 'PTSerif';
   color: #353535;
 }
 
-/* line 64, ../scss/_presets.scss */
+/* line 99, ../scss/_presets.scss */
 .mir-button__red {
   color: #fff;
   background-color: #a31418;
@@ -845,34 +949,24 @@ body {
   background-color: #760e11;
 }
 
-/* line 69, ../scss/_presets.scss */
-.pane-title {
-  font-size: 22px;
-  font-size: 1.375rem;
-  line-height: 24px;
-  line-height: 1.5rem;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-}
-
-/* line 75, ../scss/_presets.scss */
+/* line 106, ../scss/_presets.scss */
 .panels-flexible-region-mir_1-center {
   float: none;
   width: 100%;
 }
 
-/* line 79, ../scss/_presets.scss */
+/* line 110, ../scss/_presets.scss */
 .panels-flexible-mir_1 .panels-flexible-region-inside {
   padding-left: 0;
 }
 
-/* line 82, ../scss/_presets.scss */
+/* line 113, ../scss/_presets.scss */
 .panels-flexible-region-1-____________ {
   width: 100%;
   float: none;
 }
 
-/* line 88, ../scss/_presets.scss */
+/* line 119, ../scss/_presets.scss */
 .mir-colortext--base-red {
   color: #a31418;
 }
@@ -1012,7 +1106,7 @@ body {
   text-align: right;
 }
 
-/* line 30, ../scss/regions/_header.scss */
+/* line 29, ../scss/regions/_header.scss */
 .panels-flexible-row-33-1-inside {
   max-width: 1170px;
   margin: 0 auto;
@@ -1021,26 +1115,55 @@ body {
 }
 
 /* line 34, ../scss/regions/_header.scss */
+.front .pane-page-logo {
+  margin-bottom: -120px;
+  z-index: 2;
+  position: relative;
+}
+
+/* line 39, ../scss/regions/_header.scss */
 .not-front .pane-page-logo {
   height: 60px;
   overflow: hidden;
 }
-/* line 37, ../scss/regions/_header.scss */
+/* line 42, ../scss/regions/_header.scss */
 .not-front .pane-page-logo img {
   margin-top: -90px;
   max-width: 100%;
   display: block;
 }
 
-/* line 44, ../scss/regions/_header.scss */
+/* line 49, ../scss/regions/_header.scss */
 .header-bottom {
   background: url(../images/footer_bottom_bg.jpg) no-repeat;
   background-size: cover;
   color: #f2eede;
 }
-/* line 48, ../scss/regions/_header.scss */
+/* line 53, ../scss/regions/_header.scss */
 .header-bottom .pane-page-title h1 {
   font-weight: normal;
+}
+
+/* line 3, ../scss/regions/blocks/_tabs.scss */
+.pane-pane-messages .nav-pills li {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 6, ../scss/regions/blocks/_tabs.scss */
+.pane-pane-messages .nav-pills li a {
+  background: #a31418;
+  color: #f2eede;
+  padding: 0.5em 1em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 12, ../scss/regions/blocks/_tabs.scss */
+.pane-pane-messages .nav-pills li a:hover, .pane-pane-messages .nav-pills li a.active {
+  background: #760e11;
+}
+/* line 15, ../scss/regions/blocks/_tabs.scss */
+.pane-pane-messages .nav-pills li a .sr-only {
+  display: none;
 }
 
 /* line 1, ../scss/regions/blocks/_block-teaser.scss */
@@ -1202,7 +1325,7 @@ body {
 }
 
 /* line 28, ../scss/regions/blocks/_our-work-slider.scss */
-.pane-view-our-work {
+.view-view-our-work.view-display-id-block_1 {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
@@ -1212,14 +1335,14 @@ body {
   margin-bottom: 1.5rem;
 }
 /* line 36, ../scss/regions/blocks/_our-work-slider.scss */
-.pane-view-our-work .slick-arrow {
+.view-view-our-work.view-display-id-block_1 .slick-arrow {
   top: auto;
   bottom: -90px;
   width: 30px;
   height: auto;
 }
 /* line 41, ../scss/regions/blocks/_our-work-slider.scss */
-.pane-view-our-work .slick-arrow:before {
+.view-view-our-work.view-display-id-block_1 .slick-arrow:before {
   background: #edd6a2;
   height: 30px;
   display: block;
@@ -1228,19 +1351,19 @@ body {
   font-size: 28px;
 }
 /* line 49, ../scss/regions/blocks/_our-work-slider.scss */
-.pane-view-our-work .slick-arrow.slick-next {
+.view-view-our-work.view-display-id-block_1 .slick-arrow.slick-next {
   left: 35px;
 }
 /* line 53, ../scss/regions/blocks/_our-work-slider.scss */
-.pane-view-our-work .slick-arrow.slick-next:before {
+.view-view-our-work.view-display-id-block_1 .slick-arrow.slick-next:before {
   content: '\0203A';
 }
 /* line 57, ../scss/regions/blocks/_our-work-slider.scss */
-.pane-view-our-work .slick-arrow.slick-prev {
+.view-view-our-work.view-display-id-block_1 .slick-arrow.slick-prev {
   left: 0px;
 }
 /* line 61, ../scss/regions/blocks/_our-work-slider.scss */
-.pane-view-our-work .slick-arrow.slick-prev:before {
+.view-view-our-work.view-display-id-block_1 .slick-arrow.slick-prev:before {
   content: '\02039';
 }
 
@@ -1292,6 +1415,25 @@ body {
 }
 /* line 108, ../scss/regions/blocks/_our-work-slider.scss */
 .out-work-slider__slide-item .views-field-field-news-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 119, ../scss/regions/blocks/_our-work-slider.scss */
+.node-type-content-our-work-section .pane-view-our-work {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+
+/* line 124, ../scss/regions/blocks/_our-work-slider.scss */
+.view-view-our-work.view-display-id-block .views-field {
+  margin-right: 30px;
+}
+/* line 128, ../scss/regions/blocks/_our-work-slider.scss */
+.view-view-our-work.view-display-id-block .views-field-field-ow-img img {
   display: block;
   width: 100%;
   height: auto;
@@ -1396,15 +1538,22 @@ body {
 }
 
 /* line 12, ../scss/regions/blocks/_sidebar.scss */
-.pane-menu-menu-menu-about {
+.pane-menu-menu-menu-about, .pane-view-ow-sections {
   background: #f8f8f8;
   padding: 2em;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 /* line 17, ../scss/regions/blocks/_sidebar.scss */
-.pane-menu-menu-menu-about .menu a {
+.pane-menu-menu-menu-about a, .pane-view-ow-sections a {
   text-decoration: underline;
+  display: inline-block;
+  padding: 0.3em 0;
+}
+/* line 21, ../scss/regions/blocks/_sidebar.scss */
+.pane-menu-menu-menu-about a.active, .pane-menu-menu-menu-about a:hover, .pane-view-ow-sections a.active, .pane-view-ow-sections a:hover {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* line 3, ../scss/regions/blocks/_partners.scss */
@@ -1454,6 +1603,119 @@ body {
 .view-id-view_partnerlsit .views-row .views-field-title {
   margin-top: 12px;
   margin-top: 0.75rem;
+}
+
+/* line 1, ../scss/regions/blocks/_last-news.scss */
+.pane-view-news {
+  margin-top: 48px;
+  margin-top: 3rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+/* line 4, ../scss/regions/blocks/_last-news.scss */
+.pane-view-news .pane-title {
+  color: #a31418;
+}
+/* line 2, ../scss/_mixin.scss */
+.pane-view-news .view-content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 11, ../scss/regions/blocks/_last-news.scss */
+.pane-view-news .views-row {
+  width: 31.91489%;
+  float: left;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.pane-view-news .views-row:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.pane-view-news .views-row:nth-child(3n + 2) {
+  margin-left: 34.04255%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.pane-view-news .views-row:nth-child(3n + 3) {
+  margin-left: 68.08511%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 15, ../scss/regions/blocks/_last-news.scss */
+.pane-view-news .views-row .views-field-field-news-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 19, ../scss/regions/blocks/_last-news.scss */
+.pane-view-news .views-row .views-field-title {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+/* line 22, ../scss/regions/blocks/_last-news.scss */
+.pane-view-news .views-row .views-field-title a {
+  color: #a31418;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+/* line 25, ../scss/regions/blocks/_last-news.scss */
+.pane-view-news .views-row .views-field-title a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../scss/regions/blocks/_webform-69.scss */
+.pane-webform-client-block-69 {
+  background: url(../images/webform_bg.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+/* line 7, ../scss/regions/blocks/_webform-69.scss */
+.pane-webform-client-block-69 .pane-title {
+  color: #f2eede;
+  text-align: center;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+/* line 13, ../scss/regions/blocks/_webform-69.scss */
+.pane-webform-client-block-69 .pane-content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+/* line 16, ../scss/regions/blocks/_webform-69.scss */
+.pane-webform-client-block-69 .form-item, .pane-webform-client-block-69 .form-actions {
+  display: inline-block;
+  margin-right: 2.12766%;
+}
+
+/* line 23, ../scss/regions/blocks/_webform-69.scss */
+#webform-client-form-69 > div {
+  text-align: center;
 }
 
 /* line 1, ../scss/regions/_panels.scss */
@@ -1603,8 +1865,12 @@ body {
 .pane-menu-menu-mir-main-menu .menu a {
   color: #edd6a2;
 }
+/* line 68, ../scss/regions/_footer.scss */
+.pane-menu-menu-mir-main-menu .menu .menu {
+  display: none;
+}
 
-/* line 71, ../scss/regions/_footer.scss */
+/* line 74, ../scss/regions/_footer.scss */
 .panels-flexible-region-40-copyright {
   color: #fff;
 }

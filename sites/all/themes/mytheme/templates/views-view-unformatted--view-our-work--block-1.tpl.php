@@ -10,19 +10,19 @@
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
-<ul class="our-work-slider-two_row">
+<div class="our-work-slider-two_row">
 <?php $counter = 0;	?>
 <?php foreach ($rows as $id => $row): ?>   
   <?php
    $counter++;  
    if($counter == 1): ?>
-    <li<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+    <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
   <?php endif ?>
   <div class="out-work-slider__slide-item"><?php print $row;  ?></div>
   <? if($counter == 2):    
       $counter = 0;	?>
-    </li>
+    </div>
   <?php endif; ?>
 <?php endforeach; ?>
 
-</ul>
+</div>
