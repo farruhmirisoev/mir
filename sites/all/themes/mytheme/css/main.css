@@ -972,6 +972,30 @@ body {
   color: #a31418;
 }
 
+/* line 126, ../scss/_presets.scss */
+.content-col--small {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 129, ../scss/_presets.scss */
+.content-col--medium {
+  width: 48.93617%;
+  float: left;
+  margin-right: 2.12766%;
+}
+/* line 132, ../scss/_presets.scss */
+.content-col--last {
+  float: right;
+  margin-right: 0;
+}
+/* line 135, ../scss/_presets.scss */
+.content-col img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* line 1, ../scss/regions/blocks/_main-menu.scss */
 #superfish-1-toggle {
   color: #353535;
@@ -1157,12 +1181,13 @@ body {
   padding: 0.5em 1em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  display: block;
 }
-/* line 12, ../scss/regions/blocks/_tabs.scss */
+/* line 13, ../scss/regions/blocks/_tabs.scss */
 .pane-pane-messages .nav-pills li a:hover, .pane-pane-messages .nav-pills li a.active {
   background: #760e11;
 }
-/* line 15, ../scss/regions/blocks/_tabs.scss */
+/* line 16, ../scss/regions/blocks/_tabs.scss */
 .pane-pane-messages .nav-pills li a .sr-only {
   display: none;
 }
@@ -1606,6 +1631,166 @@ body {
   margin-top: 0.75rem;
 }
 
+/* line 2, ../scss/_mixin.scss */
+.view-view-news .view-content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 5, ../scss/regions/blocks/_news.scss */
+.view-view-news .views-row {
+  width: 31.91489%;
+  float: left;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.view-view-news .views-row:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.view-view-news .views-row:nth-child(3n + 2) {
+  margin-left: 34.04255%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.view-view-news .views-row:nth-child(3n + 3) {
+  margin-left: 68.08511%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 9, ../scss/regions/blocks/_news.scss */
+.view-view-news .views-row .views-field-field-news-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 13, ../scss/regions/blocks/_news.scss */
+.view-view-news .views-row .views-field-title {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+/* line 16, ../scss/regions/blocks/_news.scss */
+.view-view-news .views-row .views-field-title a {
+  color: #a31418;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+/* line 19, ../scss/regions/blocks/_news.scss */
+.view-view-news .views-row .views-field-title a:hover {
+  text-decoration: underline;
+}
+/* line 24, ../scss/regions/blocks/_news.scss */
+.view-view-news .views-row .views-field-created {
+  color: #6e6e6e;
+}
+/* line 28, ../scss/regions/blocks/_news.scss */
+.view-view-news .views-widget-filter-field_news_category_tid {
+  float: right;
+  padding: 0;
+}
+/* line 32, ../scss/regions/blocks/_news.scss */
+.view-view-news .bef-select-as-links {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 34, ../scss/regions/blocks/_news.scss */
+.view-view-news .bef-select-as-links .form-type-bef-link {
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 37, ../scss/regions/blocks/_news.scss */
+.view-view-news .bef-select-as-links .form-type-bef-link a {
+  display: block;
+  outline: none;
+  padding: 0.5em 1em;
+  border: 2px solid #a31418;
+  border-radius: 3px;
+  color: #a31418;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.3s ease-out 0s;
+}
+/* line 45, ../scss/regions/blocks/_news.scss */
+.view-view-news .bef-select-as-links .form-type-bef-link a.active, .view-view-news .bef-select-as-links .form-type-bef-link a:hover {
+  color: #fff;
+  background: #a31418;
+}
+
+/* line 57, ../scss/regions/blocks/_news.scss */
+.node-type-content-news .pane-node-created {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  margin-left: 6em;
+}
+/* line 60, ../scss/regions/blocks/_news.scss */
+.node-type-content-news .pane-node-created .pane-title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin: 0;
+  display: inline-block;
+}
+/* line 65, ../scss/regions/blocks/_news.scss */
+.node-type-content-news .pane-node-created .pane-content {
+  display: inline-block;
+}
+/* line 69, ../scss/regions/blocks/_news.scss */
+.node-type-content-news .field-type-text-long {
+  position: relative;
+  background: #fef6f6;
+  padding: 2em 3em;
+  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 0px 1px #e1e1e1;
+  -webkit-box-shadow: 0px 1px 0px 1px #e1e1e1;
+  box-shadow: 0px 1px 0px 1px #e1e1e1;
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+/* line 76, ../scss/regions/blocks/_news.scss */
+.node-type-content-news .field-type-text-long:before {
+  content: '\f10d';
+  font-family: fontawesome;
+  color: #a31418;
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 96px;
+  line-height: 6rem;
+  position: absolute;
+  top: -50px;
+  left: 2.12766%;
+}
+/* line 85, ../scss/regions/blocks/_news.scss */
+.node-type-content-news .field-type-text-long:after {
+  content: "";
+  background: url(../images/anons_tail.png) no-repeat;
+  display: block;
+  width: 38px;
+  height: 26px;
+  position: absolute;
+  bottom: -26px;
+  right: 15%;
+}
+/* line 97, ../scss/regions/blocks/_news.scss */
+.node-type-content-news .mir_1-bottom-content {
+  background: #f8f8f8;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+}
+
 /* line 1, ../scss/regions/blocks/_last-news.scss */
 .pane-view-news {
   margin-top: 48px;
@@ -1620,65 +1805,6 @@ body {
 /* line 4, ../scss/regions/blocks/_last-news.scss */
 .pane-view-news .pane-title {
   color: #a31418;
-}
-/* line 2, ../scss/_mixin.scss */
-.pane-view-news .view-content:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-/* line 11, ../scss/regions/blocks/_last-news.scss */
-.pane-view-news .views-row {
-  width: 31.91489%;
-  float: left;
-  margin-bottom: 48px;
-  margin-bottom: 3rem;
-}
-/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.pane-view-news .views-row:nth-child(3n + 1) {
-  margin-left: 0;
-  margin-right: -100%;
-  clear: both;
-  margin-left: 0;
-}
-/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.pane-view-news .views-row:nth-child(3n + 2) {
-  margin-left: 34.04255%;
-  margin-right: -100%;
-  clear: none;
-}
-/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.pane-view-news .views-row:nth-child(3n + 3) {
-  margin-left: 68.08511%;
-  margin-right: -100%;
-  clear: none;
-}
-/* line 15, ../scss/regions/blocks/_last-news.scss */
-.pane-view-news .views-row .views-field-field-news-img img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-/* line 19, ../scss/regions/blocks/_last-news.scss */
-.pane-view-news .views-row .views-field-title {
-  margin-top: 12px;
-  margin-top: 0.75rem;
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
-}
-/* line 22, ../scss/regions/blocks/_last-news.scss */
-.pane-view-news .views-row .views-field-title a {
-  color: #a31418;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 24px;
-  line-height: 1.5rem;
-}
-/* line 25, ../scss/regions/blocks/_last-news.scss */
-.pane-view-news .views-row .views-field-title a:hover {
-  text-decoration: underline;
 }
 
 /* line 1, ../scss/regions/blocks/_webform-69.scss */
@@ -1771,6 +1897,12 @@ body {
 /* line 41, ../scss/regions/_panels.scss */
 .not-front .panels-flexible-row-mir_1-main-row-middle {
   margin-left: 0;
+}
+
+/* line 47, ../scss/regions/_panels.scss */
+.mir_1-bottom-content {
+  width: auto;
+  float: none;
 }
 
 /* line 1, ../scss/regions/_footer.scss */

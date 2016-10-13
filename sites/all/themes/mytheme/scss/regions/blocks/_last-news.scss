@@ -5,27 +5,5 @@
 		color: $red;
 	}
 	@include innerbox(0,1);
-	.view-content{
-		@include clearfix;
-	}
-	.views-row{
-		@include gallery(4);
-		@include margin-trailer(2);
-		.views-field-field-news-img{
-			img{
-				@include img_res;
-			}
-		}
-		.views-field-title{
-			@include margin-leader(.5);
-			@include margin-trailer(.5);
-			a{
-				color: $red;				
-				@include fontsize(20px, 1);
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-		}
-	}
+
 }
