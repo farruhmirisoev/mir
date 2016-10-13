@@ -781,6 +781,7 @@ input[type="week"]:-ms-input-placeholder {
   color: #edd6a2;
   border: 1px solid #edd6a2;
   background: #a31418;
+  max-width: 365px;
 }
 /* line 70, ../scss/_mixin.scss */
 #mini-panel-footer input[type="color"]::-webkit-input-placeholder,
@@ -850,12 +851,12 @@ input[type="week"]:-ms-input-placeholder {
 #mini-panel-footer input[type="week"]:-ms-input-placeholder {
   color: #edd6a2;
 }
-/* line 71, ../scss/_presets.scss */
+/* line 72, ../scss/_presets.scss */
 #mini-panel-footer .pane-title {
   color: #edd6a2;
 }
 
-/* line 77, ../scss/_presets.scss */
+/* line 78, ../scss/_presets.scss */
 input[type="submit"] {
   color: #edd6a2;
   background-color: #a31418;
@@ -885,7 +886,7 @@ input[type="submit"]:hover {
   background-color: #760e11;
 }
 
-/* line 81, ../scss/_presets.scss */
+/* line 82, ../scss/_presets.scss */
 textarea {
   color: #edd6a2;
   border: 1px solid #edd6a2;
@@ -913,13 +914,13 @@ textarea:-ms-input-placeholder {
   color: #edd6a2;
 }
 
-/* line 93, ../scss/_presets.scss */
+/* line 94, ../scss/_presets.scss */
 body {
   font-family: 'PTSerif';
   color: #353535;
 }
 
-/* line 99, ../scss/_presets.scss */
+/* line 100, ../scss/_presets.scss */
 .mir-button__red {
   color: #fff;
   background-color: #a31418;
@@ -949,24 +950,24 @@ body {
   background-color: #760e11;
 }
 
-/* line 106, ../scss/_presets.scss */
+/* line 107, ../scss/_presets.scss */
 .panels-flexible-region-mir_1-center {
   float: none;
   width: 100%;
 }
 
-/* line 110, ../scss/_presets.scss */
+/* line 111, ../scss/_presets.scss */
 .panels-flexible-mir_1 .panels-flexible-region-inside {
   padding-left: 0;
 }
 
-/* line 113, ../scss/_presets.scss */
+/* line 114, ../scss/_presets.scss */
 .panels-flexible-region-1-____________ {
   width: 100%;
   float: none;
 }
 
-/* line 119, ../scss/_presets.scss */
+/* line 120, ../scss/_presets.scss */
 .mir-colortext--base-red {
   color: #a31418;
 }
