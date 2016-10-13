@@ -1,0 +1,102 @@
+.view-view-news {
+    .view-content {
+        @include clearfix;
+    }
+    .views-row {
+        @include gallery(4);
+        @include margin-trailer(2);
+        .views-field-field-news-img {
+            img {
+                @include img_res;
+            }
+        }
+        .views-field-title {
+            @include margin-leader(.5);
+            @include margin-trailer(.5);
+            a {
+                color: $red;
+                @include fontsize(20px, 1);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .views-field-created {
+            color: $gray_date;
+        }
+    }
+    .views-widget-filter-field_news_category_tid {
+        float: right;
+        padding: 0;
+    }
+    .bef-select-as-links {
+        @include margin-trailer(1);
+        .form-type-bef-link {
+            display: inline-block;
+            margin-left: 5px;
+            a {
+                display: block;
+                outline: none;
+                padding: 0.5em 1em;
+                border: 2px solid $red;
+                border-radius: 3px;
+                color: $red;
+                @include single-transition(all, .3s, ease-out, 0s);
+                &.active,
+                &:hover {
+                    color: #fff;
+                    background: $red;
+                }
+            }
+        }
+    }
+}
+
+// news details page ==========================
+.node-type-content-news {
+    .pane-node-created {
+        @include margin-trailer(1);
+        margin-left: 6em;
+        .pane-title {
+            @include fontsize(16px, 1);
+            margin: 0;
+            display: inline-block;
+        }
+        .pane-content {
+            display: inline-block;
+        }
+    }
+    .field-type-text-long {
+        position: relative;
+        background: $pink_lite;
+        padding: 2em 3em;
+        border-radius: 4px;
+        @include box-shadow(0px 1px 0px 1px $gray_shadow);
+		@include margin-leader(2); 
+        &:before{
+        	content: '\f10d';
+        	font-family: fontawesome;
+        	color: $red;
+        	@include fontsize(70px,4);
+        	position: absolute;
+        	top: -50px;
+        	left: gutter();        	
+        }
+        &:after {
+            content: "";
+            background: url(../images/anons_tail.png) no-repeat;
+            display: block;
+            width: 38px;
+            height: 26px;
+            position: absolute;
+            bottom: -26px;
+            right: 15%;
+        }
+    }
+
+    .mir_1-bottom-content{
+    	background: $gray_bg;
+    	@include padding-leader(1);
+    	// @include padding-trailer(1);
+    }
+}

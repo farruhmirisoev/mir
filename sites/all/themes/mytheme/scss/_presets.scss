@@ -64,6 +64,7 @@ input[type="week"] {
         color: $gold;
         border: 1px solid $gold;
         background: $red;
+        max-width: 365px;
         @include placeholder {
             color: $gold;
         }
@@ -121,3 +122,17 @@ body {
     }
 }
 
+.content-col{
+    &--small{   
+        @include span(4);       
+    }   
+    &--medium{  
+        @include span(6);
+    }   
+    &--last{
+        @include last;
+    }
+    img{
+        @include img_res;
+    }
+} 
