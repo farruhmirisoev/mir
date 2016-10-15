@@ -42,6 +42,16 @@
 
         });
 
+        $('.node-type-content-news .field-name-field-galery .field-items').slick({
+            dots: false,            
+            infinite: true,
+            autoplay:true,
+            autoplaySpeed:3000,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+        });
+
 
     });
 })(jQuery);
