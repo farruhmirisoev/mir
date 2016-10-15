@@ -1,50 +1,52 @@
-.panels-flexible-region-mir_1-header{
-  width: auto;
-  float: none;
-}
-
 .panels-flexible-row-mir_1-main-row .panels-flexible-row-1-main-row {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-left: 2.12766%;
-  padding-right: 2.12766%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 2.12766%;
+    padding-right: 2.12766%;
 }
 
 .panels-flexible-mir_1 .panels-flexible-row {
-  padding: 0;
+    padding: 0;
 }
 
-// .panels-flexible-region-mir_1-center .pane-title {
-//   color: #a31418;
-//   font-size: 24px;
-//   font-size: 1.5rem;
-//   line-height: 36px;
-//   line-height: 2.25rem;
-// }
-
-.panels-flexible-region-1-center {
-  float: none;
-  width: auto;
+.not-front {
+    .panels-flexible-row-mir_1-main-row-inside {
+        @include innerbox(0, 1);
+        @include padding-leader(1);
+    }
+    .panels-flexible-row-mir_1-main-row-left {
+        @include span(4);
+    }
+    .panels-flexible-row-mir_1-main-row-middle {
+        margin-left: 0;
+    }
 }
 
-.not-front { 
-
-  .panels-flexible-row-mir_1-main-row-inside{
-    @include innerbox(0,1);
-    @include padding-leader(1);
-  }
-
-  .panels-flexible-row-mir_1-main-row-left{
-    @include span(4);
-  }
-
-  .panels-flexible-row-mir_1-main-row-middle{
-    // @include span(8 last);
-    margin-left: 0;
-  }
+.panels-flexible-region-mir_1-header,
+.mir_1-bottom-content,
+.panels-flexible-region-1-centr_bottom_wide,
+.panels-flexible-region-1-center,
+.panels-flexible-region-1-underground,
+.panels-flexible-region-1-center_bottom {
+    width: auto;
+    float: none;
 }
 
-.mir_1-bottom-content{
-  width: auto;
-  float: none;
+.panels-flexible-mir_1 {
+    .mir-banner-wide {
+        @include margin-trailer(2);
+    }
+    .mir-center {
+        @include margin-leader(2);
+        @include margin-trailer(2);
+    }
+    .mir-center-bottom-wide {
+        @include margin-leader(2);
+        @include margin-trailer(2);
+    }
+    .mir-center-bottom {
+        @include innerbox(0, 1);
+        @include margin-leader(2);
+        @include margin-trailer(2);
+    }
 }

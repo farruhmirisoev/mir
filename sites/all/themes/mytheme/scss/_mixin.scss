@@ -29,7 +29,7 @@
     height: auto;
 }
 
-@mixin mir_button($color:$mainorange, $textColor:#fff, $borderSize:0, $transparent:1) {
+@mixin mir_button($color:$red, $textColor:#fff, $borderSize:0, $transparent:1) {
     @if($transparent == 1) {
         color: $textColor;
         background-color: $color;
@@ -42,7 +42,7 @@
         background: none;
         &:hover {
             color: $textColor;
-            background-color: $mainorange;
+            background-color: $color;
         }
     }
     display: inline-block;
@@ -51,6 +51,7 @@
     border-radius: 2em;    
     border:$borderSize solid $textColor;
     text-decoration: none;
+    text-align: center;
     outline: none;
     cursor: pointer;
     @include adjust-font-size-to(16px, 1);    
@@ -75,4 +76,8 @@
 
 @mixin fontsize($size, $lineHeight){
     @include adjust-font-size-to($size, $lineHeight);
+}
+
+@mixin transall{
+     @include single-transition(all, 0.3s, ease-out, 0s);
 }

@@ -1,9 +1,14 @@
-.panels-flexible-40 {
+#mini-panel-footer {
     background-color: $red;
     background-image: url(../images/footer_bg_img.png);
     background-repeat: no-repeat;
     background-position: center bottom;
-    &-inside {
+    overflow: hidden !important;
+    &:after{
+        content: none;
+        display: none;
+    }
+    .panels-flexible-40-inside {
         @include innerbox(0, 1);
     }
     .panels-flexible-row-40-main-row {

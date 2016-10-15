@@ -1,10 +1,6 @@
 .view-view-block-teaser-section{
-	  background: #f2eede;
-  padding: 0 1.05263%;
-  margin-left: -2.12766%;
-  margin-right: -2.12766%;
-  margin-bottom: 48px;
-  margin-bottom: 3rem;
+	background: $gold_lite;  
+  @include bleed-x(gutter(24));
 	.view-content{
 		@include clearfix;
 	}

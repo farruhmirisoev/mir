@@ -96,44 +96,28 @@
     }
     .field-name-field-galery  {
         @include margin-leader(1);
-        @include margin-trailer(1);
+        @include margin-trailer(1);        
         .field-item {
-            @include box-sizing(border-box);
-            padding: 0 15px;
-            
+            @include box-sizing(border-box);            
+            padding: 0 15px;            
             img{
                 @include img_res;
                 outline: none;
             }
         }
 
-        .slick-arrow{
-            &:before{
-                color: $red;
-                font-family: fontawesome;
-                // font-size: 3em;
-            }
-            &.slick-prev:before{
-                content: '\02039';
-            }
-            &.slick-next:before{
-                content: '\0203A';
-            }
 
-        }
     }
     .mir_1-bottom-content {
         background: $gray_bg;
         @include padding-leader(1);
-    }
-    .mir-soc-share {
-        text-align: center;
     }
 }
 
 .mir-soc-share {
     @include margin-leader(1);
     @include margin-trailer(1);
+    text-align: center;
     .mir-soc-share__title {
         display: inline-block;
         @include fontsize(16px, 1);

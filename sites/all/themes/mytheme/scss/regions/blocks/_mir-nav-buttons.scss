@@ -1,0 +1,41 @@
+.mir-nav-button__wrap {}
+
+.mir-nav-button {
+    display: inline-block;
+    @include clearfix;
+    &--left {
+        float: left;
+        a {
+            &:before {
+                content: '\f053';
+                font-family: fontawesome;
+                vertical-align: middle;
+                color: $gray_date;
+                display: inline-block;
+                margin-right: 1em;
+            }
+        }
+    }
+    &--right {
+        float: right;
+        a {
+            &:after {
+                content: '\f054';
+                font-family: fontawesome;
+                vertical-align: middle;
+                color: $gray_date;
+                display: inline-block;
+                margin-left: 1em;
+            }
+        }
+    }
+    a {
+        display: block;
+        border: 2px solid $gray_date;
+        padding: .5em 2em;
+        @include fontsize(18px, 1);
+        &:hover {
+            border: 2px solid $red;
+        }
+    }
+}
