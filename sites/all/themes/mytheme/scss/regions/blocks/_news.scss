@@ -72,15 +72,16 @@
         padding: 2em 3em;
         border-radius: 4px;
         @include box-shadow(0px 1px 0px 1px $gray_shadow);
-		@include margin-leader(2); 
-        &:before{
-        	content: '\f10d';
-        	font-family: fontawesome;
-        	color: $red;
-        	@include fontsize(70px,4);
-        	position: absolute;
-        	top: -50px;
-        	left: gutter();        	
+        @include margin-leader(2);
+        @include margin-trailer(2);
+        &:before {
+            content: '\f10d';
+            font-family: fontawesome;
+            color: $red;
+            @include fontsize(70px, 4);
+            position: absolute;
+            top: -50px;
+            left: gutter();
         }
         &:after {
             content: "";
@@ -93,10 +94,55 @@
             right: 15%;
         }
     }
+    .field-name-field-galery  {
+        @include margin-leader(1);
+        @include margin-trailer(1);
+        .field-item {
+            @include box-sizing(border-box);
+            padding: 0 15px;
+            
+            img{
+                @include img_res;
+                outline: none;
+            }
+        }
 
-    .mir_1-bottom-content{
-    	background: $gray_bg;
-    	@include padding-leader(1);
-    	// @include padding-trailer(1);
+        .slick-arrow{
+            &:before{
+                color: $red;
+                font-family: fontawesome;
+                // font-size: 3em;
+            }
+            &.slick-prev:before{
+                content: '\02039';
+            }
+            &.slick-next:before{
+                content: '\0203A';
+            }
+
+        }
+    }
+    .mir_1-bottom-content {
+        background: $gray_bg;
+        @include padding-leader(1);
+    }
+    .mir-soc-share {
+        text-align: center;
+    }
+}
+
+.mir-soc-share {
+    @include margin-leader(1);
+    @include margin-trailer(1);
+    .mir-soc-share__title {
+        display: inline-block;
+        @include fontsize(16px, 1);
+        margin-right: .5em;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .mir-soc-share__content {
+        display: inline-block;
+        vertical-align: middle;
     }
 }
