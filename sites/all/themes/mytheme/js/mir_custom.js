@@ -21,35 +21,67 @@
             infinite: false,
             dots: true,
             adaptiveHeight: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
             slidesToShow: 1,
             slidesToScroll: 1
         });
 
         $('.our-work-slider-two_row').slick({
-            dots: false,            
+            dots: false,
             infinite: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
             speed: 300,
             slidesToShow: 2,
-            slidesToScroll: 2,    
+            slidesToScroll: 2,
         });
 
         $('.our-works-slider').slick({
-            dots: false,            
+            dots: false,
             infinite: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 3,
 
+
         });
 
         $('.node-type-content-news .field-name-field-galery .field-items').slick({
-            dots: false,            
+            dots: false,
             infinite: true,
-            autoplay:true,
-            autoplaySpeed:3000,
+            autoplay: true,
+            autoplaySpeed: 3000,
             speed: 300,
             slidesToShow: 6,
             slidesToScroll: 1,
+        });
+
+        $('.mir-portfolio-slider__main .field-items').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.mir-portfolio-slider__thumbs .field-items'
+        });
+
+        $('.mir-portfolio-slider__thumbs .field-items').slick({
+            dots: false,
+            arrows:false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.mir-portfolio-slider__main .field-items',
+            centerMode: true,
+            focusOnSelect: true
         });
 
 

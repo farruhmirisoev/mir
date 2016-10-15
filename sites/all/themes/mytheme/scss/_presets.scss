@@ -1,6 +1,12 @@
+
 a {
     text-decoration: none;
     color: $black;
+    outline: none;
+}
+
+img {
+    outline: none;
 }
 
 ul {
@@ -13,6 +19,7 @@ ul {
         }
     }
 }
+
 .pane-title {
     @include fontsize(22px, 1);
     // @include margin-leader(1);
@@ -46,7 +53,7 @@ input[type="week"] {
     }
 }
 
-#mini-panel-footer{
+#mini-panel-footer {
     input[type="color"],
     input[type="date"],
     input[type="datetime"],
@@ -69,10 +76,9 @@ input[type="week"] {
             color: $gold;
         }
     }
-    .pane-title {    
+    .pane-title {
         color: $gold;
     }
-
 }
 
 input[type="submit"] {
@@ -91,6 +97,13 @@ textarea {
     }
 }
 
+html {
+    @include breakpoint(max-width 959px) {
+        font-size: 87.5%;
+        line-height: 1.71429em;
+    }
+}
+
 body {
     font-family: 'PTSerif';
     color: $black;
@@ -101,38 +114,59 @@ body {
         @include mir_button($red);
     }
 }
-
-
-
-.panels-flexible-region-mir_1-center{
-	float: none;
-	width: 100%;
+.clearfix{
+    @include clearfix;
 }
-.panels-flexible-mir_1 .panels-flexible-region-inside{
-	padding-left: 0;
-}
-.panels-flexible-region-1-____________{
-	width: 100%;
-	float: none;
+.panels-flexible-region-mir_1-center {
+    float: none;
+    width: 100%;
 }
 
-.mir-colortext{
-    &--base-red{
+.panels-flexible-mir_1 .panels-flexible-region-inside {
+    padding-left: 0;
+}
+
+.panels-flexible-region-1-____________ {
+    width: 100%;
+    float: none;
+}
+
+.mir-colortext {
+    &--base-red {
         color: $red;
     }
 }
 
-.content-col{
-    &--small{   
-        @include span(4);       
-    }   
-    &--medium{  
+.content-col {
+    &--small {
+        @include span(4);
+    }
+    &--medium {
         @include span(6);
-    }   
-    &--last{
+    }
+    &--last {
         @include last;
     }
-    img{
+    img {
         @include img_res;
     }
-} 
+}
+
+//slick slider
+.slick-slide {
+    outline: none;
+}
+
+.slick-arrow {
+    z-index: 2;
+    &.slick-prev:before {
+        color: $red;        
+        content: '\f053';
+        font-family: fontawesome;        
+    }
+    &.slick-next:before {
+        color: $red;   
+        content: '\f054';
+        font-family: fontawesome;        
+    }
+}
