@@ -1,81 +1,100 @@
-.view-view-block-teaser-section{
-	background: $gold_lite;  
-  @include bleed-x(gutter(24));
-	.view-content{
-		@include clearfix;
-	}
-    .views-row{
-  position: relative;
-  margin: 1.05263% 0;
-  overflow: hidden;
-        &:nth-child(8n+1){
-            @include span(4);
-        }
-        &:nth-child(8n+2){
-            @include span(8 last);
-        }
-        &:nth-child(8n+3){
-            @include span(8);
-        }
-        &:nth-child(8n+4){
-            @include span(4 last);
-        }
-        &:nth-child(8n+5){
-            @include span(4);
-        }
-        &:nth-child(8n+6){
-            @include span(4);
-        }
-        &:nth-child(8n+7){
-            @include span(4 last);
-        }
-        &:nth-child(8n+8){
-            @include span(8);
-        }
-        &:nth-child(8n+9){
-            @include span(4 last);
-        }
-
-        &:hover .bt__bg-img {
-		  -moz-transform: scale(1.5);
-		  -ms-transform: scale(1.5);
-		  -webkit-transform: scale(1.5);
-		  transform: scale(1.5);
-		}
+.view-view-block-teaser-section {
+    background: $gold_lite;
+    padding: 0 gutter();
+    @include breakpoint($tablet) {
+        padding: 0 gutter(24);
     }
-
-
+    @include breakpoint($outterbox) {
+        @include bleed-x(gutter(24));
+    }
+    .view-content {
+        @include clearfix;
+        padding: 1px 0;
+    }
+    .views-row {
+        position: relative;
+        overflow: hidden;
+        margin: gutter() 0;
+        @include breakpoint($tablet) {
+            margin: gutter(24) 0;
+        }
+        @include breakpoint($tablet 899px) {
+            @include gallery(6);
+            &.views-row-last {
+                @include span(full);
+            }
+        }
+        @include breakpoint(900px) {
+            &:nth-child(8n+1) {
+                @include span(4);
+            }
+            &:nth-child(8n+2) {
+                @include span(8 last);
+            }
+            &:nth-child(8n+3) {
+                @include span(8);
+            }
+            &:nth-child(8n+4) {
+                @include span(4 last);
+            }
+            &:nth-child(8n+5) {
+                @include span(4);
+            }
+            &:nth-child(8n+6) {
+                @include span(4);
+            }
+            &:nth-child(8n+7) {
+                @include span(4 last);
+            }
+            &:nth-child(8n+8) {
+                @include span(8);
+            }
+            &:nth-child(8n+9) {
+                @include span(4 last);
+            }
+        }
+        @include breakpoint(max-width $mobile) {
+            // float: none;
+            // width: 100%;
+            // margin-left:0;          
+            // margin-right: 0;          
+        }
+        &:hover .bt__bg-img {
+            @include transform(scale(1.5));
+        }
+    }
 }
 
 .bt__bg-img {
-  -moz-transition: all 10s ease-out 0s;
-  -o-transition: all 10s ease-out 0s;
-  -webkit-transition: all 10s ease-out;
-  -webkit-transition-delay: 0s;
-  transition: all 10s ease-out 0s;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  min-height: 264px;
-  width: 100%;
+    @include single-transition(all, 10s, ease-out, 0s);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    min-height: 264px;
+    width: 100%;
 }
 
 .bt__title {
-  position: relative;
-  z-index: 2;
-}
-
-.bt__title a {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 24px;
-  line-height: 1.5rem;
-  padding: 2em;
-  color: #fff;
-  display: block;
-  min-height: 264px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    a {
+        @include fontsize(20px, 4);
+        padding: 2em;
+        color: $gold_lite;
+        display: block;        
+        @include box-sizing(border-box);
+        // min-height: 164px;
+        text-align: center;
+        text-transform: uppercase;   
+        font-weight: bold;    
+        @include breakpoint($tablet) {
+          text-transform: none;
+          font-weight: bold;
+          text-align: left;
+          font-weight: normal;
+          min-height: 264px;
+          @include fontsize(24px, 1.5);
+        }
+    }
 }
