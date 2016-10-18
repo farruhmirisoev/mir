@@ -31,7 +31,7 @@
     <?php print render($content); ?>   
 		
     <div class="mir-soc-share clearfix">
-			<div class="mir-soc-share__title"><?php print t('Share it on'); ?>:</div>
+			<div class="mir-soc-share__title"><?php print t('Поделиться'); ?>:</div>
 			<div class="mir-soc-share__content">		
 				<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 				<script src="//yastatic.net/share2/share.js"></script>
