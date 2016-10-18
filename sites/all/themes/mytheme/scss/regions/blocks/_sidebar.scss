@@ -1,28 +1,31 @@
-.panels-flexible-region-mir_1-left_sidebar{
-  float: none;
-  padding-right: 0;
-  float: none;
-  width: auto;
+.panels-flexible-region-mir_1-left_sidebar {
+    float: none;
+    padding-right: 0;
+    float: none;
+    width: auto;
 }
 
-.panels-flexible-region-mir_1-left_sidebar-inside{
-  padding-right: 0;
+.panels-flexible-mir_1 .panels-flexible-region-mir_1-left_sidebar-inside {
+    padding-right: 0;
 }
 
-.pane-menu-menu-menu-about, .pane-view-ow-sections{
-	background: $gray_bg;
-	padding: 2em;
-	@include margin-trailer(1);
-	
-		a{
-			text-decoration: underline; 
-			display: inline-block;
-			padding: 0.3em 0;
-			&.active, &:hover{
-				font-weight: bold;
-				text-decoration: none;
-			}
-		}
-	
+.pane-menu-menu-menu-about,
+.pane-view-ow-sections,
+.pane-menu-menu-menu-press-releases {
+    background: $gray_bg;
+    padding: 2em;
+    @include margin-trailer(1);
+    .pane-content {
+        a {
+            text-decoration: underline;
+            display: inline-block;
+            padding: 0.3em 0;
+            outline: none;
+            &.active,
+            &:hover {
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
 }
-
