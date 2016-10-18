@@ -30,7 +30,7 @@
 }
 
 @mixin mir_button($color:$red, $textColor:#fff, $borderSize:0, $transparent:1) {
-    @if($transparent == 1) {
+    @if($transparent==1) {
         color: $textColor;
         background-color: $color;
         &:hover {
@@ -48,16 +48,15 @@
     display: inline-block;
     min-width: 168px;
     padding: .4em 1.5em;
-    border-radius: 2em;    
+    border-radius: 2em;
     border:$borderSize solid $textColor;
     text-decoration: none;
     text-align: center;
     outline: none;
     cursor: pointer;
-    @include adjust-font-size-to(16px, 1);    
+    @include adjust-font-size-to(16px, 1);
     @include box-sizing(border-box);
     @include single-transition(all, 0.2s, ease-out, 0s);
-
 }
 
 @mixin remove_gallery {
@@ -68,16 +67,35 @@
 }
 
 @mixin placeholder {
-    &::-webkit-input-placeholder {@content}
-    &::-moz-placeholder {@content}
-    &:-moz-placeholder {@content}
-    &:-ms-input-placeholder {@content}
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
 }
 
-@mixin fontsize($size, $lineHeight){
+@mixin fontsize($size, $lineHeight) {
     @include adjust-font-size-to($size, $lineHeight);
 }
 
-@mixin transall{
-     @include single-transition(all, 0.3s, ease-out, 0s);
+@mixin transall {
+    @include single-transition(all, 0.3s, ease-out, 0s);
+}
+
+@mixin mir_title($color:$black) {
+    color: $color;
+    @include fontsize(20px, 1);
+    display: inline-block;
+    @include margin-leader(.25);
+    @include margin-trailer(.25);
+    &:hover {
+        text-decoration: underline;
+    }
 }

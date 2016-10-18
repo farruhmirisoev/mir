@@ -709,7 +709,7 @@ input[type="week"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 71, ../scss/_mixin.scss */
+/* line 70, ../scss/_mixin.scss */
 input[type="color"]::-webkit-input-placeholder,
 input[type="date"]::-webkit-input-placeholder,
 input[type="datetime"]::-webkit-input-placeholder,
@@ -726,7 +726,7 @@ input[type="url"]::-webkit-input-placeholder,
 input[type="week"]::-webkit-input-placeholder {
   color: #a31418;
 }
-/* line 72, ../scss/_mixin.scss */
+/* line 73, ../scss/_mixin.scss */
 input[type="color"]::-moz-placeholder,
 input[type="date"]::-moz-placeholder,
 input[type="datetime"]::-moz-placeholder,
@@ -743,7 +743,7 @@ input[type="url"]::-moz-placeholder,
 input[type="week"]::-moz-placeholder {
   color: #a31418;
 }
-/* line 73, ../scss/_mixin.scss */
+/* line 76, ../scss/_mixin.scss */
 input[type="color"]:-moz-placeholder,
 input[type="date"]:-moz-placeholder,
 input[type="datetime"]:-moz-placeholder,
@@ -760,7 +760,7 @@ input[type="url"]:-moz-placeholder,
 input[type="week"]:-moz-placeholder {
   color: #a31418;
 }
-/* line 74, ../scss/_mixin.scss */
+/* line 79, ../scss/_mixin.scss */
 input[type="color"]:-ms-input-placeholder,
 input[type="date"]:-ms-input-placeholder,
 input[type="datetime"]:-ms-input-placeholder,
@@ -798,7 +798,7 @@ input[type="week"]:-ms-input-placeholder {
   background: #a31418;
   max-width: 365px;
 }
-/* line 71, ../scss/_mixin.scss */
+/* line 70, ../scss/_mixin.scss */
 #mini-panel-footer input[type="color"]::-webkit-input-placeholder,
 #mini-panel-footer input[type="date"]::-webkit-input-placeholder,
 #mini-panel-footer input[type="datetime"]::-webkit-input-placeholder,
@@ -815,7 +815,7 @@ input[type="week"]:-ms-input-placeholder {
 #mini-panel-footer input[type="week"]::-webkit-input-placeholder {
   color: #edd6a2;
 }
-/* line 72, ../scss/_mixin.scss */
+/* line 73, ../scss/_mixin.scss */
 #mini-panel-footer input[type="color"]::-moz-placeholder,
 #mini-panel-footer input[type="date"]::-moz-placeholder,
 #mini-panel-footer input[type="datetime"]::-moz-placeholder,
@@ -832,7 +832,7 @@ input[type="week"]:-ms-input-placeholder {
 #mini-panel-footer input[type="week"]::-moz-placeholder {
   color: #edd6a2;
 }
-/* line 73, ../scss/_mixin.scss */
+/* line 76, ../scss/_mixin.scss */
 #mini-panel-footer input[type="color"]:-moz-placeholder,
 #mini-panel-footer input[type="date"]:-moz-placeholder,
 #mini-panel-footer input[type="datetime"]:-moz-placeholder,
@@ -849,7 +849,7 @@ input[type="week"]:-ms-input-placeholder {
 #mini-panel-footer input[type="week"]:-moz-placeholder {
   color: #edd6a2;
 }
-/* line 74, ../scss/_mixin.scss */
+/* line 79, ../scss/_mixin.scss */
 #mini-panel-footer input[type="color"]:-ms-input-placeholder,
 #mini-panel-footer input[type="date"]:-ms-input-placeholder,
 #mini-panel-footer input[type="datetime"]:-ms-input-placeholder,
@@ -913,19 +913,19 @@ textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 71, ../scss/_mixin.scss */
+/* line 70, ../scss/_mixin.scss */
 textarea::-webkit-input-placeholder {
   color: #edd6a2;
 }
-/* line 72, ../scss/_mixin.scss */
+/* line 73, ../scss/_mixin.scss */
 textarea::-moz-placeholder {
   color: #edd6a2;
 }
-/* line 73, ../scss/_mixin.scss */
+/* line 76, ../scss/_mixin.scss */
 textarea:-moz-placeholder {
   color: #edd6a2;
 }
-/* line 74, ../scss/_mixin.scss */
+/* line 79, ../scss/_mixin.scss */
 textarea:-ms-input-placeholder {
   color: #edd6a2;
 }
@@ -1885,25 +1885,34 @@ body {
 }
 
 /* line 8, ../scss/regions/blocks/_sidebar.scss */
-.panels-flexible-region-mir_1-left_sidebar-inside {
+.panels-flexible-mir_1 .panels-flexible-region-mir_1-left_sidebar-inside {
   padding-right: 0;
 }
 
 /* line 12, ../scss/regions/blocks/_sidebar.scss */
-.pane-menu-menu-menu-about, .pane-view-ow-sections {
+.pane-menu-menu-menu-about,
+.pane-view-ow-sections,
+.pane-menu-menu-menu-press-releases {
   background: #f8f8f8;
   padding: 2em;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 17, ../scss/regions/blocks/_sidebar.scss */
-.pane-menu-menu-menu-about a, .pane-view-ow-sections a {
+/* line 19, ../scss/regions/blocks/_sidebar.scss */
+.pane-menu-menu-menu-about .pane-content a,
+.pane-view-ow-sections .pane-content a,
+.pane-menu-menu-menu-press-releases .pane-content a {
   text-decoration: underline;
   display: inline-block;
   padding: 0.3em 0;
+  outline: none;
 }
-/* line 21, ../scss/regions/blocks/_sidebar.scss */
-.pane-menu-menu-menu-about a.active, .pane-menu-menu-menu-about a:hover, .pane-view-ow-sections a.active, .pane-view-ow-sections a:hover {
+/* line 24, ../scss/regions/blocks/_sidebar.scss */
+.pane-menu-menu-menu-about .pane-content a.active, .pane-menu-menu-menu-about .pane-content a:hover,
+.pane-view-ow-sections .pane-content a.active,
+.pane-view-ow-sections .pane-content a:hover,
+.pane-menu-menu-menu-press-releases .pane-content a.active,
+.pane-menu-menu-menu-press-releases .pane-content a:hover {
   font-weight: bold;
   text-decoration: none;
 }
@@ -2277,6 +2286,74 @@ body {
 /* line 37, ../scss/regions/blocks/_mir-nav-buttons.scss */
 .mir-nav-button a:hover {
   border: 2px solid #a31418;
+}
+
+/* line 1, ../scss/regions/blocks/_press-release.scss */
+.view-view-press-releases.view-display-id-page_1 {
+  width: 65.95745%;
+  float: right;
+  margin-right: 0;
+}
+/* line 3, ../scss/regions/blocks/_press-release.scss */
+.view-view-press-releases.view-display-id-page_1 .views-row {
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+}
+/* line 7, ../scss/regions/blocks/_press-release.scss */
+.view-view-press-releases.view-display-id-page_1 .views-field-title a {
+  color: #a31418;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  display: inline-block;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/* line 98, ../scss/_mixin.scss */
+.view-view-press-releases.view-display-id-page_1 .views-field-title a:hover {
+  text-decoration: underline;
+}
+
+/* line 15, ../scss/regions/blocks/_press-release.scss */
+.view-view-press-releases.view-display-id-page_2 {
+  width: 65.95745%;
+  float: right;
+  margin-right: 0;
+}
+/* line 20, ../scss/regions/blocks/_press-release.scss */
+.view-view-press-releases.view-display-id-page_2 .view-content .views-row {
+  width: 31.42857%;
+  float: left;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.view-view-press-releases.view-display-id-page_2 .view-content .views-row:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.view-view-press-releases.view-display-id-page_2 .view-content .views-row:nth-child(3n + 2) {
+  margin-left: 34.28571%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+.view-view-press-releases.view-display-id-page_2 .view-content .views-row:nth-child(3n + 3) {
+  margin-left: 68.57143%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 23, ../scss/regions/blocks/_press-release.scss */
+.view-view-press-releases.view-display-id-page_2 .view-content .views-row img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* line 1, ../scss/regions/_panels.scss */

@@ -1,0 +1,29 @@
+.view-view-press-releases.view-display-id-page_1 {
+    @include span(8 last);
+    .views-row{
+    	@include margin-trailer(1.50); 
+    }
+    .views-field-title {
+        a {
+            @include mir_title($red);
+        }
+    }
+}
+
+// fotogallery
+
+.view-view-press-releases.view-display-id-page_2{
+	@include span(8 last);
+	.view-content{
+		$layout6:6 1/5;
+		@include with-layout($layout6, true){			
+			.views-row{
+				@include gallery(2);
+				@include margin-trailer(1);
+				img{
+					@include img_res;
+				}
+			}
+		}
+	}
+}
