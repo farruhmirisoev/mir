@@ -106,7 +106,7 @@
         });
 
         $(window).scroll(function() {
-           if (!$('.stats-object').data('processed') && $(this).scrollTop() >= $('.stats-object').offset().top - $(window).height()) {
+           if ($('.stats-object').length && !$('.stats-object').data('processed') && $(this).scrollTop() >= $('.stats-object').offset().top - $(window).height()) {
                 $('.stats-object__number').each(function(index, elem) {
                     var $elem = $(elem);
                     $elem.animateNumber({number: $elem.data('count')}, 1000);
