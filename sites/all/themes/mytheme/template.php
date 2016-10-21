@@ -11,5 +11,5 @@ function mytheme_html_head_alter(&$head_elements)  {
   //drupal_add_js('sites/all/themes/mytheme/js/map.js');
 }
 function mytheme_preprocess_html(&$vars) {
-  //dpm($vars);
+  // dpm($vars);
 }

@@ -10,7 +10,6 @@
   <script src="/sites/all/themes/mytheme/js/jcarousel.responsive.min.js"></script>
   <script src="/sites/all/themes/mytheme/js/jquery.jcarousel-autoscroll.js"></script>
   <script src="/sites/all/themes/mytheme/js/jquery.maskedinput.min.js"></script>
-  <meta name="viewport" content="width=1200">
   <?php include_once 'before_last_head.tpl.php'; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
