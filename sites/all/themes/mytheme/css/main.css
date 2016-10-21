@@ -2361,7 +2361,7 @@ body {
   margin-bottom: 6px;
   margin-bottom: 0.375rem;
 }
-/* line 99, ../scss/_mixin.scss */
+/* line 106, ../scss/_mixin.scss */
 .view-view-press-releases.view-display-id-page_1 .views-field-title a:hover {
   text-decoration: underline;
 }
@@ -2470,8 +2470,8 @@ body {
 /* line 30, ../scss/regions/blocks/_jobs.scss */
 .mir-vakansii__more a {
   color: #a31418;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
   display: inline-block;
@@ -2480,9 +2480,69 @@ body {
   margin-bottom: 6px;
   margin-bottom: 0.375rem;
 }
-/* line 99, ../scss/_mixin.scss */
+/* line 106, ../scss/_mixin.scss */
 .mir-vakansii__more a:hover {
   text-decoration: underline;
+}
+
+/* line 2, ../scss/regions/blocks/_executive.scss */
+.page-rukovodstvo .panels-flexible-row-mir_1-main-row-middle {
+  width: 65.95745%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 8, ../scss/regions/blocks/_executive.scss */
+.view-view-excusitive.view-display-id-page .views-row {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 2, ../scss/_mixin.scss */
+.view-view-excusitive.view-display-id-page .views-row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 12, ../scss/regions/blocks/_executive.scss */
+.view-view-excusitive.view-display-id-page .views-field-field-ex-photo {
+  width: 35.48387%;
+  float: left;
+  margin-right: 3.22581%;
+}
+/* line 14, ../scss/regions/blocks/_executive.scss */
+.view-view-excusitive.view-display-id-page .views-field-field-ex-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 19, ../scss/regions/blocks/_executive.scss */
+.view-view-excusitive.view-display-id-page .exc-more {
+  text-align: right;
+}
+/* line 21, ../scss/regions/blocks/_executive.scss */
+.view-view-excusitive.view-display-id-page .exc-more a {
+  color: #a31418;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  display: inline-block;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/* line 106, ../scss/_mixin.scss */
+.view-view-excusitive.view-display-id-page .exc-more a:hover {
+  text-decoration: underline;
+}
+/* line 25, ../scss/regions/blocks/_executive.scss */
+.view-view-excusitive.view-display-id-page .views-field-nothing {
+  width: 61.29032%;
+  float: right;
+  margin-right: 0;
 }
 
 /* line 1, ../scss/regions/_panels.scss */
