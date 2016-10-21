@@ -59,6 +59,7 @@
             slidesToScroll: 1,
         });
 
+        // porfolio---------------------
         $('.mir-portfolio-slider__main .field-items').slick({
             dots: false,
             infinite: true,
@@ -82,6 +83,36 @@
             asNavFor: '.mir-portfolio-slider__main .field-items',
             centerMode: true,
             focusOnSelect: true
+        });
+
+        // portfolie END------------------------------------
+
+        $('.view-view-cert.view-display-id-block .view-content').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+        });
+
+        // stats-object --------------------------------------
+
+        $('.stats-object__number').each(function(index, elem) {
+            var $elem = $(elem);
+            $elem.data('count', $elem.html());
+            $elem.html('0');
+        });
+
+        $(window).scroll(function() {
+           if (!$('.stats-object').data('processed') && $(this).scrollTop() >= $('.stats-object').offset().top - $(window).height()) {
+                $('.stats-object__number').each(function(index, elem) {
+                    var $elem = $(elem);
+                    $elem.animateNumber({number: $elem.data('count')}, 1000);
+                });
+                $('.stats-object').data('processed', true);
+           }
         });
 
 
