@@ -45,15 +45,23 @@
     <?php print render($content); ?>
     <div class="stats-object__wrap">
       <div class="stats-object">
+      <?php
+      global $language ;
+      $lang_name = $language->language;
+      $words = array(
+        'ru' => array('объект', 'объекта', 'объектов'),
+        'en' => array('object', 'objects', 'objects'),
+        );
+      ?>
         <?php foreach ($districts as $key => $value): ?>
 
-          <div class="stats-object__item">
+          <a class="stats-object__item" href="<?php print url('taxonomy/term/' . $key, array()); ?>">
             <div class="stats-object__number"><?php print $value['count']; ?></div>
             <div class="stats-object__title">
-            <?php print mytheme_custom_russian_number_declension(array('number' => $value['count'], 'words' => array('объект', 'объекта', 'объектов'))); ?>
+            <?php print mytheme_custom_russian_number_declension(array('number' => $value['count'], 'words' => $words[$lang_name])); ?>
             </div>
             <div class="stats-object__region"><?php print $value['name']; ?></div>
-          </div>
+          </a>
 
         <?php endforeach; ?>
       </div>

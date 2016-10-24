@@ -1199,16 +1199,17 @@ body {
 }
 /* line 29, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside .pane-search-form {
+  display: none;
   width: 6.38298%;
   float: right;
   margin-right: 0;
 }
-/* line 31, ../scss/regions/_header.scss */
+/* line 32, ../scss/regions/_header.scss */
 .panels-flexible-row-33-main-row-inside .pane-search-form .sr-only {
   display: none;
 }
 
-/* line 38, ../scss/regions/_header.scss */
+/* line 39, ../scss/regions/_header.scss */
 .panels-flexible-row-33-1-inside {
   max-width: 1170px;
   margin: 0 auto;
@@ -1216,32 +1217,32 @@ body {
   padding-right: 2.12766%;
 }
 
-/* line 43, ../scss/regions/_header.scss */
+/* line 44, ../scss/regions/_header.scss */
 .front .pane-page-logo {
   margin-bottom: -120px;
   z-index: 2;
   position: relative;
 }
 
-/* line 48, ../scss/regions/_header.scss */
+/* line 49, ../scss/regions/_header.scss */
 .not-front .pane-page-logo {
   height: 60px;
   overflow: hidden;
 }
-/* line 51, ../scss/regions/_header.scss */
+/* line 52, ../scss/regions/_header.scss */
 .not-front .pane-page-logo img {
   margin-top: -90px;
   max-width: 100%;
   display: block;
 }
 
-/* line 58, ../scss/regions/_header.scss */
+/* line 59, ../scss/regions/_header.scss */
 .header-bottom {
   background: url(../images/footer_bottom_bg.jpg) no-repeat;
   background-size: cover;
   color: #f2eede;
 }
-/* line 62, ../scss/regions/_header.scss */
+/* line 63, ../scss/regions/_header.scss */
 .header-bottom .pane-page-title h1 {
   font-weight: normal;
 }
@@ -1841,7 +1842,6 @@ body {
   margin: 0 auto;
   padding-left: 2.12766%;
   padding-right: 2.12766%;
-  color: #f2eede;
   padding-top: 48px;
   padding-top: 3rem;
   padding-bottom: 48px;
@@ -1855,7 +1855,11 @@ body {
   clear: both;
   visibility: hidden;
 }
-/* line 13, ../scss/regions/blocks/_stats-object.scss */
+/* line 11, ../scss/regions/blocks/_stats-object.scss */
+.stats-object a {
+  color: #f2eede;
+}
+/* line 15, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__item {
   width: 47.91667%;
   float: left;
@@ -1879,7 +1883,7 @@ body {
   clear: none;
 }
 @media (min-width: 900px) {
-  /* line 13, ../scss/regions/blocks/_stats-object.scss */
+  /* line 15, ../scss/regions/blocks/_stats-object.scss */
   .stats-object__item {
     width: 22.91667%;
     float: left;
@@ -1909,25 +1913,25 @@ body {
     clear: none;
   }
 }
-/* line 22, ../scss/regions/blocks/_stats-object.scss */
+/* line 24, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__item:last-child {
   border: none;
 }
-/* line 27, ../scss/regions/blocks/_stats-object.scss */
+/* line 29, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__number {
   font-size: 60px;
   font-size: 3.75rem;
   line-height: 72px;
   line-height: 4.5rem;
 }
-/* line 30, ../scss/regions/blocks/_stats-object.scss */
+/* line 32, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__title {
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 48px;
   line-height: 3rem;
 }
-/* line 33, ../scss/regions/blocks/_stats-object.scss */
+/* line 35, ../scss/regions/blocks/_stats-object.scss */
 .stats-object__region {
   font-size: 17px;
   font-size: 1.0625rem;
@@ -1935,21 +1939,21 @@ body {
   line-height: 1.5rem;
 }
 @media (min-width: 800px) {
-  /* line 37, ../scss/regions/blocks/_stats-object.scss */
+  /* line 39, ../scss/regions/blocks/_stats-object.scss */
   .stats-object__number {
     font-size: 72px;
     font-size: 4.5rem;
     line-height: 96px;
     line-height: 6rem;
   }
-  /* line 40, ../scss/regions/blocks/_stats-object.scss */
+  /* line 42, ../scss/regions/blocks/_stats-object.scss */
   .stats-object__title {
     font-size: 48px;
     font-size: 3rem;
     line-height: 72px;
     line-height: 4.5rem;
   }
-  /* line 43, ../scss/regions/blocks/_stats-object.scss */
+  /* line 45, ../scss/regions/blocks/_stats-object.scss */
   .stats-object__region {
     font-size: 24px;
     font-size: 1.5rem;
@@ -2685,6 +2689,32 @@ body {
 /* line 48, ../scss/regions/blocks/_certificate-slider.scss */
 .certificate-slider-nav .fa {
   line-height: 45px;
+}
+
+/* line 2, ../scss/regions/blocks/_lang-switch.scss */
+.mir-language-switcher__wrap {
+  background: url(../images/lang_bg_trail.png) center bottom;
+  background-size: 100%;
+  padding-bottom: 8px;
+}
+/* line 6, ../scss/regions/blocks/_lang-switch.scss */
+.mir-language-switcher__wrap a {
+  color: #fff;
+}
+/* line 10, ../scss/regions/blocks/_lang-switch.scss */
+.mir-language-switcher__active-lang {
+  background: #d7611b;
+  text-align: center;
+}
+
+/* line 16, ../scss/regions/blocks/_lang-switch.scss */
+.language-switcher-locale-url {
+  background: #d7611b;
+}
+/* line 18, ../scss/regions/blocks/_lang-switch.scss */
+.language-switcher-locale-url li {
+  display: block;
+  text-align: center;
 }
 
 /* line 1, ../scss/regions/_panels.scss */

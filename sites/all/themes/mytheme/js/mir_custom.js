@@ -1,7 +1,7 @@
 (function($) {
     $(document).ready(function() {
         $('.view-id-main_slider.view-display-id-block_1 .view-content').slick({
-            arrows: false,
+            arrows: true,
             infinite: false,
             dots: true,
             adaptiveHeight: false,

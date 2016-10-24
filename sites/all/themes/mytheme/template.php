@@ -32,7 +32,7 @@ function mytheme_preprocess_panels_pane(&$variables) {
         $result = $query->execute();
         $count = $result->fetchField();
         if ($count) {
-          $variables['districts'][] = array(
+          $variables['districts'][$tid] = array(
             'name' => $term_wrapper->name->value(),
             'count' => $count
           );
