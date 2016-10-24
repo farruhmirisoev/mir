@@ -74,3 +74,9 @@ function mytheme_custom_russian_number_declension($variables) {
   }
   return $output;
 }
+
+function mytheme_preprocess_node(&$vars) {
+  if ($vars['node']->type == 'content_our_work' && $vars['view_mode'] == 'full') {
+    $vars['theme_hook_suggestions'][] = 'node__content_our_work__full';
+  }
+}

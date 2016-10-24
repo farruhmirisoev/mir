@@ -19,8 +19,9 @@
       hide($content['comments']);
       hide($content['links']);
       hide($content['links']);
-      hide($content['locations']);
+      // hide($content['locations']);
       hide($content['field_ow_img']);
+
     ?>
 
     <div class="mir-portfolio-slider">

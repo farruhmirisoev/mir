@@ -1636,20 +1636,55 @@ body {
   text-decoration: underline;
 }
 
-/* line 137, ../scss/regions/blocks/_our-works.scss */
+/* line 139, ../scss/regions/blocks/_our-works.scss */
+.node-content-our-work.node-teaser h2 a {
+  color: #353535;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  display: inline-block;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/* line 106, ../scss/_mixin.scss */
+.node-content-our-work.node-teaser h2 a:hover {
+  text-decoration: underline;
+}
+/* line 143, ../scss/regions/blocks/_our-works.scss */
+.node-content-our-work.node-teaser .links a {
+  color: #a31418;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  display: inline-block;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/* line 106, ../scss/_mixin.scss */
+.node-content-our-work.node-teaser .links a:hover {
+  text-decoration: underline;
+}
+
+/* line 150, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
 }
 
-/* line 142, ../scss/regions/blocks/_our-works.scss */
+/* line 155, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 145, ../scss/regions/blocks/_our-works.scss */
+/* line 158, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main .slick-arrow {
   background: rgba(255, 255, 255, 0.5);
   width: 45px;
@@ -1661,32 +1696,32 @@ body {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease-out 0s;
 }
-/* line 151, ../scss/regions/blocks/_our-works.scss */
+/* line 164, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main .slick-arrow.slick-prev {
   left: 0;
 }
-/* line 153, ../scss/regions/blocks/_our-works.scss */
+/* line 166, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main .slick-arrow.slick-prev:hover, .mir-portfolio-slider__main .slick-arrow.slick-prev:focus {
   background: rgba(255, 255, 255, 0.5);
 }
-/* line 156, ../scss/regions/blocks/_our-works.scss */
+/* line 169, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main .slick-arrow.slick-prev:hover {
   opacity: 1;
 }
-/* line 160, ../scss/regions/blocks/_our-works.scss */
+/* line 173, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main .slick-arrow.slick-next {
   right: -1px;
 }
-/* line 162, ../scss/regions/blocks/_our-works.scss */
+/* line 175, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main .slick-arrow.slick-next:hover, .mir-portfolio-slider__main .slick-arrow.slick-next:focus {
   background: rgba(255, 255, 255, 0.5);
 }
-/* line 165, ../scss/regions/blocks/_our-works.scss */
+/* line 178, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__main .slick-arrow.slick-next:hover {
   opacity: 1;
 }
 
-/* line 172, ../scss/regions/blocks/_our-works.scss */
+/* line 185, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__thumbs {
   overflow: hidden;
   margin-top: 24px;
@@ -1694,19 +1729,19 @@ body {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 176, ../scss/regions/blocks/_our-works.scss */
+/* line 189, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__thumbs .slick-list {
   margin-left: -30px;
   padding: 0 !important;
 }
-/* line 180, ../scss/regions/blocks/_our-works.scss */
+/* line 193, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__thumbs .field-item {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 30px;
 }
-/* line 183, ../scss/regions/blocks/_our-works.scss */
+/* line 196, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__thumbs .field-item img {
   display: block;
   width: 100%;
@@ -1720,7 +1755,7 @@ body {
   -webkit-transition-delay: 0s;
   transition: all 0.3s ease-out 0s;
 }
-/* line 189, ../scss/regions/blocks/_our-works.scss */
+/* line 202, ../scss/regions/blocks/_our-works.scss */
 .mir-portfolio-slider__thumbs .field-item.slick-current img {
   padding: 0;
 }
@@ -1828,6 +1863,27 @@ body {
 /* line 21, ../scss/regions/blocks/_portfolio.scss */
 .view-id-view_our_work.view-display-id-page .views-row .views-field-title a:hover, .view-id-view_our_work.view-display-id-page .views-row .views-field-title-field-et a:hover {
   text-decoration: underline;
+}
+
+/* line 31, ../scss/regions/blocks/_portfolio.scss */
+.location-locations-display .country-name {
+  display: none;
+}
+/* line 34, ../scss/regions/blocks/_portfolio.scss */
+.location-locations-display .location-locations-header {
+  display: none;
+}
+/* line 37, ../scss/regions/blocks/_portfolio.scss */
+.location-locations-display .location-hidden {
+  display: none;
+}
+/* line 40, ../scss/regions/blocks/_portfolio.scss */
+.location-locations-display .map-link {
+  display: none;
+}
+/* line 43, ../scss/regions/blocks/_portfolio.scss */
+.location-locations-display .street-address {
+  font-weight: bold;
 }
 
 /* line 1, ../scss/regions/blocks/_stats-object.scss */
@@ -2046,10 +2102,22 @@ body {
 .view-id-view_partnerlsit .views-row img:hover {
   border: 2px solid #a31418;
 }
-/* line 13, ../scss/regions/blocks/_partners.scss */
-.view-id-view_partnerlsit .views-row .views-field-title {
-  margin-top: 12px;
-  margin-top: 0.75rem;
+/* line 15, ../scss/regions/blocks/_partners.scss */
+.view-id-view_partnerlsit .views-row .views-field-title a, .view-id-view_partnerlsit .views-row .views-field-title-field-et a {
+  color: #353535;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  display: inline-block;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
+}
+/* line 106, ../scss/_mixin.scss */
+.view-id-view_partnerlsit .views-row .views-field-title a:hover, .view-id-view_partnerlsit .views-row .views-field-title-field-et a:hover {
+  text-decoration: underline;
 }
 
 /* line 2, ../scss/_mixin.scss */
@@ -2386,7 +2454,7 @@ body {
   margin-bottom: 2.25rem;
 }
 /* line 7, ../scss/regions/blocks/_press-release.scss */
-.view-view-press-releases.view-display-id-page_1 .views-field-title a {
+.view-view-press-releases.view-display-id-page_1 .views-field-title a, .view-view-press-releases.view-display-id-page_1 .views-field-title-field-et a {
   color: #a31418;
   font-size: 20px;
   font-size: 1.25rem;
@@ -2399,7 +2467,7 @@ body {
   margin-bottom: 0.375rem;
 }
 /* line 106, ../scss/_mixin.scss */
-.view-view-press-releases.view-display-id-page_1 .views-field-title a:hover {
+.view-view-press-releases.view-display-id-page_1 .views-field-title a:hover, .view-view-press-releases.view-display-id-page_1 .views-field-title-field-et a:hover {
   text-decoration: underline;
 }
 
@@ -2515,7 +2583,7 @@ body {
 }
 
 /* line 22, ../scss/regions/blocks/_jobs.scss */
-.mir-vakansii__title {
+.mir-vakansii__title, .views-field-title-field-et {
   color: #353535;
   font-size: 20px;
   font-size: 1.25rem;
@@ -2534,11 +2602,11 @@ body {
 }
 
 /* line 28, ../scss/regions/blocks/_jobs.scss */
-.mir-vakansii__more {
+.mir-vakansii__more, .views-field-view-node {
   text-align: right;
 }
 /* line 30, ../scss/regions/blocks/_jobs.scss */
-.mir-vakansii__more a {
+.mir-vakansii__more a, .views-field-view-node a {
   color: #a31418;
   font-size: 16px;
   font-size: 1rem;
@@ -2551,7 +2619,7 @@ body {
   margin-bottom: 0.375rem;
 }
 /* line 106, ../scss/_mixin.scss */
-.mir-vakansii__more a:hover {
+.mir-vakansii__more a:hover, .views-field-view-node a:hover {
   text-decoration: underline;
 }
 
@@ -2693,28 +2761,70 @@ body {
 
 /* line 2, ../scss/regions/blocks/_lang-switch.scss */
 .mir-language-switcher__wrap {
-  background: url(../images/lang_bg_trail.png) center bottom;
-  background-size: 100%;
-  padding-bottom: 8px;
+  height: 37px;
+  word-break: break-all;
+  position: relative;
+  display: inline-block;
 }
-/* line 6, ../scss/regions/blocks/_lang-switch.scss */
+/* line 8, ../scss/regions/blocks/_lang-switch.scss */
 .mir-language-switcher__wrap a {
   color: #fff;
+  padding: .3em .5em;
+  text-decoration: underline;
+  display: block;
+  outline: none;
 }
-/* line 10, ../scss/regions/blocks/_lang-switch.scss */
+/* line 16, ../scss/regions/blocks/_lang-switch.scss */
+.mir-language-switcher__shift-content {
+  position: absolute;
+  z-index: 999;
+  top: -36px;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  -webkit-transition: all 0.3s ease-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.3s ease-out 0s;
+}
+/* line 25, ../scss/regions/blocks/_lang-switch.scss */
+.mir-language-switcher__shift-content:hover {
+  top: 0;
+}
+/* line 28, ../scss/regions/blocks/_lang-switch.scss */
+.mir-language-switcher__shift-content:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  border: 20px solid transparent;
+  border-top: 6px solid #d7611b;
+}
+/* line 38, ../scss/regions/blocks/_lang-switch.scss */
 .mir-language-switcher__active-lang {
   background: #d7611b;
   text-align: center;
 }
 
-/* line 16, ../scss/regions/blocks/_lang-switch.scss */
+/* line 44, ../scss/regions/blocks/_lang-switch.scss */
 .language-switcher-locale-url {
+  position: relative;
   background: #d7611b;
 }
-/* line 18, ../scss/regions/blocks/_lang-switch.scss */
+/* line 47, ../scss/regions/blocks/_lang-switch.scss */
 .language-switcher-locale-url li {
   display: block;
   text-align: center;
+}
+/* line 50, ../scss/regions/blocks/_lang-switch.scss */
+.language-switcher-locale-url li a {
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out;
+  -webkit-transition-delay: 0s;
+  transition: all 0.2s ease-out 0s;
+}
+/* line 52, ../scss/regions/blocks/_lang-switch.scss */
+.language-switcher-locale-url li a:hover {
+  background: #aa4d15;
 }
 
 /* line 1, ../scss/regions/_panels.scss */
