@@ -20,6 +20,23 @@
 			.views-row{
 				@include gallery(2);
 				@include margin-trailer(1);
+
+				img{
+					@include img_res;
+				}
+			}
+		}
+	}
+}
+
+// fotogallery details page
+
+.node-type-content-gallery-press-release{
+	.field-name-field-prg-imgs{
+		.field-items{
+			.field-item{
+				@include gallery(4);
+				@include margin-trailer(1);
 				img{
 					@include img_res;
 				}

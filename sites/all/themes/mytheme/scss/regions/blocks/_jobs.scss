@@ -1,0 +1,33 @@
+.page-vakansii {
+	.panels-flexible-row-mir_1-main-row-middle{
+		@include span(8 last);
+	}
+}
+.view-view-job-openings.view-display-id-page_1{
+	
+	.views-row{
+		@include clearfix;
+		@include margin-trailer(1);
+		.views-field-field-jo-img{
+			@include span(3 of 8);
+			img{
+				@include img_res;
+			}
+		}
+		.views-field-nothing{
+			@include span(5 of 8 last);
+		}
+	}
+}
+.mir-vakansii__title{
+	@include mir_title($black, false);
+}
+.mir-vakansii__body{
+	text-align: justify;
+}
+.mir-vakansii__more{
+	text-align: right;
+	a{
+		@include mir_title($red,true,s);
+	}
+}

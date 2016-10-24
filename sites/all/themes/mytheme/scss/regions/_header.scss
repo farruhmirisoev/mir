@@ -14,13 +14,22 @@
 			@include fontsize(30px,2.5);	
 		}
 	}
+	.pane-locale-language-content{
+		@include span(1);
+	}
 	.pane-block-9{
-		@include span(4);
+		@include span(3);
 		line-height: 3.5em;
 		.pane-content{
 			div{
 				text-align: right;
 			}
+		}
+	}
+	.pane-search-form{
+		@include span(1 last);
+		.sr-only{
+			display: none;
 		}
 	}
 

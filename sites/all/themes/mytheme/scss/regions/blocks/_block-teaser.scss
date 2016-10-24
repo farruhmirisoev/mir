@@ -53,12 +53,8 @@
                 @include span(4 last);
             }
         }
-        @include breakpoint(max-width $mobile) {
-            // float: none;
-            // width: 100%;
-            // margin-left:0;          
-            // margin-right: 0;          
-        }
+
+
         &:hover .bt__bg-img {
             @include transform(scale(1.5));
         }

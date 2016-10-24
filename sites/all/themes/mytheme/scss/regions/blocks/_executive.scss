@@ -1,0 +1,28 @@
+.page-rukovodstvo {
+	.panels-flexible-row-mir_1-main-row-middle{
+		@include span(8 last);
+	}	
+}
+
+.view-view-excusitive.view-display-id-page{
+	.views-row{
+		@include clearfix;
+		@include margin-trailer(1);
+	}
+	.views-field-field-ex-photo{
+		@include span(3 of 8);
+		img{
+			@include img_res;
+		}
+
+	}
+	.exc-more{
+		text-align: right;
+		a{
+			@include mir_title($red,true,s);
+		}
+	}
+	.views-field-nothing{
+		@include span(5 of 8 last);
+	}
+}

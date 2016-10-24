@@ -121,11 +121,11 @@
   height: 140px;
 }
 
-.webform-component-textfield {
+.webform-client-form-47 .webform-component-textfield {
   width: 48%;
 }
 
-.webform-component-textfield input {
+.webform-client-form-47 .webform-component-textfield input {
   width: 100%;
   max-width: none;
 }

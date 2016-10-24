@@ -85,17 +85,26 @@
     @include adjust-font-size-to($size, $lineHeight);
 }
 
-@mixin transall {
-    @include single-transition(all, 0.3s, ease-out, 0s);
+@mixin transall($duration:.3s) {
+    @include single-transition(all, $duration, ease-out, 0s);
 }
 
-@mixin mir_title($color:$black) {
+@mixin mir_title($color:$black, $is_link:true, $size:m) {
     color: $color;
-    @include fontsize(20px, 1);
+    @if($size == m){
+        @include fontsize(20px, 1);        
+    }
+    @else{     
+        @if($size == s){
+            @include fontsize(16px,1);            
+        }   
+    }
     display: inline-block;
     @include margin-leader(.25);
     @include margin-trailer(.25);
-    &:hover {
-        text-decoration: underline;
+    @if($is_link){
+        &:hover {
+            text-decoration: underline;
+        }        
     }
 }

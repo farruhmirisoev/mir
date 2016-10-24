@@ -1,16 +1,21 @@
-.stats-object__wrap{
+.stats-object__wrap {
     background: url(../images/stats_bg.jpg) no-repeat;
     background-size: cover;
 }
+
 .stats-object {
-	@include innerbox(0, 1);
+    @include innerbox(0, 1);
     @include clearfix;
     color: $gold_lite;
     @include padding-leader(2);
     @include padding-trailer(2);
     @include with-layout(split) {
         &__item {
-            @include gallery(3);
+            @include gallery(6);
+            @include margin-trailer(1);
+            @include breakpoint(900px) {
+                @include gallery(3);
+            }
             text-align: center;
             border-right: 2px solid $gold_lite;
             padding: 0 gutter(12);
@@ -20,13 +25,24 @@
             min-height: 240px;
         }
         &__number {
-            @include fontsize(72px, 4);
+            @include fontsize(60px, 3);
         }
         &__title {
-            @include fontsize(48px, 3);
+            @include fontsize(30px, 2);
         }
         &__region {
-            @include fontsize(24px, 1.5);
+            @include fontsize(17px, 1);
+        }
+        @include breakpoint($tablet) {
+            &__number {
+                @include fontsize(72px, 4);
+            }
+            &__title {
+                @include fontsize(48px, 3);
+            }
+            &__region {
+                @include fontsize(24px, 1.5);
+            }
         }
     }
 }
