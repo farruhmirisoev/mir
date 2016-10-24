@@ -118,6 +118,27 @@
           $(this).attr('title',ImgAlt);
         })
 
+        // contacts map
+        ymaps.ready(function () {
+          contacts_map = new ymaps.Map("contacts__map-container", {
+              center: [59.95097378591654,30.299200438484185],
+              zoom: 18,
+              controls: [],
+          });
+
+          let place = new ymaps.Placemark([59.95097378591654,30.299200438484185], {
+              balloonContent: 'ул. Яблочкова, 12Ц'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: '/sites/all/themes/mytheme/images/marker.png',
+            iconImageSize: [169, 66],
+            iconImageOffset: [0, -66]
+          });
+
+          contacts_map.behaviors.disable(['scrollZoom']);
+          contacts_map.geoObjects.add(place);
+      });
+
 
     }); // doc ready
 })(jQuery);
