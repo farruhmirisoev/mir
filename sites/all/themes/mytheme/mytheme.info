@@ -22,6 +22,9 @@ scripts[] = js/bootstrap.js
 ;scripts[] = js/hideTable.js
 scripts[] = plugins/bxslider/jquery.bxslider.min.js
 scripts[] = plugins/slick/slick.min.js
+scripts[] = js/jquery.animateNumber.min.js
+scripts[] = js/ya_maps2.1.js
+
 scripts[] = js/mir_custom.js
 
 

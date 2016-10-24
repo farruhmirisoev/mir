@@ -10,7 +10,7 @@
                 @include img_res;
             }
         }
-        .views-field-title {
+        .views-field-title, .views-field-title-field-et {
             @include margin-leader(.5);
             @include margin-trailer(.5);
             a {

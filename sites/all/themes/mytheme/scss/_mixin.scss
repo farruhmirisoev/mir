@@ -85,8 +85,8 @@
     @include adjust-font-size-to($size, $lineHeight);
 }
 
-@mixin transall {
-    @include single-transition(all, 0.3s, ease-out, 0s);
+@mixin transall($duration:.3s) {
+    @include single-transition(all, $duration, ease-out, 0s);
 }
 
 @mixin mir_title($color:$black, $is_link:true, $size:m) {
