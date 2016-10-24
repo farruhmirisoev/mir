@@ -64,3 +64,82 @@
   display: block;
   padding-top: 150px;
 }
+
+
+
+/**
+ * Текст в контактах
+ */
+
+.pane-block-6 {
+  padding-left: 50px;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+}
+
+.pane-block-6 .fa {
+  margin-left: -50px;
+  border: 1px solid #a31418;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  float: left;
+  text-align: center;
+  line-height: 28px;
+  color: #a31418;
+  margin-top: 5px;
+
+}
+
+.pane-block-6 p {
+  clear: left;
+  font-size: 18px;
+}
+
+.mir-contact__webform {
+  float: left;
+  width: 50%;
+}
+
+.mir-contact__webform:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.webform-client-form-47 {
+
+}
+
+.webform-component--mus-soobshchenie {
+  float: right;
+  width: 48%;
+}
+
+.webform-component--mus-soobshchenie textarea {
+  height: 140px;
+}
+
+.webform-component-textfield {
+  width: 48%;
+}
+
+.webform-component-textfield input {
+  width: 100%;
+  max-width: none;
+}
+
+.webform-client-form-47 .form-actions {
+  text-align: right;
+}
+
+.mir-contact__webform .webform-client-form-47 .form-actions {
+
+  margin-top: 25px;
+}
+
+#contacts__map-container {
+  height: 515px;
+  margin-top: 50px;
+}

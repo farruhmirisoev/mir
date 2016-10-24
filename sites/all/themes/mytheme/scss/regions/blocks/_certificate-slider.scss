@@ -1,0 +1,17 @@
+.view-view-cert.view-display-id-block{
+	@include innerbox(0,1);
+	// @include margin-leader(2);
+	// @include margin-trailer(2);
+	.view-content{
+		overflow: hidden;
+	}
+	.slick-list{
+		margin-left:-30px;
+	}
+	.views-field{
+		margin-left: 30px;
+		img{
+			@include img_res;
+		}
+	}
+}

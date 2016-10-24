@@ -1,21 +1,5 @@
 (function($) {
     $(document).ready(function() {
-        // if ($('.our-works-slider').length > 0) {
-        //     var our_work_slider = $('.our-works-slider').bxSlider({
-        //         minSlides: 5,
-        //         maxSlides: 5,
-        //         slideWidth: 178,
-        //         auto: true,
-        //         pause: 7000,
-        //         nextText: '&#xf061;',
-        //         prevText: '&#xf060;',
-        //         autoHover: true,
-        //         pager: false,
-        //         controls: true,
-        //         adaptiveHeight: true,
-        //     });
-        // }
-
         $('.view-id-main_slider.view-display-id-block_1 .view-content').slick({
             arrows: false,
             infinite: false,
@@ -85,17 +69,29 @@
             focusOnSelect: true
         });
 
-        // portfolie END------------------------------------
 
-        $('.view-view-cert.view-display-id-block .view-content').slick({
+        //  certificate slider-----------------
+        $('.view-view-cert.view-display-id-block')
+        .prepend('<div class="certificate-slider-nav certificate-slider-nav--prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>')
+        .prepend('<div class="certificate-slider-nav certificate-slider-nav--next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>');
+
+        var certificate_slider = $('.view-view-cert.view-display-id-block .view-content').slick({
             dots: false,
             infinite: true,
             autoplay: true,
             autoplaySpeed: 3000,
             speed: 300,
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1,
         });
+        $('.certificate-slider-nav--prev').click(function(){
+            certificate_slider.slick('slickPrev');
+        });
+        $('.certificate-slider-nav--next').click(function(){
+            certificate_slider.slick('slickNext');
+        });
+
+
 
         // stats-object --------------------------------------
 
@@ -116,5 +112,33 @@
         });
 
 
-    });
+        //set all img titles as alts
+        $('img').each(function(){
+          var ImgAlt = $(this).attr('alt');
+          $(this).attr('title',ImgAlt);
+        })
+
+        // contacts map
+        ymaps.ready(function () {
+          contacts_map = new ymaps.Map("contacts__map-container", {
+              center: [59.95097378591654,30.299200438484185],
+              zoom: 18,
+              controls: [],
+          });
+
+          let place = new ymaps.Placemark([59.95097378591654,30.299200438484185], {
+              balloonContent: 'ул. Яблочкова, 12Ц'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: '/sites/all/themes/mytheme/images/marker.png',
+            iconImageSize: [169, 66],
+            iconImageOffset: [0, -66]
+          });
+
+          contacts_map.behaviors.disable(['scrollZoom']);
+          contacts_map.geoObjects.add(place);
+      });
+
+
+    }); // doc ready
 })(jQuery);
