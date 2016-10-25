@@ -32,7 +32,7 @@ function mytheme_preprocess_panels_pane(&$variables) {
         $result = $query->execute();
         $count = $result->fetchField();
         if ($count) {
-          $variables['districts'][] = array(
+          $variables['districts'][$tid] = array(
             'name' => $term_wrapper->name->value(),
             'count' => $count
           );
@@ -73,4 +73,10 @@ function mytheme_custom_russian_number_declension($variables) {
     }
   }
   return $output;
+}
+
+function mytheme_preprocess_node(&$vars) {
+  if ($vars['node']->type == 'content_our_work' && $vars['view_mode'] == 'full') {
+    $vars['theme_hook_suggestions'][] = 'node__content_our_work__full';
+  }
 }

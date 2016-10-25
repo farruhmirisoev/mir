@@ -1,0 +1,176 @@
+/*** replace ******/
+
+.view-id-main_slider.view-display-id-block_1 .views-row {
+    height: 310px;
+    position: relative;
+    background-color: gray;
+    @include breakpoint($tablet){
+      height: 550px;      
+    }
+}
+
+@include breakpoint($tablet) {
+    .view-id-main_slider.view-display-id-block_1 .views-row:before {
+        background-color: #270102;
+        opacity: 0.4;
+        display: block;
+        position: absolute;
+        content: '';
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 50%;
+        min-width: 525px;
+        bottom: 0;
+    }
+}
+
+.main-slider {
+    &__title {
+        color: $gold_lite;
+        /*в переменную*/
+        margin-bottom: 10px;
+        @include fontsize(22px, 1);
+        @include breakpoint($tablet) {
+            @include fontsize(42px, 2);
+        }
+        line-height: 1;
+        /* В миксин */
+    }
+    &__subtitle {
+        display: none;
+        @include breakpoint($tablet) {
+            display: block;
+        }
+    }
+}
+
+.view-id-main_slider.view-display-id-block_1 .views-field-field-ms-slide-img > div > div {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.main-slider__subtitle {
+    color: #f2eede;
+    /*в переменную*/
+    font-size: 18px;
+    line-height: 1.3;
+    /* В миксин наверно */
+    margin-bottom: 17px;
+    /* Еще тут шрифт другой, но я его не прописал, т.к. скорее всего это шрифт по умолчанию*/
+}
+
+.main-slider__link a {
+    color: #edd6a2;
+    /*в переменную*/
+    border: 1px solid #e2bc93;
+    /* возможно, цвет в переменную */
+    padding: 4px 25px 6px;
+    min-width: 115px;
+    display: inline-block;
+    text-align: center;
+}
+
+.view-id-main_slider.view-display-id-block_1 .views-field-nothing {
+    z-index: 2;
+    @include breakpoint(max-width 799px) {
+        background-color: rgba(39, 1, 2, .5);
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: gutter();
+        @include box-sizing(border-box);
+    }
+    @include breakpoint($tablet) {
+        position: relative;
+        @include innerbox(0, 1);
+    }
+}
+
+.view-id-main_slider.view-display-id-block_1 .views-field-nothing .field-content {
+    display: block;
+    @include breakpoint($tablet) {
+        padding-top: 150px;
+        max-width: 510px;
+    }
+}
+
+
+/**
+ * Текст в контактах
+ */
+
+.pane-block-6 {
+    padding-left: 50px;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+.pane-block-6 .fa {
+    margin-left: -50px;
+    border: 1px solid #a31418;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    float: left;
+    text-align: center;
+    line-height: 28px;
+    color: #a31418;
+    margin-top: 5px;
+}
+
+.pane-block-6 p {
+    clear: left;
+    font-size: 18px;
+}
+
+.mir-contact__webform {
+    float: left;
+    width: 50%;
+}
+
+.mir-contact__webform:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.webform-client-form-47 {}
+
+.webform-component--mus-soobshchenie {
+    float: right;
+    width: 48%;
+}
+
+.webform-component--mus-soobshchenie textarea {
+    height: 140px;
+}
+
+.webform-client-form-47 .webform-component-textfield {
+    width: 48%;
+}
+
+.webform-client-form-47 .webform-component-textfield input {
+    width: 100%;
+    max-width: none;
+}
+
+.webform-client-form-47 .form-actions {
+    text-align: right;
+}
+
+.mir-contact__webform .webform-client-form-47 .form-actions {
+    margin-top: 25px;
+}
+
+#contacts__map-container {
+    height: 515px;
+    margin-top: 50px;
+}

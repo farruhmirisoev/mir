@@ -108,7 +108,7 @@
     }
 }
 
-// works page
+// portfolio page
 .node-type-content-our-work-section {
     .pane-view-our-work {
         @include innerbox(0, 1);
@@ -130,6 +130,19 @@
     }
     .views-field-title-field-et{
         @include mir_title($red);
+    }
+}
+
+// teaser
+
+.node-content-our-work.node-teaser{
+    h2 a{
+        @include mir_title;
+    }
+    .links{
+        a{
+            @include mir_title($red, true, s);
+        }
     }
 }
 
@@ -192,3 +205,5 @@
         }
     }
 }
+
+

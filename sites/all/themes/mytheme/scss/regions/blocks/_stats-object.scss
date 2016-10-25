@@ -5,24 +5,27 @@
 
 .stats-object {
     @include innerbox(0, 1);
-    @include clearfix;
-    color: $gold_lite;
+    @include clearfix;    
     @include padding-leader(2);
     @include padding-trailer(2);
+    a{
+        color: $gold_lite;
+    }
     @include with-layout(split) {
         &__item {
             @include gallery(6);
             @include margin-trailer(1);
-            @include breakpoint(900px) {
-                @include gallery(3);
-            }
             text-align: center;
             border-right: 2px solid $gold_lite;
             padding: 0 gutter(12);
-            &:last-child {
+            min-height: 240px;
+            &:last-child, &:nth-child(2) {
                 border: none;
             }
-            min-height: 240px;
+
+            @include breakpoint($tablet) {
+                @include gallery(3);
+            }
         }
         &__number {
             @include fontsize(60px, 3);

@@ -19,8 +19,9 @@
       hide($content['comments']);
       hide($content['links']);
       hide($content['links']);
-      hide($content['locations']);
+      // hide($content['locations']);
       hide($content['field_ow_img']);
+
     ?>
 
     <div class="mir-portfolio-slider">
@@ -38,7 +39,6 @@
 				<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,viber,whatsapp"></div>
 			</div>
 		</div>
-
 
     <div class="mir-nav-button__wrap">
     <?php

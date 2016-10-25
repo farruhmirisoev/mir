@@ -29,7 +29,7 @@
     height: auto;
 }
 
-@mixin mir_button($color:$red, $textColor:#fff, $borderSize:0, $transparent:1) {
+@mixin mir_button($color:$red, $textColor:#fff, $borderSize:0, $transparent:1, $borderRadius:2em) {
     @if($transparent==1) {
         color: $textColor;
         background-color: $color;
@@ -48,7 +48,7 @@
     display: inline-block;
     min-width: 168px;
     padding: .4em 1.5em;
-    border-radius: 2em;
+    border-radius: $borderRadius;
     border:$borderSize solid $textColor;
     text-decoration: none;
     text-align: center;
@@ -58,6 +58,7 @@
     @include box-sizing(border-box);
     @include single-transition(all, 0.2s, ease-out, 0s);
 }
+
 
 @mixin remove_gallery {
     width: 100%;

@@ -3,7 +3,7 @@
     .views-row{
     	@include margin-trailer(1.50); 
     }
-    .views-field-title {
+    .views-field-title, .views-field-title-field-et {
         a {
             @include mir_title($red);
         }

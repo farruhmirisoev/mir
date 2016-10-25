@@ -1,66 +1,92 @@
-#superfish-1-toggle{
-	color:$black;
-	outline: none;
-	span{
-		@include fontsize(24px, 1);
-		vertical-align: middle;		
-	}
-	&:hover{
-		color: $red;		
-	}
-	&:before{
-		content: '\f0c9';
-		display: inline-block;
-		font-family: 'fontawesome';
-		margin-right: 10px;
-		@include fontsize(38px, 2.5);
-		vertical-align: middle;
-		@include single-transition(all, 0.2s, ease-out, 0s);
-	}
-	&.sf-expanded{
-		color: $red;	
-		&:before{
-			@include transform(rotate(90deg));			
-		}
-	}
-	
+#superfish-1-toggle {
+    color: #fff;
+    outline: none;
+    margin-right: gutter();
+    @include breakpoint($tablet) {
+        color: $black;
+        margin-right: 10px;
+        &:hover {
+            color: $red;
+        }
+    }
+    &:before {
+        content: '\f0c9';
+        display: inline-block;
+        font-family: 'fontawesome';
+        @include fontsize(38px, 2);
+        vertical-align: middle;
+        @include single-transition(all, 0.2s, ease-out, 0s);
+        @include breakpoint($tablet) {
+            margin-right: 10px;
+            @include fontsize(38px, 2.5);
+        }
+    }
+    &.sf-expanded {
+        &:before {
+            @include transform(rotate(90deg));
+        }
+        @include breakpoint(800px) {
+            &.sf-expanded {
+                color: $red;
+            }
+        }
+    }
+    span {
+        @include fontsize(24px, 1);
+        vertical-align: middle;
+        display: none;
+        @include breakpoint($tablet) {
+            display: inline;
+        }
+    }
 }
 
-#superfish-1-accordion{
-	position: absolute;
-	background: $red;
-	overflow: hidden;
-	width: 300px;	
-
-	li.sf-depth-2, a.active{
-		background: darken($red, 10);
-	}
-	.sf-clone-parent{
-		display: none;
-	}
-	.sf-depth-1.sf-expanded{
-		background: darken($red, 15);
-		a.sf-depth-1{
-			@include box-shadow(0px 4px 15px 0px rgba(0, 0, 0, 0.59));
-			position: relative;
-			z-index: 999;
-		}
-	}
-	a.menuparent{
-		&:after{
-			content: '\f0d7';
-			font-family: fontawesome;
-			margin-left: 10px;
-		}
-	}
-
-	
-	a{
-		color: $gold;
-		outline: none;
-		padding: 0.5em 1em;
-		&:hover{
-			background: darken($red, 12);
-		}
-	}
+#superfish-1-accordion {
+    position: absolute;
+    background: $red;
+    overflow: hidden;
+    li.sf-depth-2,
+    a.active {
+        background: darken($red, 10);
+    }
+    .sf-clone-parent {
+        display: none;
+    }
+    .sf-depth-1.sf-expanded {
+        // background: darken($red, 15);
+        a.sf-depth-1 {
+            @include box-shadow(0px 4px 15px 0px rgba(0, 0, 0, 0.59));
+            position: relative;
+            z-index: 999;
+        }
+    }
+    a.menuparent {
+        &:after {
+            content: '\f0d7';
+            font-family: fontawesome;
+            margin-left: 10px;
+        }
+    }
+    a {
+        color: $gold;
+        outline: none;
+        padding: 0.5em 1em;
+        &:hover {
+            background: darken($red, 12);
+        }
+    }
+    @include breakpoint(max-width 799px) {
+        a {
+            display: block;
+            text-align: center;
+            @include fontsize(18px, 2);
+            border-top: 1px solid lighten($red, 20);
+        }
+    }
+    @include breakpoint(800px) {
+        width: 300px;
+        .sf-depth-1.sf-expanded {
+            background: darken($red, 15);
+        }
+    }
 }

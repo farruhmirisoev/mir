@@ -25,3 +25,22 @@
 		}
 	}
 }
+
+
+.location-locations-display{
+	.country-name{
+		display: none;
+	}
+	.location-locations-header{
+		display: none;
+	}
+	.location-hidden{
+		display: none;
+	}
+	.map-link{
+		display: none;
+	}
+	.street-address{
+		font-weight: bold;
+	}
+}
