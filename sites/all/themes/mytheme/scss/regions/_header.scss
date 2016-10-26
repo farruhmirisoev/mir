@@ -1,65 +1,139 @@
 @import 'blocks/main-menu';
-.panels-flexible-row-33-main-row-inside{
-	@include innerbox(0,1); 	
-	.pane-page-logo{
-		@include span(2);
-	}
-	.pane-superfish-1{
-		@include span(2);
-	}
-	.pane-block-8{
-		@include span(3);
-		.pane-content{
-			color: $red;
-			@include fontsize(30px,2.5);	
-		}
-	}
-	.pane-locale-language-content{
-		@include span(1);
-	}
-	.pane-block-9{
-		@include span(3);
-		line-height: 3.5em;
-		.pane-content{
-			div{
-				text-align: right;
-			}
-		}
-	}
-	.pane-search-form{
-		@include span(1 last);
-		.sr-only{
-			display: none;
-		}
-	}
+// .panels-flexible-row-33-main-row-inside{
+#mini-panel-header {
+    position: relative;
+    @include breakpoint(max-width 799px){
+        min-height: 120px;
+    }
+    @include innerbox(0, 1);
+    .pane-page-logo {
+        background: url(../images/logo_lite.png) no-repeat center top;
+        img {
+            visibility: hidden;
+            @include img_res;
+        }
+        @include breakpoint(max-width 799px){
+        	width:63px;
+        	height: 120px;
+        	overflow: hidden;
+        	img{
+				width: auto;
+        	}
+        }
+        @include breakpoint($tablet) {
+        	max-width: 138px;
+            @include span(2);
+            img {
+                visibility: visible;
+            }
+        }
+    }
+    .pane-superfish-1 {
+        @include breakpoint(max-width 799px) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: $red;
+            text-align: right;
+            margin-left: -(gutter());
+            height: 43px;
+        }
+        @include breakpoint($tablet) {
+            // background: none;
+            // position: static;
+            @include span(2);
+        }
+    }
+    .pane-block-8 {
+        .pane-content {
+            color: $red;
+            text-align: right;
+            @include fontsize(16px, 1);
+        }
+        @include breakpoint(max-width 799px) {
+            position: absolute;
+            top: 5px;
+            right: gutter();
+            .pane-content{
+            	color:$black;
+            }
+        }
+        @include breakpoint($tablet) {
+            @include span(3);
+            .pane-content {
+                @include fontsize(30px, 2.5);
 
+            }
+        }
+    }
+    .pane-locale-language-content {
+        
+        @include breakpoint(max-width 799px){
+        	position: absolute;
+        	top:85px;
+        	right: 75px;
+        }
+        @include breakpoint($tablet) {
+            @include span(1);        
+        }
+    }
+    .pane-block-9 {
+        line-height: 3.5em;        
+        @include breakpoint(max-width 799px) {
+        	position: absolute;
+        	top:28px;
+        	right: gutter();
+        }
+        @include breakpoint($tablet) {
+            @include span(3);
+        }
+        .pane-content {
+            div {
+                text-align: right;
+            }
+        }
+    }
+    .pane-search-form {
+        display: none;
+        background-color: red;
+        @include breakpoint($tablet) {
+            @include span(1 last);
+            // display: block;
+        }
+        .pane-content {
+            opacity: 0;
+        }
+        .sr-only {
+            display: none;
+        }
+    }
 }
 
-.panels-flexible-row-33-1-inside{
-	@include innerbox(0,1);
+.panels-flexible-row-33-1-inside {
+    @include innerbox(0, 1);
 }
 
-
-.front .pane-page-logo{
-		margin-bottom: -120px;
-    	z-index: 2;
-    	position: relative;
-}	
-.not-front .pane-page-logo{
-	height: 60px;
-	overflow: hidden;
-	img{
-		margin-top: -90px;
-		max-width: 100%;
-		display: block;
-	}
+.front .pane-page-logo {
+    margin-bottom: -120px;
+    z-index: 2;
+    position: relative;
 }
 
-.header-bottom{
-	background: url(../images/footer_bottom_bg.jpg) no-repeat;
-	background-size:  cover;
-	color: $gold_lite;
-	.pane-page-title h1{
-		font-weight: normal;
-	}
+.not-front .pane-page-logo {
+    height: 60px;
+    overflow: hidden;
+    img {
+        margin-top: -90px;
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.header-bottom {
+    background: url(../images/footer_bottom_bg.jpg) no-repeat;
+    background-size: cover;
+    color: $gold_lite;
+    .pane-page-title h1 {
+        font-weight: normal;
+    }
 }

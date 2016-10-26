@@ -1,0 +1,84 @@
+
+@include breakpoint(max-width 799px) {
+    .mir-language-switcher {
+        &__wrap {
+            a {
+                color: #fff;
+            }
+        }
+        &__active-lang {
+            display: inline-block;
+        }
+    }
+    .language-switcher-locale-url {
+        display: inline-block;
+        li {
+            list-style: none;
+            a {
+                text-decoration: underline;
+ 
+                &:after {
+                    content: "|";
+                    font-size: 15px;
+                    line-height: 1;
+                    color: #fff;
+                    display: inline-block;
+                    margin: 0 7px;
+                }
+            }
+        }
+    }
+}
+@include breakpoint(800px) {
+    .mir-language-switcher {
+        &__wrap {
+            height: 37px;
+            word-break: break-all;
+            position: relative;
+            display: inline-block;
+            a {
+                color: #fff;
+                padding: .3em .5em;
+                text-decoration: underline;
+                display: block;
+                outline: none;
+            }
+        }
+        &__shift-content {
+            position: absolute;
+            z-index: 999;
+            top: -36px;
+            @include transall;
+            &:hover {
+                top: 0;
+            }
+            &:after {
+                //triangle trail
+                content: "";
+                display: block;
+                margin: 0 auto;
+                width: 0;
+                border: 20px solid transparent;
+                border-top: 6px solid $orange_lang;
+            }
+        }
+        &__active-lang {
+            background: $orange_lang;
+            text-align: center;
+        }
+    }
+    .language-switcher-locale-url {
+        position: relative;
+        background: $orange_lang;
+        li {
+            display: block;
+            text-align: center;
+            a {
+                @include transall(.2s);
+                &:hover {
+                    background: darken($orange_lang, 10);
+                }
+            }
+        }
+    }
+}

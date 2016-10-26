@@ -10,8 +10,11 @@
 				border:2px solid $red;
 			}
 		}
-		.views-field-title{
-			@include margin-leader(.5);
+		.views-field-title, .views-field-title-field-et{
+			// @include margin-leader(.5);
+			a{
+				@include mir_title($black,true,s);
+			}
 		}
 	}
 }

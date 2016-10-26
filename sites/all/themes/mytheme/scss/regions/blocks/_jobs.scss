@@ -18,14 +18,14 @@
 			@include span(5 of 8 last);
 		}
 	}
-}
-.mir-vakansii__title{
-	@include mir_title($black, false);
+	.mir-vakansii__title, .views-field-title-field-et{
+		@include mir_title($black, false);
+	}
 }
 .mir-vakansii__body{
 	text-align: justify;
 }
-.mir-vakansii__more{
+.mir-vakansii__more, .views-field-view-node{
 	text-align: right;
 	a{
 		@include mir_title($red,true,s);

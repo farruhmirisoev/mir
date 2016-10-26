@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     overflow: hidden !important;
-    &:after{
+    &:after {
         content: none;
         display: none;
     }
@@ -16,45 +16,52 @@
         @include padding-trailer(.5);
         color: $gold;
     }
-    .panels-flexible-row-40-1{
-    	@include padding-leader(.5);
-        @include padding-trailer(.5);	
+    .panels-flexible-row-40-1 {
+        @include padding-leader(.5);
+        @include padding-trailer(.5);
     }
-
-    .pane-block-3{
-    	.contact-phone{
-    		@include fontsize(30px,1.5);
-    	}
-    	.contact-list{
-    		color: #fff;
-    		list-style: none;
-    		li{
-    			padding: 0.5em;	
-    		}
-    		a{
-    			color: #fff;
-    		}
-
-    	}
+    .pane-block-3 {
+        .contact-phone {
+            @include fontsize(30px, 1.5);
+        }
+        .contact-list {
+            color: #fff;
+            list-style: none;
+            li {
+                padding: 0.5em;
+            }
+            a {
+                color: #fff;
+            }
+        }
     }
 }
 
 .panels-flexible-region-40-left {
-    @include span(3);
+    @include span(full);
+    @include breakpoint($tablet) {
+        @include span(3);
+    }
     .panels-flexible-region-40-left-inside {
         padding-right: 0;
     }
 }
 
 .panels-flexible-region-40-center {
-    @include span(6);
+    @include span(full);
+    @include breakpoint($tablet) {
+        @include span(6);
+    }
     .panels-flexible-region-40-left-inside {
         padding-right: 0;
     }
 }
 
 .panels-flexible-region-40-right {
-    @include span(3 last);
+    @include span(full);
+    @include breakpoint($tablet) {
+        @include span(3 last);
+    }
     .panels-flexible-region-40-right-last {
         padding-left: 0;
     }
@@ -70,7 +77,7 @@
         a {
             color: $gold;
         }
-        .menu{
+        .menu {
             display: none;
         }
     }
@@ -80,4 +87,40 @@
     color: #fff;
 }
 
+@include breakpoint(max-width 799px) {
+    .mir-underground .pane-view-our-work {
+        @include span(full);
+        margin-bottom: 100px;
+        padding: gutter();
+    }
+    .pane-block-11 {
+        @include span(full);
+        display: none;
+    }
+    .mir-underground:before {
+        display: none;
+    }
+}
 
+#mini-panel-footer {
+    @include breakpoint(max-width 799px) {
+        .pane-webform-client-block-47 {
+            display: none;
+        }
+        .webform-component--mus-soobshchenie {
+            float: none;
+            width: 100%;
+        }
+        .webform-client-form-47 .webform-component-textfield {
+            width: 100%;
+        }
+        .pane-menu-menu-mir-main-menu {
+            li {
+                text-align: center;
+            }
+        }
+        input[type="text"] {
+            max-width: none;
+        }
+    }
+}

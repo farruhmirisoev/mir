@@ -110,8 +110,19 @@ body {
 }
 
 .mir-button {
-    &__red {
+    &__red:not(.mir-button__mobile) {
         @include mir_button($red);
+    }
+    &__red.mir-button__mobile{
+        @include breakpoint(max-width 799px){
+            @include mir_button($orange_lang, $orange_lang, 2px, 0, 5px);
+            &:hover{
+                color:#fff;
+            }
+        }
+        @include breakpoint(800px){
+            @include mir_button($red);
+        }
     }
 }
 .clearfix{

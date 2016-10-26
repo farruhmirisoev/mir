@@ -6,23 +6,41 @@
 .stats-object {
     @include innerbox(0, 1);
     @include clearfix;
-    color: $gold_lite;
     @include padding-leader(2);
-    @include padding-trailer(2);
+    @include padding-trailer(1);
+    @include breakpoint($tablet) {
+        @include padding-trailer(2);
+    }
+    a {
+        color: $gold_lite;
+    }
     @include with-layout(split) {
         &__item {
             @include gallery(6);
             @include margin-trailer(1);
-            @include breakpoint(900px) {
-                @include gallery(3);
-            }
             text-align: center;
             border-right: 2px solid $gold_lite;
             padding: 0 gutter(12);
+            min-height: 160px;
             &:last-child {
                 border: none;
             }
-            min-height: 240px;
+            @include breakpoint(max-width 799px) {
+                &:nth-child(2) {
+                    border: none;
+                }
+                &:nth-child(3),
+                &:nth-child(4) {
+                    .stats-object__number {
+                        border-top: 2px solid $gold_lite;
+                        margin-top: -10px;
+                        padding-top: 10%;
+                    }
+                }
+            }
+            @include breakpoint($tablet) {
+                @include gallery(3);
+            }
         }
         &__number {
             @include fontsize(60px, 3);
