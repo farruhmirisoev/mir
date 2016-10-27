@@ -73,6 +73,10 @@
             focusOnSelect: true
         });
 
+        $('.mir-portfolio-slider__thumbs .field-items a').click(function(){
+          return false;   
+        });
+
 
         //  certificate slider-----------------
         $('.view-view-cert.view-display-id-block')
@@ -149,6 +153,17 @@
         var langSwticher__activeLink = $('#mini-panel-header .language-switcher-locale-url .active').html();
         $('#mini-panel-header .language-switcher-locale-url .active').hide();
         $('#mini-panel-header .mir-language-switcher__shift-content').append('<div class="mir-language-switcher__active-lang">'+langSwticher__activeLink+'</div>');
+
+
+        // translation
+        htmlLang = $('html').attr('lang');
+        switch (htmlLang) {
+          case 'en':
+              $('#superfish-1-toggle span').text('Menu');
+            break;
+          default:
+
+        }
 
 
     }); // doc ready
