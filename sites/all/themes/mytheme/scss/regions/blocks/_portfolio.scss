@@ -63,8 +63,27 @@
         }
         .field-name-title-field {
             a {
-                @include mir_title;
+                font-weight: bold;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
+
         }
+    }
+    .pagination-wrapper{
+    	clear:both;
+    	@include margin-leader(1);
+    	@include margin-trailer(1);
+    	ul{
+    		text-align: center;
+    	}
+    	li{
+    		display: inline-block;
+    		margin:0 1em;
+    		.sr-only{
+    			display: none;
+    		}
+    	}
     }
 }
