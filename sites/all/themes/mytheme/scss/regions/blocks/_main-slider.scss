@@ -28,7 +28,7 @@
 .main-slider {
     &__title {
         color: $gold_lite;
-        /*в переменную*/
+        font-family: 'PTSerif';
         margin-bottom: 10px;
         @include fontsize(22px, 1);
         @include breakpoint($tablet) {
@@ -67,14 +67,21 @@
 }
 
 .main-slider__link a {
-    color: #edd6a2;
-    /*в переменную*/
-    border: 1px solid #e2bc93;
-    /* возможно, цвет в переменную */
+    color: $gold;
+    font-family: 'PTSerif';
+    border: 1px solid $gold;    
     padding: 4px 25px 6px;
     min-width: 115px;
     display: inline-block;
     text-align: center;
+    @include transall;
+    &:hover{
+      // color: $black;
+      color: $gold_lite;
+      background: rgba($gold, 0.5);
+
+      border: 1px solid $gold;
+    }
 }
 
 .view-id-main_slider.view-display-id-block_1 .views-field-nothing {
@@ -99,80 +106,6 @@
         padding-top: 150px;
         max-width: 510px;
     }
-}
-
-
-/**
- * Текст в контактах
- */
-
-.pane-block-6 {
-    padding-left: 50px;
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
-}
-
-.pane-block-6 .fa {
-    margin-left: -50px;
-    border: 1px solid #a31418;
-    border-radius: 100%;
-    width: 28px;
-    height: 28px;
-    float: left;
-    text-align: center;
-    line-height: 28px;
-    color: #a31418;
-    margin-top: 5px;
-}
-
-.pane-block-6 p {
-    clear: left;
-    font-size: 18px;
-}
-
-.mir-contact__webform {
-    float: left;
-    width: 50%;
-}
-
-.mir-contact__webform:after {
-    display: block;
-    content: '';
-    clear: both;
-}
-
-.webform-client-form-47 {}
-
-.webform-component--mus-soobshchenie {
-    float: right;
-    width: 48%;
-}
-
-.webform-component--mus-soobshchenie textarea {
-    height: 140px;
-}
-
-.webform-client-form-47 .webform-component-textfield {
-    width: 48%;
-}
-
-.webform-client-form-47 .webform-component-textfield input {
-    width: 100%;
-    max-width: none;
-}
-
-.webform-client-form-47 .form-actions {
-    text-align: right;
-}
-
-.mir-contact__webform .webform-client-form-47 .form-actions {
-    margin-top: 25px;
-}
-
-#contacts__map-container {
-    height: 515px;
-    margin-top: 50px;
 }
 
 

@@ -8,7 +8,7 @@
     @include clearfix;
     @include padding-leader(2);
     @include padding-trailer(1);
-    @include breakpoint($tablet) {
+    @include breakpoint($desktop_medium) {
         @include padding-trailer(2);
     }
     a {
@@ -21,10 +21,12 @@
             text-align: center;
             border-right: 2px solid $gold_lite;
             padding: 0 gutter(12);
+            font-family: 'PTSerif';
+            outline: none;
             &:last-child {
                 border: none;
             }
-            @include breakpoint(max-width 799px) {
+            @include breakpoint(max-width 959px) {
                 min-height: 160px;
                 &:nth-child(2) {
                     border: none;
@@ -38,8 +40,9 @@
                     }
                 }
             }
-            @include breakpoint($tablet) {
+            @include breakpoint($desktop_medium) {
                 @include gallery(3);
+                min-height: 250px;
             }
         }
         &__number {
@@ -51,7 +54,7 @@
         &__region {
             @include fontsize(17px, 1);
         }
-        @include breakpoint($tablet) {
+        @include breakpoint($desktop_medium) {
             &__number {
                 @include fontsize(72px, 4);
             }

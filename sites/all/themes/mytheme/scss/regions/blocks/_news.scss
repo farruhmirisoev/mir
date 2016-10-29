@@ -15,6 +15,7 @@
             @include margin-trailer(.5);
             a {
                 color: $red;
+                font-family: 'PTSerif';
                 @include fontsize(20px, 1);
                 &:hover {
                     text-decoration: underline;

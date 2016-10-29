@@ -14,6 +14,13 @@ function mytheme_preprocess_html(&$vars) {
 
 }
 function mytheme_preprocess_panels_pane(&$variables) {
+  
+  // wrap nodes on term page
+  if(!empty($variables['content']['system_main']['nodes'])){    
+    $variables['content']['system_main']['nodes']['#prefix'] = '<div class="term-node-wrap">';
+    $variables['content']['system_main']['nodes']['#suffix'] = '</div>';
+  }
+
   if($variables['pane']->subtype == 'block-10') {
     $variables['districts'] = array();
     $vocabulary = taxonomy_vocabulary_machine_name_load('district');

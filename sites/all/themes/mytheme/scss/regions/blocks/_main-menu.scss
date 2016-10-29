@@ -39,9 +39,7 @@
         vertical-align: middle;
         display: none;
         @include breakpoint($desktop_medium) {
-            span {
-                display: inline;
-            }
+            display: inline;
         }
     }
 }
@@ -76,6 +74,7 @@
         color: $gold;
         outline: none;
         padding: 0.5em 1em;
+        font-family: 'PTSerif';
         &:hover {
             background: darken($red, 12);
         }

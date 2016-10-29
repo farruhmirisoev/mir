@@ -30,6 +30,7 @@
 }
 
 @mixin mir_button($color:$red, $textColor:#fff, $borderSize:0, $transparent:1, $borderRadius:2em) {
+    font-family: 'PTSerif';
     @if($transparent==1) {
         color: $textColor;
         background-color: $color;
