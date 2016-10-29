@@ -2329,42 +2329,43 @@ body {
 /* line 20, ../scss/regions/blocks/_portfolio.scss */
 .view-id-view_our_work.view-display-id-page .views-row .views-field-title a,
 .view-id-view_our_work.view-display-id-page .views-row .views-field-title-field-et a {
+  color: #a31418;
   font-weight: bold;
 }
-/* line 22, ../scss/regions/blocks/_portfolio.scss */
+/* line 23, ../scss/regions/blocks/_portfolio.scss */
 .view-id-view_our_work.view-display-id-page .views-row .views-field-title a:hover,
 .view-id-view_our_work.view-display-id-page .views-row .views-field-title-field-et a:hover {
   text-decoration: underline;
 }
 
-/* line 31, ../scss/regions/blocks/_portfolio.scss */
+/* line 32, ../scss/regions/blocks/_portfolio.scss */
 .location-locations-display .country-name {
   display: none;
 }
-/* line 34, ../scss/regions/blocks/_portfolio.scss */
+/* line 35, ../scss/regions/blocks/_portfolio.scss */
 .location-locations-display .location-locations-header {
   display: none;
 }
-/* line 37, ../scss/regions/blocks/_portfolio.scss */
+/* line 38, ../scss/regions/blocks/_portfolio.scss */
 .location-locations-display .location-hidden {
   display: none;
 }
-/* line 40, ../scss/regions/blocks/_portfolio.scss */
+/* line 41, ../scss/regions/blocks/_portfolio.scss */
 .location-locations-display .map-link {
   display: none;
 }
-/* line 43, ../scss/regions/blocks/_portfolio.scss */
+/* line 44, ../scss/regions/blocks/_portfolio.scss */
 .location-locations-display .street-address {
   font-weight: bold;
 }
 
-/* line 50, ../scss/regions/blocks/_portfolio.scss */
+/* line 51, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .panels-flexible-row-mir_1-main-row-middle {
   width: 65.95745%;
   float: right;
   margin-right: 0;
 }
-/* line 53, ../scss/regions/blocks/_portfolio.scss */
+/* line 54, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .node-content-our-work {
   width: 31.42857%;
   float: left;
@@ -2372,26 +2373,27 @@ body {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 56, ../scss/regions/blocks/_portfolio.scss */
+/* line 57, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .node-content-our-work:nth-of-type(3n+3) {
   float: right;
   margin-right: 0;
 }
-/* line 60, ../scss/regions/blocks/_portfolio.scss */
+/* line 61, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .node-content-our-work img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 65, ../scss/regions/blocks/_portfolio.scss */
+/* line 66, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .node-content-our-work .field-name-title-field a {
   font-weight: bold;
+  color: #a31418;
 }
-/* line 67, ../scss/regions/blocks/_portfolio.scss */
+/* line 69, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .node-content-our-work .field-name-title-field a:hover {
   text-decoration: underline;
 }
-/* line 74, ../scss/regions/blocks/_portfolio.scss */
+/* line 76, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .pagination-wrapper {
   clear: both;
   margin-top: 24px;
@@ -2399,16 +2401,16 @@ body {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 78, ../scss/regions/blocks/_portfolio.scss */
+/* line 80, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .pagination-wrapper ul {
   text-align: center;
 }
-/* line 81, ../scss/regions/blocks/_portfolio.scss */
+/* line 83, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .pagination-wrapper li {
   display: inline-block;
   margin: 0 1em;
 }
-/* line 84, ../scss/regions/blocks/_portfolio.scss */
+/* line 86, ../scss/regions/blocks/_portfolio.scss */
 .page-taxonomy-term .pagination-wrapper li .sr-only {
   display: none;
 }

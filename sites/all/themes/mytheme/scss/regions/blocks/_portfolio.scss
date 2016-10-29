@@ -18,6 +18,7 @@
             @include margin-leader(.5);
             @include margin-trailer(.5);
             a {
+            	color: $red;
                 font-weight: bold;
                 &:hover {
                     text-decoration: underline;
@@ -64,6 +65,7 @@
         .field-name-title-field {
             a {
                 font-weight: bold;
+                color: $red;
                 &:hover {
                     text-decoration: underline;
                 }
