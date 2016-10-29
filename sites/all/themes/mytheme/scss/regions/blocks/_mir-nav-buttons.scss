@@ -3,6 +3,7 @@
 .mir-nav-button {
     display: inline-block;
     @include clearfix;
+    font-family: 'PTSerif';
     &--left {
         float: left;
         a {

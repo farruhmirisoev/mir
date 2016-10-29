@@ -75,6 +75,7 @@
     position: relative;
     z-index: 2;
     a {
+        font-family: 'PTSerif';
         @include fontsize(20px, 4);
         padding: 2em;
         color: $gold_lite;

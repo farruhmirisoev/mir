@@ -2,10 +2,10 @@
 a {
     text-decoration: none;
     color: $black;
-    outline: none;
 }
 
-img {
+img, a:hover, a:active, a:focus, object, embed {
+    outline: none;
     outline: none;
 }
 
@@ -21,12 +21,14 @@ ul {
 }
 
 .pane-title {
+    font-family: 'PTSerif';
     @include fontsize(22px, 1);
-    // @include margin-leader(1);
     @include margin-trailer(1);
     color: $red;
 }
-
+form .form-actions .btn{
+    margin-right: 0;
+}
 input[type="color"],
 input[type="date"],
 input[type="datetime"],
@@ -43,13 +45,25 @@ input[type="url"],
 input[type="week"] {
     color: $red;
     border: 1px solid $red;
-    background: $gold;
+    background: $gold_lite;
     width: 100%;
     max-width: 270px;
     padding: .5em .7em;
     @include box-sizing(border-box);
     @include placeholder {
         color: $red;
+    }
+}
+
+textarea {
+    color: $red;
+    border: 1px solid $red;
+    background: $gold_lite;
+    width: 100%;
+    padding: .5em .7em;
+    @include box-sizing(border-box);
+    @include placeholder {
+        color: $gold_lite;
     }
 }
 
@@ -79,13 +93,8 @@ input[type="week"] {
     .pane-title {
         color: $gold;
     }
-}
 
-input[type="submit"] {
-    @include mir_button($red, $gold, 1px);
-}
-
-textarea {
+    textarea {
     color: $gold;
     border: 1px solid $gold;
     background: $red;
@@ -96,6 +105,13 @@ textarea {
         color: $gold;
     }
 }
+}
+
+input[type="submit"] {
+    @include mir_button($red, $gold, 1px);
+}
+
+
 
 html {
     @include breakpoint(max-width 799px) {
@@ -105,7 +121,8 @@ html {
 }
 
 body {
-    font-family: 'PTSerif';
+   
+    font-family: Roboto;
     color: $black;
 }
 
@@ -231,4 +248,8 @@ body {
     &:hover{
         opacity: 1;
     }
+}
+
+.pane-page-title{
+    font-family: 'PTSerif';
 }

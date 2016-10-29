@@ -21,20 +21,72 @@
         @include padding-trailer(.5);
     }
     .pane-block-3 {
+        font-size: 14px;
         .contact-phone {
             @include fontsize(30px, 1.5);
         }
         .contact-list {
             color: #fff;
             list-style: none;
+            padding-left: 50px;
+            .fa {
+                border: 1px solid $gold;
+                color: $red;
+                background: $gold;
+                margin-top: 0px;
+                margin-left: -50px;
+                border-radius: 100%;
+                width: 28px;
+                height: 28px;
+                float: left;
+                text-align: center;
+                line-height: 28px;
+            }
             li {
-                padding: 0.5em;
+                padding: .7em 0;
             }
             a {
                 color: #fff;
             }
         }
     }
+}
+
+.mir-social-list {
+    @include margin-leader(1);
+}
+
+.mir-social-list__title {
+    color: #fff;
+}
+
+.mir-social-list__list {
+    @include margin-leader(.25);
+    .fa {
+        border: 1px solid $gold;
+        background: $gold;
+        color: $red;
+        margin-top: 0px;
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+        float: left;
+        text-align: center;
+        line-height: 35px;
+        margin-top: 5px;
+        font-size: 22px;
+        @include transall;
+        &:hover {
+            border: 1px solid $gold;
+            background: $red;
+            color: $gold;
+        }
+    }
+}
+
+.mir-social-list__item {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .panels-flexible-region-40-left {
@@ -76,6 +128,7 @@
     .menu {
         a {
             color: $gold;
+            font-family: 'PTSerif';
         }
         .menu {
             display: none;
@@ -87,40 +140,64 @@
     color: #fff;
 }
 
-@include breakpoint(max-width 799px) {
-    .mir-underground .pane-view-our-work {
-        @include span(full);
-        margin-bottom: 100px;
-        padding: gutter();
-    }
-    .pane-block-11 {
-        @include span(full);
-        display: none;
-    }
-    .mir-underground:before {
-        display: none;
-    }
-}
-
 #mini-panel-footer {
     @include breakpoint(max-width 799px) {
-        .pane-webform-client-block-47 {
-            display: none;
-        }
-        .webform-component--mus-soobshchenie {
-            float: none;
-            width: 100%;
-        }
-        .webform-client-form-47 .webform-component-textfield {
-            width: 100%;
-        }
-        .pane-menu-menu-mir-main-menu {
-            li {
-                text-align: center;
-            }
+        .webform-component--mus-soobshchenie textarea {
+            height: 124px;
         }
         input[type="text"] {
             max-width: none;
+        }
+        .pane-menu-menu-mir-main-menu {
+            .menu {
+                -moz-column-count: 2;
+                -moz-column-gap: gutter();
+                -webkit-column-count: 2;
+                -webkit-column-gap: gutter();
+                column-count: 2;
+                column-gap: gutter();
+            }
+        }
+        .panels-flexible-region-40-center {
+            display: none;
+        }
+        .panels-flexible-region-40-left {
+            @include padding-trailer(1);
+            @include margin-trailer(1);
+            border-bottom: 2px solid $gold;
+        }
+        .panels-flexible-region-40-right {
+            .mir-social-list {
+                @include padding-leader(1);
+                @include margin-leader(1);
+                border-top: 2px solid $gold;
+                border-bottom: 2px solid $gold;
+                @include padding-trailer(1);
+            }
+        }
+    }
+    @include breakpoint($tablet 1023px) {
+        .panels-flexible-region-40-center {
+            // display: none;
+            @include span(4);
+        }
+        .panels-flexible-region-40-left {
+            @include span(4);
+        }
+        .panels-flexible-region-40-right {
+            @include span(4 last);
+        }
+        .webform-client-form-47 {
+            .webform-component--mus-soobshchenie,
+            .webform-component-textfield {
+                float: none;
+                width: 100%;
+            }
+            .form-actions {
+                input {
+                    width: 100%;
+                }
+            }
         }
     }
 }
