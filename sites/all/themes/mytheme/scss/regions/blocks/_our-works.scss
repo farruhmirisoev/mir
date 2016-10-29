@@ -129,9 +129,7 @@
         }
     }
     .views-field-title-field-et{
-        a{
-            @include mir_title($red);
-        }
+        @include mir_title($red);
     }
 }
 
