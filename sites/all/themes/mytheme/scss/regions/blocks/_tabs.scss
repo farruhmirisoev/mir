@@ -1,4 +1,5 @@
 .pane-pane-messages{
+	@include margin-trailer(1);
 	.nav-pills{
 		li{
 			display: inline-block;

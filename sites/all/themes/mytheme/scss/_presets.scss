@@ -125,6 +125,11 @@ body {
         }
     }
 }
+.mir-title{
+    &--red{
+        @include mir_title($red);
+    }
+}
 .clearfix{
     @include clearfix;
 }

@@ -32,7 +32,7 @@
     background-color: gray;
     position: relative;
     @include breakpoint($tablet) {
-        @include span(1);
+        @include span(1 last);
         display: block;
     }
 

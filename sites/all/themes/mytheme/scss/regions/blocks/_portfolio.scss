@@ -1,46 +1,70 @@
-.view-id-view_our_work.view-display-id-page{
-	.views-row{
-		@include margin-trailer(1);
-		@include breakpoint(320px){
-			@include gallery(6);				
-		}	
-		@include breakpoint(640px){
-			@include gallery(4);				
-		}		
-		@include breakpoint(900px){
-			@include gallery(3);				
-		}		
-		img{
-			@include img_res;
-		}
-		.views-field-title, .views-field-title-field-et{
-			@include margin-leader(.5);
-			@include margin-trailer(.5);
-			a{
-				font-weight: bold;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-		}
-	}
+.view-id-view_our_work.view-display-id-page {
+    .views-row {
+        @include margin-trailer(1);
+        @include breakpoint(320px) {
+            @include gallery(6);
+        }
+        @include breakpoint(640px) {
+            @include gallery(4);
+        }
+        @include breakpoint(900px) {
+            @include gallery(3);
+        }
+        img {
+            @include img_res;
+        }
+        .views-field-title,
+        .views-field-title-field-et {
+            @include margin-leader(.5);
+            @include margin-trailer(.5);
+            a {
+                font-weight: bold;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
+.location-locations-display {
+    .country-name {
+        display: none;
+    }
+    .location-locations-header {
+        display: none;
+    }
+    .location-hidden {
+        display: none;
+    }
+    .map-link {
+        display: none;
+    }
+    .street-address {
+        font-weight: bold;
+    }
+}
 
-.location-locations-display{
-	.country-name{
-		display: none;
-	}
-	.location-locations-header{
-		display: none;
-	}
-	.location-hidden{
-		display: none;
-	}
-	.map-link{
-		display: none;
-	}
-	.street-address{
-		font-weight: bold;
-	}
+// taxonomy term page 
+.page-taxonomy-term {
+    .panels-flexible-row-mir_1-main-row-middle {
+        @include span(8 last);
+    }
+    .node-content-our-work {
+        @include with-layout(6 1/5) {
+            @include span(2);
+            &:nth-of-type(3n+3){
+            	@include last;
+            }
+            @include margin-trailer(1);
+            img {
+                @include img_res;
+            }
+        }
+        .field-name-title-field {
+            a {
+                @include mir_title;
+            }
+        }
+    }
 }

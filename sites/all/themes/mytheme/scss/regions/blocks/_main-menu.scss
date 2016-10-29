@@ -2,6 +2,9 @@
     color: #fff;
     outline: none;
     margin-right: gutter();
+    span {
+        display: none;
+    }
     @include breakpoint($tablet) {
         color: $black;
         margin-right: 10px;
@@ -35,8 +38,10 @@
         @include fontsize(24px, 1);
         vertical-align: middle;
         display: none;
-        @include breakpoint($tablet) {
-            display: inline;
+        @include breakpoint($desktop_medium) {
+            span {
+                display: inline;
+            }
         }
     }
 }

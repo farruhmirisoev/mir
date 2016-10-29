@@ -1,6 +1,5 @@
 @import 'blocks/main-menu';
 @import 'blocks/searchform';
-
 // .panels-flexible-row-33-main-row-inside{
 #mini-panel-header {
     @include breakpoint(max-width 799px) {
@@ -50,13 +49,13 @@
             height: 43px;
         }
         @include breakpoint($tablet) {
-            // background: none;
-            // position: static;
+            @include span(1);
+        }
+        @include breakpoint($desktop_medium) {
             @include span(2);
         }
     }
     .pane-block-8 {
-
         .pane-content {
             color: $red;
             text-align: right;
@@ -71,10 +70,13 @@
             }
         }
         @include breakpoint($tablet) {
-            @include span(3);
+            @include span(4);
             .pane-content {
                 @include fontsize(30px, 2.5);
             }
+        }
+        @include breakpoint($desktop_medium) {
+            @include span(3);
         }
     }
     .pane-locale-language-content {
@@ -105,20 +107,18 @@
             }
         }
     }
-
-
     .header-bottom {
-    background: url(../images/footer_bottom_bg.jpg) no-repeat;
-    background-size: cover;
-    color: $gold_lite;
-    .pane-page-title h1 {
-        font-weight: normal;
+        background: url(../images/footer_bottom_bg.jpg) no-repeat;
+        background-size: cover;
+        color: $gold_lite;
+        .pane-page-title h1 {
+            font-weight: normal;
+        }
+        @include breakpoint(max-width 799px) {
+            margin-left: -2.12766%;
+            margin-right: -4.12766%;
+        }
     }
-    @include breakpoint(max-width 799px) {
-        margin-left: -2.12766%;
-        margin-right: -4.12766%;
-    }
-}
 }
 
 .panels-flexible-row-33-1-inside {
@@ -141,9 +141,10 @@
     }
 }
 
-
-.pane-block-8, .pane-locale-language-content, .pane-block-9{
-    .pane-content{
+.pane-block-8,
+.pane-locale-language-content,
+.pane-block-9 {
+    .pane-content {
         // @include transall;        
     }
 }
