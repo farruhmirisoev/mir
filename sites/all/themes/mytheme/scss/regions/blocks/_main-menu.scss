@@ -39,9 +39,7 @@
         vertical-align: middle;
         display: none;
         @include breakpoint($desktop_medium) {
-            span {
-                display: inline;
-            }
+            display: inline;
         }
     }
 }
