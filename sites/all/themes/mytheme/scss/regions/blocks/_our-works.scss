@@ -25,7 +25,7 @@
     @include clearfix;
 }
 
-.view-view-our-work.view-display-id-block_1 {
+.mir-underground .pane-view-our-work/*.view-view-our-work.view-display-id-block_1*/ {
     width: 48.93617%;
     float: left;
     margin-right: 2.12766%;
@@ -129,7 +129,9 @@
         }
     }
     .views-field-title-field-et{
-        @include mir_title($red);
+        a{
+            @include mir_title($red);
+        }
     }
 }
 

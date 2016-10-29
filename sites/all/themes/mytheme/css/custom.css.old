@@ -143,3 +143,113 @@
   height: 515px;
   margin-top: 50px;
 }
+
+
+// slider responsive
+
+
+/*@media all and (max-width: 799px) {
+  .view-id-main_slider.view-display-id-block_1 .views-field-nothing {
+    padding-right: 110px;
+  }
+}
+
+
+.view-id-main_slider.view-display-id-block_1 {
+  position: relative;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-arrows {
+  position: absolute;
+  bottom: 0px;
+  width: 80px;
+  right: 20px;
+}
+@media all and (min-width: 800px) {
+
+  .view-id-main_slider.view-display-id-block_1 .slick-arrows {
+    right: auto;
+    width: 100%;
+    bottom: 10px;
+  }
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-arrows__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2.12766%;
+  padding-right: 2.12766%;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-arrow  {
+    width: 30px;
+    height: auto;
+    position: static;
+    display: inline-block;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-arrow:before {
+    background: #edd6a2;
+    height: 30px;
+    display: block;
+    color: #a31418;
+    font-family: Arial;
+    font-size: 28px;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-prev:before {
+  content: '\02039';
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-prev {
+  margin-right: 10px;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-next:before {
+  content: '\0203A';
+}
+
+
+.view-id-main_slider.view-display-id-block_1 .slick-dots {
+  bottom: 0;
+  top: 0;
+  right: 25px;
+  width: 18px;
+  display: none;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-dots button {
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #a31418;
+  background-color: #efefef;
+  border-radius: 100%;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-dots__wrapper {
+  display: table;
+  height: 100%;
+}
+@media all and (max-width: 799px) {
+  .view-id-main_slider.view-display-id-block_1 .slick-dots__wrapper {
+    display: none;
+  }
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-dots__wrapper1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-dots li {
+  margin: 0;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-dots .slick-active button {
+  background-color: #a31418;
+}
+
+.view-id-main_slider.view-display-id-block_1 .slick-dots button:before {
+  content: none;
+}*/

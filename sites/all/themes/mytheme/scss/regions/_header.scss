@@ -1,25 +1,37 @@
 @import 'blocks/main-menu';
+@import 'blocks/searchform';
+
 // .panels-flexible-row-33-main-row-inside{
 #mini-panel-header {
-    position: relative;
-    min-height: 120px;
-    @include innerbox(0, 1);
+    @include breakpoint(max-width 799px) {
+        position: relative;
+        min-height: 120px;
+        @include innerbox(0, 1);
+    }
+    @include breakpoint($tablet) {
+        .panels-flexible-row-33-main-row-inside {
+            position: relative;
+            @include innerbox(0, 1);
+        }
+    }
     .pane-page-logo {
-        background: url(../images/logo_lite.png) no-repeat center top;
         img {
             visibility: hidden;
             @include img_res;
         }
-        @include breakpoint(max-width 799px){
-        	width:63px;
-        	height: 120px;
-        	overflow: hidden;
-        	img{
-				width: auto;
-        	}
+        @include breakpoint(max-width 799px) {
+            background: url(../images/logo_lite.png) no-repeat center top;
+            width: 63px;
+            height: 120px;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            img {
+                width: auto;
+            }
         }
         @include breakpoint($tablet) {
-        	max-width: 138px;
+            max-width: 138px;
             @include span(2);
             img {
                 visibility: visible;
@@ -29,7 +41,8 @@
     .pane-superfish-1 {
         @include breakpoint(max-width 799px) {
             position: absolute;
-            bottom: 0;
+            // bottom: 0;
+            top: 77px;
             width: 100%;
             background: $red;
             text-align: right;
@@ -43,6 +56,7 @@
         }
     }
     .pane-block-8 {
+
         .pane-content {
             color: $red;
             text-align: right;
@@ -52,35 +66,35 @@
             position: absolute;
             top: 5px;
             right: gutter();
-            .pane-content{
-            	color:$black;
+            .pane-content {
+                color: $black;
             }
         }
         @include breakpoint($tablet) {
             @include span(3);
             .pane-content {
                 @include fontsize(30px, 2.5);
-
             }
         }
     }
     .pane-locale-language-content {
-        
-        @include breakpoint(max-width 799px){
-        	position: absolute;
-        	top:85px;
-        	right: 75px;
+        @include breakpoint(max-width 799px) {
+            position: absolute;
+            top: 85px;
+            right: 75px;
         }
         @include breakpoint($tablet) {
-            @include span(1);        
+            @include span(1);
         }
     }
     .pane-block-9 {
-        line-height: 3.5em;        
+        position: relative;
+        z-index: 999;
+        line-height: 3.5em;
         @include breakpoint(max-width 799px) {
-        	position: absolute;
-        	top:28px;
-        	right: gutter();
+            position: absolute;
+            top: 28px;
+            right: gutter();
         }
         @include breakpoint($tablet) {
             @include span(3);
@@ -91,20 +105,20 @@
             }
         }
     }
-    .pane-search-form {
-        display: none;
-        background-color: red;
-        @include breakpoint($tablet) {
-            @include span(1 last);
-            display: block;
-        }
-        .pane-content {
-            opacity: 0;
-        }
-        .sr-only {
-            display: none;
-        }
+
+
+    .header-bottom {
+    background: url(../images/footer_bottom_bg.jpg) no-repeat;
+    background-size: cover;
+    color: $gold_lite;
+    .pane-page-title h1 {
+        font-weight: normal;
     }
+    @include breakpoint(max-width 799px) {
+        margin-left: -2.12766%;
+        margin-right: -4.12766%;
+    }
+}
 }
 
 .panels-flexible-row-33-1-inside {
@@ -127,11 +141,9 @@
     }
 }
 
-.header-bottom {
-    background: url(../images/footer_bottom_bg.jpg) no-repeat;
-    background-size: cover;
-    color: $gold_lite;
-    .pane-page-title h1 {
-        font-weight: normal;
+
+.pane-block-8, .pane-locale-language-content, .pane-block-9{
+    .pane-content{
+        // @include transall;        
     }
 }

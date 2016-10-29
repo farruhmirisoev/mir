@@ -37,6 +37,7 @@
 }
 
 .panels-flexible-mir_1 {
+    overflow: hidden;
     .mir-banner-wide {
         @include margin-trailer(2);
     }
@@ -53,4 +54,9 @@
         @include margin-leader(2);
         @include margin-trailer(2);
     }
+}
+
+
+.front .panels-flexible-mir_1 .panels-flexible-region-1-center_bottom-inside{
+    padding: 0 gutter();
 }

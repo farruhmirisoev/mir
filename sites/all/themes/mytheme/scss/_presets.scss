@@ -98,7 +98,7 @@ textarea {
 }
 
 html {
-    @include breakpoint(max-width 959px) {
+    @include breakpoint(max-width 799px) {
         font-size: 87.5%;
         line-height: 1.71429em;
     }
@@ -183,4 +183,47 @@ body {
 }
 .field-name-body img{
     margin:15px !important;
+}
+
+// webform ajax
+
+#webform-ajax-wrapper-47, #webform-ajax-wrapper-69{
+    .links{
+        display: none;
+    }
+}
+
+.webform-confirmation{
+    background: $gold;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+}
+
+.logged-in .view{
+    position: relative;
+    &:hover{
+        .mir-view-edit-link-wrap{
+            display: block;
+        }
+    }
+}
+.mir-view-edit-link-wrap{
+    position: absolute;
+    z-index: 9999;
+    top:1em;
+    right:1em;
+    text-align: right;
+    display: none;
+}
+
+.mir-view-edit-link{
+    display: inline-block;
+    @include mir_button(#fff, #000);
+    min-width: inherit;
+    padding: 10px 15px;
+    opacity: .7;
+    &:hover{
+        opacity: 1;
+    }
 }

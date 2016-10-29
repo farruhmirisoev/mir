@@ -1,0 +1,108 @@
+.mir-search__activate {
+    display: inline-block;
+    .fa {
+        width: 33px;
+        height: 33px;
+        border: 2px solid $red;
+        text-align: center;
+        color: $red;
+        cursor: pointer;
+        opacity: .7;
+        &:before {
+            display: inline-block;
+            line-height: 33px;
+            @include transall(.3s);
+        }
+        &:hover {
+            opacity: 1;
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    &--gosearch {
+        .fa:before {
+            @include transform(rotate(360deg) scale(1.2));
+        }
+    }
+}
+
+.pane-search-form {
+    display: none;
+    background-color: gray;
+    position: relative;
+    @include breakpoint($tablet) {
+        @include span(1);
+        display: block;
+    }
+
+    .sr-only {
+        display: none;
+    }
+    .container-inline {
+        text-align: right;
+    }
+    #search-block-form {
+        position: absolute;
+        right: 0;
+        top: 10px;
+
+    }
+}
+
+#search-block-form {
+    text-align: right;
+    width: 600px;
+    >div {
+        position: relative;
+    }
+    .container-inline {
+        display: none;
+        opacity: 0;
+        position: absolute;
+        z-index: 999;
+        right: 37px;
+        @include transall(5s);
+        .form-item {
+            display: block;
+            float: left;
+            width: 500px;
+            margin-bottom: 0;
+            @include box-sizing(border-box);
+        }
+        input {
+            width: 100%;
+            max-width: none;
+            height: 37px;
+            padding: 0 .7em;
+            outline: none;
+            @include box-sizing(border-box);
+        }
+    }
+    .form-actions {
+        display: none;
+    }
+    &.mir-search__js-show {
+        .container-inline {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+.container-inline .mir-search__close {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 37px;
+    background: $red;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background: darken($red, 10);
+    }
+}
