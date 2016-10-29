@@ -16,6 +16,10 @@
 		}
 
 	}
+	.exc-team{
+		@include mir_title;
+	}
+	
 	.exc-more{
 		text-align: right;
 		a{

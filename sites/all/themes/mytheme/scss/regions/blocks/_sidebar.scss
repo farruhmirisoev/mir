@@ -11,7 +11,7 @@
 
 .pane-menu-menu-menu-about,
 .pane-view-ow-sections,
-.pane-menu-menu-menu-press-releases {
+.pane-menu-menu-menu-press-releases, .page-taxonomy-term .pane-view-districts {
     background: $gray_bg;
     padding: 2em;
     @include margin-trailer(1);

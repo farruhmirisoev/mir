@@ -21,11 +21,11 @@
             text-align: center;
             border-right: 2px solid $gold_lite;
             padding: 0 gutter(12);
-            min-height: 160px;
             &:last-child {
                 border: none;
             }
             @include breakpoint(max-width 799px) {
+                min-height: 160px;
                 &:nth-child(2) {
                     border: none;
                 }
