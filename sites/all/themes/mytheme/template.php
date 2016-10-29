@@ -11,7 +11,7 @@ function mytheme_html_head_alter(&$head_elements)  {
   //drupal_add_js('sites/all/themes/mytheme/js/map.js');
 }
 function mytheme_preprocess_html(&$vars) {
-  //dpm($vars);
+
 }
 function mytheme_preprocess_panels_pane(&$variables) {
   if($variables['pane']->subtype == 'block-10') {
@@ -78,5 +78,9 @@ function mytheme_custom_russian_number_declension($variables) {
 function mytheme_preprocess_node(&$vars) {
   if ($vars['node']->type == 'content_our_work' && $vars['view_mode'] == 'full') {
     $vars['theme_hook_suggestions'][] = 'node__content_our_work__full';
+  }
+
+  if ($vars['node']->type == 'content_our_work' && $vars['view_mode'] == 'teaser') {
+    $vars['theme_hook_suggestions'][] = 'node__content_our_work__teaser';
   }
 }
