@@ -1,9 +1,9 @@
 .pane-webform-client-block-69 {
-    @include margin-trailer(1);
     background: url(../images/webform_bg_2.jpg) no-repeat;
     background-size: cover;
     @include padding-trailer(2);
     @include margin-leader(2);
+    @include margin-trailer(1);
     .pane-title {
         color: $gold_lite;
         text-align: center;
