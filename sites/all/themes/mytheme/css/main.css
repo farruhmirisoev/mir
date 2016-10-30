@@ -3925,16 +3925,16 @@ body {
 
 @media (min-width: 800px) {
   /* line 59, ../scss/regions/blocks/_kontakty.scss */
-  .mir-contact__webform .webform-component--mus-soobshchenie {
+  .pane-webform-client-block-47 .webform-component--mus-soobshchenie {
     float: right;
     width: 48%;
   }
   /* line 63, ../scss/regions/blocks/_kontakty.scss */
-  .mir-contact__webform .webform-component-textfield {
+  .pane-webform-client-block-47 .webform-component-textfield {
     width: 48%;
   }
   /* line 65, ../scss/regions/blocks/_kontakty.scss */
-  .mir-contact__webform .webform-component-textfield input {
+  .pane-webform-client-block-47 .webform-component-textfield input {
     background: #f2eede;
   }
 }
