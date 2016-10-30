@@ -70,7 +70,16 @@
 
 .out-work-slider__slide-item {
     position: relative;
-    margin-right: 24px;
+    width: 47.5%;
+    float: left;
+    &:first-child {
+        margin-right: 5%;
+    }
+    @include breakpoint($tablet) {
+        margin-right: 24px;
+        width: auto;
+        float: none;
+    }
     &:first-child {
         margin-bottom: 24px;
     }
@@ -102,32 +111,39 @@
 }
 
 @include breakpoint(max-width 799px) {
-    .mir-underground .pane-view-our-work {
-        @include span(full);
-        margin-bottom: 100px;
-        padding: gutter();
-        .slick-arrow{
-            &.slick-prev{
-                left:50%;
-                margin-left: -40px;
+    .panels-flexible-mir_1 .mir-underground {
+        @include padding-leader(1);
+    }
+    .mir-underground {
+        .pane-view-our-work {
+            @include span(full);
+            float: none;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+            .slick-arrow {
+                bottom: -60px;
+                &.slick-prev {
+                    left: 50%;
+                    margin-left: -40px;
+                }
+                &.slick-next {
+                    left: 50%;
+                    margin-left: 5px;
+                }
             }
-            &.slick-next{
-                left:50%;
-                margin-left: 5px;
-            }
-            
+        }
+        .pane-block-11 {
+            @include span(full);
+            float: none;
+            background: rgba($gold_lite, .8);            
         }
     }
-    .pane-block-11 {
-        @include span(full);        
-        background:rgba($gold_lite, .8);
-        @include margin-leader(1);
-    } 
     .mir-underground:before {
         display: none;
     }
 }
-
 
 // portfolio page
 .node-type-content-our-work-section {
@@ -149,8 +165,8 @@
             @include img_res;
         }
     }
-    .views-field-title-field-et{
-        a{
+    .views-field-title-field-et {
+        a {
             font-family: 'PTSerif';
             @include mir_title($red);
         }
@@ -158,13 +174,12 @@
 }
 
 // teaser
-
-.node-content-our-work.node-teaser{
-    h2 a{
+.node-content-our-work.node-teaser {
+    h2 a {
         @include mir_title;
     }
-    .links{
-        a{
+    .links {
+        a {
             @include mir_title($red, true, s);
         }
     }
@@ -180,27 +195,29 @@
         @include img_res;
     }
     .slick-arrow {
-      background: rgba(255,255,255,.5);
-      width: 45px;
-      height: 45px;
-      opacity: 0.5;      
-      @include transall;
+        background: rgba(255, 255, 255, .5);
+        width: 45px;
+        height: 45px;
+        opacity: 0.5;
+        @include transall;
         &.slick-prev {
             left: 0;
-            &:hover, &:focus{
-              background: rgba(255,255,255,.5);              
+            &:hover,
+            &:focus {
+                background: rgba(255, 255, 255, .5);
             }
-            &:hover{
-              opacity: 1;
+            &:hover {
+                opacity: 1;
             }
         }
         &.slick-next {
             right: -1px;
-            &:hover, &:focus{
-              background: rgba(255,255,255,.5);              
+            &:hover,
+            &:focus {
+                background: rgba(255, 255, 255, .5);
             }
-            &:hover{
-              opacity: 1;
+            &:hover {
+                opacity: 1;
             }
         }
     }
@@ -222,12 +239,10 @@
             @include box-sizing(border-box);
             @include transall;
         }
-        &.slick-current{
-          img{
-            padding: 0;
-          }
+        &.slick-current {
+            img {
+                padding: 0;
+            }
         }
     }
 }
-
-

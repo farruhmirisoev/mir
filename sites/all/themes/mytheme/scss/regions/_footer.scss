@@ -177,12 +177,11 @@
         }
     }
     @include breakpoint($tablet 1023px) {
-        .panels-flexible-region-40-center {
-            // display: none;
-            @include span(4);
-        }
         .panels-flexible-region-40-left {
-            @include span(4);
+            @include span(3);
+        }
+        .panels-flexible-region-40-center {            
+            @include span(5);
         }
         .panels-flexible-region-40-right {
             @include span(4 last);
