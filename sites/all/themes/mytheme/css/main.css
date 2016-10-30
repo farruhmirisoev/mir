@@ -2978,48 +2978,94 @@ body {
 }
 /* line 3, ../scss/regions/blocks/_partners.scss */
 .view-id-view_partnerlsit .views-row {
-  width: 23.40426%;
-  float: left;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
+  width: 48.93617%;
+  float: left;
 }
 /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.view-id-view_partnerlsit .views-row:nth-child(4n + 1) {
+.view-id-view_partnerlsit .views-row:nth-child(2n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
   margin-left: 0;
 }
 /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.view-id-view_partnerlsit .views-row:nth-child(4n + 2) {
-  margin-left: 25.53191%;
-  margin-right: -100%;
-  clear: none;
-}
-/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.view-id-view_partnerlsit .views-row:nth-child(4n + 3) {
+.view-id-view_partnerlsit .views-row:nth-child(2n + 2) {
   margin-left: 51.06383%;
   margin-right: -100%;
   clear: none;
 }
-/* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.view-id-view_partnerlsit .views-row:nth-child(4n + 4) {
-  margin-left: 76.59574%;
-  margin-right: -100%;
-  clear: none;
+@media (min-width: 640px) {
+  /* line 3, ../scss/regions/blocks/_partners.scss */
+  .view-id-view_partnerlsit .views-row {
+    width: 31.91489%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  .view-id-view_partnerlsit .views-row:nth-child(3n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  .view-id-view_partnerlsit .views-row:nth-child(3n + 2) {
+    margin-left: 34.04255%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  .view-id-view_partnerlsit .views-row:nth-child(3n + 3) {
+    margin-left: 68.08511%;
+    margin-right: -100%;
+    clear: none;
+  }
 }
-/* line 6, ../scss/regions/blocks/_partners.scss */
+@media (min-width: 960px) {
+  /* line 3, ../scss/regions/blocks/_partners.scss */
+  .view-id-view_partnerlsit .views-row {
+    width: 23.40426%;
+    float: left;
+  }
+  /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  .view-id-view_partnerlsit .views-row:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  .view-id-view_partnerlsit .views-row:nth-child(4n + 2) {
+    margin-left: 25.53191%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  .view-id-view_partnerlsit .views-row:nth-child(4n + 3) {
+    margin-left: 51.06383%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  .view-id-view_partnerlsit .views-row:nth-child(4n + 4) {
+    margin-left: 76.59574%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 14, ../scss/regions/blocks/_partners.scss */
 .view-id-view_partnerlsit .views-row img {
   display: block;
   width: 100%;
   height: auto;
   border: 2px solid #f2eede;
 }
-/* line 9, ../scss/regions/blocks/_partners.scss */
+/* line 17, ../scss/regions/blocks/_partners.scss */
 .view-id-view_partnerlsit .views-row img:hover {
   border: 2px solid #a31418;
 }
-/* line 15, ../scss/regions/blocks/_partners.scss */
+/* line 23, ../scss/regions/blocks/_partners.scss */
 .view-id-view_partnerlsit .views-row .views-field-title a, .view-id-view_partnerlsit .views-row .views-field-title-field-et a {
   color: #353535;
   font-size: 16px;

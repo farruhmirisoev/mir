@@ -1,8 +1,16 @@
 .view-id-view_partnerlsit{
 
 	.views-row{
-		@include gallery(3);
 		@include margin-trailer(1);
+
+			@include gallery(6);			
+
+		@include breakpoint(640px){
+			@include gallery(4);			
+		}
+		@include breakpoint($desktop_medium){
+			@include gallery(3);			
+		}
 		img{
 			@include img_res;
 			border:2px solid $gold_lite;
