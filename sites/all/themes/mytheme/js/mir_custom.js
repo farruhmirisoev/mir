@@ -18,11 +18,19 @@
         $('.our-work-slider-two_row').slick({
             dots: false,
             infinite: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             speed: 300,
             slidesToShow: 2,
             slidesToScroll: 2,
+            responsive: [{
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },               
+            ]
         });
 
         $('.our-works-slider').slick({
@@ -173,16 +181,15 @@
 
         //expand
         $('.mir-search__activate').click(function() {
-            
+
             if (!$(this).hasClass('mir-search__activate--gosearch')) {
                 $('#search-block-form').addClass('mir-search__js-show');
                 $('.mir-search__activate').addClass('mir-search__activate--gosearch');
                 $('#search-block-form .form-text').focus();
-                $('.pane-block-8, .pane-locale-language-content, .pane-block-9').find('.pane-content').css({'position':'relative','z-index':-1,'opacity':0});
-            }
-            else{
-                if($('#search-block-form .form-text').val()!='')
-                    $('#search-block-form .form-submit').css('background','red').trigger('click');
+                $('.pane-block-8, .pane-locale-language-content, .pane-block-9').find('.pane-content').css({ 'position': 'relative', 'z-index': -1, 'opacity': 0 });
+            } else {
+                if ($('#search-block-form .form-text').val() != '')
+                    $('#search-block-form .form-submit').css('background', 'red').trigger('click');
             }
         });
         //collapse
@@ -192,7 +199,7 @@
                 $('.mir-search__activate').removeClass('mir-search__activate--gosearch');
                 $('.mir-search__activate').addClass('mir-search__activate--input');
                 $('#search-block-form .form-text').val('');
-                $('.pane-block-8, .pane-locale-language-content, .pane-block-9').find('.pane-content').css({'position':'relative','z-index':999,'opacity':1});;
+                $('.pane-block-8, .pane-locale-language-content, .pane-block-9').find('.pane-content').css({ 'position': 'relative', 'z-index': 999, 'opacity': 1 });;
             }
         });
 

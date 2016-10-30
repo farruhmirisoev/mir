@@ -20,7 +20,7 @@ ul {
     }
 }
 
-.pane-title {
+.pane-title, .webform-title  {
     font-family: 'PTSerif';
     @include fontsize(22px, 1);
     @include margin-trailer(1);
@@ -207,9 +207,13 @@ body {
     margin:15px !important;
 }
 
+.alert-danger{display: none;}
+.ajax-progress{
+    display: none;
+}
 // webform ajax
 
-#webform-ajax-wrapper-47, #webform-ajax-wrapper-69{
+#webform-ajax-wrapper-47, #webform-ajax-wrapper-69, #webform-node-30{
     .links{
         display: none;
     }
@@ -252,4 +256,16 @@ body {
 
 .pane-page-title{
     font-family: 'PTSerif';
+}
+
+#colorbox{
+    .webform-title{
+        text-align: center;
+    }
+    input.form-text, textarea{
+        max-width: none;
+    }
+    .form-actions{
+        text-align: right;
+    }
 }
