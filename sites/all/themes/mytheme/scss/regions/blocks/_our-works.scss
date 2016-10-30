@@ -187,7 +187,9 @@
 
 // portfolio page slider
 .mir-portfolio-slider {
-    @include span(6);
+    @include breakpoint($tablet){
+        @include span(6);
+    }
 }
 
 .mir-portfolio-slider__main {

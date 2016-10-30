@@ -1,8 +1,8 @@
 .pane-webform-client-block-69 {
-    background: url(../images/webform_bg.jpg) no-repeat;
+    margin-bottom: 0;
+    background: url(../images/webform_bg_2.jpg) no-repeat;
     background-size: cover;
     @include padding-trailer(2);
-    @include margin-trailer(2);
     @include margin-leader(2);
     .pane-title {
         color: $gold_lite;
@@ -25,12 +25,3 @@
         text-align: center;
     }
 }
-
-.node-type-content-our-work {
-    .pane-webform-client-block-69 {
-        margin-bottom: 0;
-        background: url(../images/webform_bg_2.jpg) no-repeat;
-    }
-}
-
-

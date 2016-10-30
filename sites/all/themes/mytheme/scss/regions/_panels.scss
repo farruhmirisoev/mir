@@ -19,6 +19,7 @@
     }
     .panels-flexible-row-mir_1-main-row-middle {
         margin-left: 0;
+        
     }
 }
 
@@ -59,4 +60,15 @@
 
 .front .panels-flexible-mir_1 .panels-flexible-region-1-center_bottom-inside{
     padding: 0 gutter();
+}
+
+
+@include breakpoint(max-width 799px){
+    .not-front{
+        .panels-flexible-row-mir_1-main-row-inside{
+            position: relative;
+            padding-top: 0;
+            @include margin-leader(1);
+        }
+    }
 }

@@ -3,8 +3,8 @@
     padding-right: 0;
     float: none;
     width: auto;
-    .pane-content{
-        font-family: 'PTSerif'; 
+    .pane-content {
+        font-family: 'PTSerif';
     }
 }
 
@@ -14,7 +14,8 @@
 
 .pane-menu-menu-menu-about,
 .pane-view-ow-sections,
-.pane-menu-menu-menu-press-releases, .page-taxonomy-term .pane-view-districts {
+.pane-menu-menu-menu-press-releases,
+.page-taxonomy-term .pane-view-districts {
     background: $gray_bg;
     padding: 2em;
     @include margin-trailer(1);
@@ -30,5 +31,42 @@
                 text-decoration: none;
             }
         }
+    }
+}
+
+// sidebar responsive
+@include breakpoint(max-width 799px) {
+    .not-front {
+        .panels-flexible-row-mir_1-main-row-left {
+            position: absolute;
+            text-align: right;
+            right: 0;
+            top: -50px;            
+            z-index: 99;
+            width: auto;   
+            margin-left: gutter();         
+            .menu{
+                text-align: left;
+            }
+        }
+    }
+    #mir-sidebar-menu-trigger {
+        font-size: 18px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 20px;
+        background: $red;
+        color: #fff;
+        outline: none;
+        @include margin-trailer(1);
+    }
+}
+
+@include breakpoint($tablet) {
+    #mir-sidebar-menu-trigger {
+        display: none;
     }
 }

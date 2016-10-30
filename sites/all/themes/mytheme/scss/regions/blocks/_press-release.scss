@@ -1,9 +1,12 @@
 .view-view-press-releases.view-display-id-page_1 {
-    @include span(8 last);
-    .views-row{
-    	@include margin-trailer(1.50); 
+    @include breakpoint($tablet) {
+        @include span(8 last);
     }
-    .views-field-title, .views-field-title-field-et {
+    .views-row {
+        @include margin-trailer(1.50);
+    }
+    .views-field-title,
+    .views-field-title-field-et {
         a {
             @include mir_title($red);
         }
@@ -11,36 +14,41 @@
 }
 
 // fotogallery
-
-.view-view-press-releases.view-display-id-page_2{
-	@include span(8 last);
-	.view-content{
-		$layout6:6 1/5;
-		@include with-layout($layout6, true){			
-			.views-row{
-				@include gallery(2);
-				@include margin-trailer(1);
-
-				img{
-					@include img_res;
-				}
-			}
-		}
-	}
+.view-view-press-releases.view-display-id-page_2 {
+    @include breakpoint($tablet) {
+        @include span(8 last);
+    }
+    .view-content {
+        $layout6: 6 1/5;
+        @include with-layout($layout6, true) {
+            .views-row {
+                
+                @include margin-trailer(1);
+                @include breakpoint($mobile 799px) {
+                    @include gallery(3);
+                }
+                @include breakpoint($tablet) {
+                    @include gallery(2);
+                }
+                img {
+                    @include img_res;
+                }
+            }
+        }
+    }
 }
 
 // fotogallery details page
-
-.node-type-content-gallery-press-release{
-	.field-name-field-prg-imgs{
-		.field-items{
-			.field-item{
-				@include gallery(4);
-				@include margin-trailer(1);
-				img{
-					@include img_res;
-				}
-			}
-		}
-	}
+.node-type-content-gallery-press-release {
+    .field-name-field-prg-imgs {
+        .field-items {
+            .field-item {
+                @include gallery(4);
+                @include margin-trailer(1);
+                img {
+                    @include img_res;
+                }
+            }
+        }
+    }
 }

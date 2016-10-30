@@ -1,4 +1,6 @@
-.mir-nav-button__wrap {}
+.mir-nav-button__wrap {
+    @include margin-trailer(1);
+}
 
 .mir-nav-button {
     display: inline-block;
@@ -33,10 +35,22 @@
     a {
         display: block;
         border: 2px solid $gray_date;
-        padding: .5em 2em;
-        @include fontsize(18px, 1);
+        padding: .2em .5em;
         &:hover {
             border: 2px solid $red;
+        }
+        @include breakpoint(max-width 359px){
+            text-align: center;
+            &:before, &:after{
+                margin: 0;
+            }
+            span{
+                display: none;
+            }
+        }
+        @include breakpoint($tablet){
+            padding: .5em 2em;
+            @include fontsize(18px, 1);
         }
     }
 }
