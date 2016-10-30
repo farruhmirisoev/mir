@@ -665,7 +665,7 @@ a {
 }
 
 /* line 7, ../scss/_presets.scss */
-img, a:hover, a:active, a:focus, object, embed {
+img, *:hover, *:active, *:focus, object, embed {
   outline: none;
   outline: none;
 }
@@ -1740,25 +1740,37 @@ body {
 #mini-panel-header .pane-block-9 .pane-content div {
   text-align: right;
 }
-/* line 110, ../scss/regions/_header.scss */
-#mini-panel-header .header-bottom {
-  background: url(../images/footer_bottom_bg.jpg) no-repeat;
-  background-size: cover;
-  color: #f2eede;
-}
-/* line 114, ../scss/regions/_header.scss */
+/* line 111, ../scss/regions/_header.scss */
 #mini-panel-header .header-bottom .pane-page-title h1 {
   font-weight: normal;
 }
 @media (max-width: 799px) {
+  /* line 115, ../scss/regions/_header.scss */
+  #mini-panel-header .header-bottom .pane-page-title h1 {
+    font-weight: normal;
+    color: #a31418;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    padding-right: 40px;
+  }
+  /* line 122, ../scss/regions/_header.scss */
+  #mini-panel-header .header-bottom .panels-flexible-row-33-1-inside {
+    padding: 0;
+  }
+}
+@media (min-width: 800px) {
   /* line 110, ../scss/regions/_header.scss */
   #mini-panel-header .header-bottom {
-    margin-left: -2.12766%;
-    margin-right: -4.12766%;
+    background: url(../images/footer_bottom_bg.jpg) no-repeat;
+    background-size: cover;
+    color: #f2eede;
   }
 }
 
-/* line 124, ../scss/regions/_header.scss */
+/* line 134, ../scss/regions/_header.scss */
 .panels-flexible-row-33-1-inside {
   max-width: 1170px;
   margin: 0 auto;
@@ -1766,19 +1778,19 @@ body {
   padding-right: 2.12766%;
 }
 
-/* line 128, ../scss/regions/_header.scss */
+/* line 138, ../scss/regions/_header.scss */
 .front .pane-page-logo {
   margin-bottom: -120px;
   z-index: 2;
   position: relative;
 }
 
-/* line 134, ../scss/regions/_header.scss */
+/* line 144, ../scss/regions/_header.scss */
 .not-front .pane-page-logo {
   height: 60px;
   overflow: hidden;
 }
-/* line 137, ../scss/regions/_header.scss */
+/* line 147, ../scss/regions/_header.scss */
 .not-front .pane-page-logo img {
   margin-top: -90px;
   max-width: 100%;
@@ -1869,6 +1881,15 @@ body {
   padding: 0 2.12766%;
 }
 
+@media (max-width: 799px) {
+  /* line 67, ../scss/regions/_panels.scss */
+  .not-front .panels-flexible-row-mir_1-main-row-inside {
+    position: relative;
+    padding-top: 0;
+    margin-top: 24px;
+    margin-top: 1.5rem;
+  }
+}
 /* line 1, ../scss/regions/blocks/_tabs.scss */
 .pane-pane-messages {
   margin-bottom: 24px;
@@ -2844,31 +2865,69 @@ body {
 /* line 15, ../scss/regions/blocks/_sidebar.scss */
 .pane-menu-menu-menu-about,
 .pane-view-ow-sections,
-.pane-menu-menu-menu-press-releases, .page-taxonomy-term .pane-view-districts {
+.pane-menu-menu-menu-press-releases,
+.page-taxonomy-term .pane-view-districts {
   background: #f8f8f8;
   padding: 2em;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 22, ../scss/regions/blocks/_sidebar.scss */
+/* line 23, ../scss/regions/blocks/_sidebar.scss */
 .pane-menu-menu-menu-about .pane-content a,
 .pane-view-ow-sections .pane-content a,
-.pane-menu-menu-menu-press-releases .pane-content a, .page-taxonomy-term .pane-view-districts .pane-content a {
+.pane-menu-menu-menu-press-releases .pane-content a,
+.page-taxonomy-term .pane-view-districts .pane-content a {
   text-decoration: underline;
   display: inline-block;
   padding: 0.3em 0;
   outline: none;
 }
-/* line 27, ../scss/regions/blocks/_sidebar.scss */
+/* line 28, ../scss/regions/blocks/_sidebar.scss */
 .pane-menu-menu-menu-about .pane-content a.active, .pane-menu-menu-menu-about .pane-content a:hover,
 .pane-view-ow-sections .pane-content a.active,
 .pane-view-ow-sections .pane-content a:hover,
 .pane-menu-menu-menu-press-releases .pane-content a.active,
-.pane-menu-menu-menu-press-releases .pane-content a:hover, .page-taxonomy-term .pane-view-districts .pane-content a.active, .page-taxonomy-term .pane-view-districts .pane-content a:hover {
+.pane-menu-menu-menu-press-releases .pane-content a:hover,
+.page-taxonomy-term .pane-view-districts .pane-content a.active,
+.page-taxonomy-term .pane-view-districts .pane-content a:hover {
   font-weight: bold;
   text-decoration: none;
 }
 
+@media (max-width: 799px) {
+  /* line 40, ../scss/regions/blocks/_sidebar.scss */
+  .not-front .panels-flexible-row-mir_1-main-row-left {
+    position: absolute;
+    text-align: right;
+    right: 0;
+    top: -50px;
+    z-index: 99;
+    width: auto;
+    margin-left: 2.12766%;
+  }
+
+  /* line 50, ../scss/regions/blocks/_sidebar.scss */
+  #mir-sidebar-menu-trigger {
+    font-size: 18px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    background: #a31418;
+    color: #fff;
+    outline: none;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  /* line 66, ../scss/regions/blocks/_sidebar.scss */
+  #mir-sidebar-menu-trigger {
+    display: none;
+  }
+}
 /* line 3, ../scss/regions/blocks/_partners.scss */
 .view-id-view_partnerlsit .views-row {
   width: 23.40426%;

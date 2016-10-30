@@ -108,15 +108,25 @@
         }
     }
     .header-bottom {
-        background: url(../images/footer_bottom_bg.jpg) no-repeat;
-        background-size: cover;
-        color: $gold_lite;
         .pane-page-title h1 {
             font-weight: normal;
         }
-        @include breakpoint(max-width 799px) {
-            margin-left: -2.12766%;
-            margin-right: -4.12766%;
+        @include breakpoint(max-width 799px){
+            .pane-page-title h1 {
+                font-weight: normal;
+                color: $red;             
+                margin-bottom: 0;           
+                @include fontsize(24px,1.5);
+                padding-right: 40px;
+            }
+            .panels-flexible-row-33-1-inside{
+                padding: 0;
+            }
+        }
+        @include breakpoint($tablet){
+            background: url(../images/footer_bottom_bg.jpg) no-repeat;
+            background-size: cover;
+            color: $gold_lite;
         }
     }
 }

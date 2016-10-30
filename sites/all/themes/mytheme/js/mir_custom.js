@@ -203,9 +203,25 @@
             }
         });
 
-
+        
+        // sidebar menu dropdown-------------------
+        $('.not-front .panels-flexible-row-mir_1-main-row-left').prepend('<div id="mir-sidebar-menu-trigger"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>');
+ 
+        if($('#mir-sidebar-menu-trigger').is(':visible'))
+            upDown('#mir-sidebar-menu-trigger','.panels-flexible-region-mir_1-left_sidebar');
 
 
 
     }); // doc ready
+    // dropdown 
+    function upDown(trigger, target) {
+        $(target).hide();
+        $(trigger).click(function() {
+            console.log(1);
+            if ($(target).is(':visible')) $(target).slideUp('fast');
+            else $(target).slideDown('fast');
+        }).css('cursor', 'pointer');
+    }
 })(jQuery);
+
+

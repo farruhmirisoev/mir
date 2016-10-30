@@ -4,7 +4,7 @@ a {
     color: $black;
 }
 
-img, a:hover, a:active, a:focus, object, embed {
+img, *:hover, *:active, *:focus, object, embed {
     outline: none;
     outline: none;
 }
