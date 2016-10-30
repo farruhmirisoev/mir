@@ -51,14 +51,18 @@
 // taxonomy term page 
 .page-taxonomy-term {
     .panels-flexible-row-mir_1-main-row-middle {
-        @include span(8 last);
+        @include breakpoint($tablet){
+            @include span(8 last);
+        }
     }
     .node-content-our-work {
         @include with-layout(6 1/5) {
-            @include gallery(2);
-            // &:nth-of-type(3n+3){
-            // 	@include last;
-            // }
+            @include breakpoint($mobile 799px){
+               @include gallery(3); 
+            }
+            @include breakpoint($tablet){
+                @include gallery(2);
+            }
             @include margin-trailer(1);
             img {
                 @include img_res;

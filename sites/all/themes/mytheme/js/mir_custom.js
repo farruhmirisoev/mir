@@ -24,13 +24,12 @@
             slidesToShow: 2,
             slidesToScroll: 2,
             responsive: [{
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },               
-            ]
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }, ]
         });
 
         $('.our-works-slider').slick({
@@ -41,6 +40,19 @@
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 3,
+            responsive: [{
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }, {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }, ]
 
 
         });
@@ -53,6 +65,26 @@
             speed: 300,
             slidesToShow: 6,
             slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    arrows:false
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }, {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }, ]
         });
 
         // porfolio---------------------
@@ -203,12 +235,12 @@
             }
         });
 
-        
+
         // sidebar menu dropdown-------------------
         $('.not-front .panels-flexible-row-mir_1-main-row-left').prepend('<div id="mir-sidebar-menu-trigger"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>');
- 
-        if($('#mir-sidebar-menu-trigger').is(':visible'))
-            upDown('#mir-sidebar-menu-trigger','.panels-flexible-region-mir_1-left_sidebar');
+
+        if ($('#mir-sidebar-menu-trigger').is(':visible'))
+            upDown('#mir-sidebar-menu-trigger', '.panels-flexible-region-mir_1-left_sidebar');
 
 
 
@@ -223,5 +255,3 @@
         }).css('cursor', 'pointer');
     }
 })(jQuery);
-
-

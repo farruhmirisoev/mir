@@ -27,6 +27,7 @@
             z-index: 2;
             img {
                 width: auto;
+                margin-top: 0;
             }
         }
         @include breakpoint($tablet) {

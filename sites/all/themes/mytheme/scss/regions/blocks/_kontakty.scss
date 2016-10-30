@@ -1,8 +1,6 @@
 .pane-block-6 {
     padding-left: 50px;
     box-sizing: border-box;
-    float: left;
-    width: 50%;
     .fa {
         color: $red;
         border: 1px solid $red;
@@ -17,16 +15,8 @@
     }
 }
 
-
-
 .pane-block-6 p {
     clear: left;
-    font-size: 18px;
-}
-
-.mir-contact__webform {
-    float: left;
-    width: 50%;
 }
 
 .mir-contact__webform:after {
@@ -37,24 +27,12 @@
 
 .webform-client-form-47 {}
 
-.webform-component--mus-soobshchenie {
-    float: right;
-    width: 48%;
-}
-
 .webform-component--mus-soobshchenie textarea {
-    height: 140px;
+    height: 125px;
     background: $gold_lite;
     border: 1px solid $red;
     @include placeholder {
         color: $red;
-    }
-}
-
-.webform-client-form-47 .webform-component-textfield {
-    width: 48%;
-    input {
-        background: $gold_lite;
     }
 }
 
@@ -75,3 +53,36 @@
     height: 515px;
     margin-top: 50px;
 }
+
+@include breakpoint($tablet) {
+    .mir-contact__webform {
+        .webform-component--mus-soobshchenie {
+            float: right;
+            width: 48%;
+        }
+        .webform-component-textfield {
+            width: 48%;
+            input {
+                background: $gold_lite;
+            }
+        }
+    }
+}
+
+@include breakpoint(920px) {
+    .pane-block-6 {
+        width: 50%;
+        float: left;
+        p {
+            font-size: 18px;
+        }
+    }
+    .mir-contact__webform {
+        width: 50%;
+        float: left;
+        .webform-component--mus-soobshchenie textarea {
+            min-height: 140px;
+        }
+    }
+}
+

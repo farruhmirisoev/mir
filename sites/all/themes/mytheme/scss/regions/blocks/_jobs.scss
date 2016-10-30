@@ -1,6 +1,8 @@
 .page-vakansii {
 	.panels-flexible-row-mir_1-main-row-middle{
-		@include span(8 last);
+		@include breakpoint($tablet){
+			@include span(8 last);
+		}
 	}
 }
 .view-view-job-openings.view-display-id-page_1{

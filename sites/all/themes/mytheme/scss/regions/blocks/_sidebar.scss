@@ -45,6 +45,9 @@
             z-index: 99;
             width: auto;   
             margin-left: gutter();         
+            .menu{
+                text-align: left;
+            }
         }
     }
     #mir-sidebar-menu-trigger {

@@ -3,14 +3,20 @@
         @include clearfix;
     }
     .views-row {
-        @include gallery(4);
         @include margin-trailer(2);
+        @include breakpoint($mobile 799px) {
+            @include gallery(6);
+        }
+        @include breakpoint($tablet) {
+            @include gallery(4);
+        }
         .views-field-field-news-img {
             img {
                 @include img_res;
             }
         }
-        .views-field-title, .views-field-title-field-et {
+        .views-field-title,
+        .views-field-title-field-et {
             @include margin-leader(.5);
             @include margin-trailer(.5);
             a {
@@ -33,12 +39,11 @@
     .bef-select-as-links {
         @include margin-trailer(1);
         .form-type-bef-link {
-            display: inline-block;
-            margin-left: 5px;
+            margin-bottom: 5px;
             a {
                 display: block;
                 outline: none;
-                padding: 0.5em 1em;
+                padding: 0.1em 1em;
                 border: 2px solid $red;
                 border-radius: 3px;
                 color: $red;
@@ -47,6 +52,13 @@
                 &:hover {
                     color: #fff;
                     background: $red;
+                }
+            }
+            @include breakpoint(460px) {
+                display: inline-block;
+                margin-left: 5px;
+                a{
+                    padding: 0.5em 1em;
                 }
             }
         }
@@ -95,19 +107,17 @@
             right: 15%;
         }
     }
-    .field-name-field-galery  {
+    .field-name-field-galery {
         @include margin-leader(1);
-        @include margin-trailer(1);        
+        @include margin-trailer(1);
         .field-item {
-            @include box-sizing(border-box);            
-            padding: 0 15px;            
-            img{
+            @include box-sizing(border-box);
+            padding: 0 15px;
+            img {
                 @include img_res;
                 outline: none;
             }
         }
-
-
     }
     .mir_1-bottom-content {
         background: $gray_bg;
@@ -129,5 +139,15 @@
     .mir-soc-share__content {
         display: inline-block;
         vertical-align: middle;
+    }
+}
+
+.view-view-news.view-display-id-block {
+    .views-row {
+        @include breakpoint(max-width 799px){
+            &:nth-child(3) {
+                display: none;
+            }            
+        }
     }
 }

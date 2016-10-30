@@ -48,12 +48,12 @@
 
       //check if the prev node id isset and put the link
       if(isset($nodes[($node->nid)-1])): ?>
-        <div class="mir-nav-button mir-nav-button--left"><a href="/node/<?php print ($node->nid)-1; ?>"><?php print t('Previous work'); ?></a></div>
+        <div class="mir-nav-button mir-nav-button--left"><a href="/node/<?php print ($node->nid)-1; ?>"><span><?php print t('Previous work'); ?></span></a></div>
       <?php endif;
 
       //check if the next node id isset and put the link
       if(isset($nodes[($node->nid)+1])): ?>
-        <div class="mir-nav-button mir-nav-button--right"><a href="/node/<?php print ($node->nid)+1; ?>"><?php print t('Next work'); ?></a></div>
+        <div class="mir-nav-button mir-nav-button--right"><a href="/node/<?php print ($node->nid)+1; ?>"><span><?php print t('Next work'); ?></span></a></div>
       <?php endif; ?>
 
     </div>

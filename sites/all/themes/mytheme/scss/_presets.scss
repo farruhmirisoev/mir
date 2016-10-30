@@ -6,7 +6,6 @@ a {
 
 img, *:hover, *:active, *:focus, object, embed {
     outline: none;
-    outline: none;
 }
 
 ul {
@@ -205,6 +204,15 @@ body {
 }
 .field-name-body img{
     margin:15px !important;
+    @include breakpoint(max-width 799px){
+        max-width: 90%;
+        height: auto !important;
+    }
+    @include breakpoint(max-width 620px){
+        display: block;
+        float: none !important;
+        margin: 1em auto !important;
+    }
 }
 
 .alert-danger{display: none;}
