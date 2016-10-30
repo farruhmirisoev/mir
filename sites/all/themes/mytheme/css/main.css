@@ -3355,7 +3355,8 @@ body {
 
 /* line 1, ../scss/regions/blocks/_webform-69.scss */
 .pane-webform-client-block-69 {
-  margin-bottom: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   background: url(../images/webform_bg_2.jpg) no-repeat;
   background-size: cover;
   padding-bottom: 48px;
