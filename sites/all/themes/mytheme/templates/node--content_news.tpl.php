@@ -19,12 +19,13 @@
       hide($content['comments']);
       hide($content['links']);
       hide($content['field_anons']);
+      // print '<div class="node__published">' . t('Published') . ': ' . date('d.m.Y', $node->created) . '</div>';
       print render($content['field_anons']);
       ?>
 
 		<div class="mir-soc-share">
 			<div class="mir-soc-share__title"><?php print t('Поделиться'); ?>:</div>
-			<div class="mir-soc-share__content">		
+			<div class="mir-soc-share__content">
 				<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 				<script src="//yastatic.net/share2/share.js"></script>
 				<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,viber,whatsapp"></div>
